@@ -10,7 +10,7 @@ Comme ça, je verrai comment vous progressez.
 
 Chaque exercice sera nommé par exemple Exercice1.html, Exercice2.html, etc.
 
-[Exercice n°1](Exercice1.md) - Intégration des fichiers Bootstrap: css et js.
-[Exercice n°2](Exercice2.md) - Utilisation de la classe container.
-[Exercice n°3](Exercice3.md) - Manipulation du texte.
+- [Exercice n°1](Exercice1.md) - Intégration des fichiers Bootstrap: css et js.
+- [Exercice n°2](Exercice2.md) - Utilisation de la classe container.
+- [Exercice n°3](Exercice3.md) - Manipulation du texte.
 
