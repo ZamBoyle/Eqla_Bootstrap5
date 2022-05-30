@@ -48,7 +48,7 @@ Les avantages d’utiliser Bootstrap sont les suivants :
     • Gain de temps en développement.
     • Cohérence dans le design de votre site.
     • Pensé Mobile First : Android, IOS, Windows 10 mobile.
-    • Compatible à la majorité des navigateurs : tous les navigateurs. Et pour le cas d’IE à partir de la version 10.
+    • Compatible à la majorité des navigateurs : tous les navigateurs. Sauf IE pour Bootstrap 5.
     • Responsive.
     • Open Source.
 ### 4. Bootstrap 4.x et Bootstrap 5
@@ -61,13 +61,14 @@ Mais le passage à Bootstrap 5 ne devrait pas être trop difficile normalement. 
 
 En mai 2022, la version 5.2 est la dernière version de Bootstrap. Et comme dit précédemment, elle se libère de sa dépendance avec jQuery. Cependant, il ne vous est pas interdit d'utiliser jQuery.
 
-Si vous devez continuer de supporter Internet Explorer alors vous devrez vous tourner vers Bootstrap 4. Car Internet Explorer n'est plus supporté depuis la version 5. Sachez que maintenant, Microsoft Edge (basé sur Chromium) est le nouveau navigateur de Microsoft.
+Si vous devez continuer de supporter Internet Explorer alors vous devrez vous tourner vers Bootstrap 4. Car Internet Explorer n'est plus supporté depuis la version 5. Sachez que maintenant, Microsoft Edge (basé sur Chromium) est le nouveau navigateur de Microsoft. Et c'est une bénédiction pour les développeurs. :-) 
 
 ### 5. Comment Utiliser Bootstrap ?
 
 Bootstrap est un Framework qui est composé d’un ensemble de fichiers. Pour utiliser Bootstrap, il nous faut donc utiliser des fichiers que vous pourrez trouver à cette adresse : https://getbootstrap.com/docs/4.6/getting-started/download/
 
 Il y a deux manières d’utiliser ces fichiers :
+
     • Soit vous les téléchargez (1 fichier CSS et 1 ou 2 fichiers JS) sur le site Bootstrap. Et vous ajoutez le lien dans votre HTML. Vous voyez que j’ai mis 1 ou 2 fichiers JS :
         ◦ 2 fichiers JavaScript :
             ▪ L’un pour Popper.js qui permet d’avoir des Tooltips (info-bulles) sur des éléments de votre page. Donnant un bel effet.
@@ -75,17 +76,25 @@ Il y a deux manières d’utiliser ces fichiers :
         ◦ 1 fichier JavaScript : c’est un bundle (un paquet) qui contient Popper et Bootstrap.
     • Soit vous utilisez des adresses qui pointent sur ce qu’on appelle des CDN(Content Delivery Network). L’avantage des CDN c’est qu’ils sont super rapides mais si vous voulez les utiliser, vous devez ajouter l’attribut integrity pour vérifier que c’est le code javascript que vous voulez et qu’il n’a pas été remplacé par un hacker. Les navigateurs modernes vérifieront grâce à la valeur mise pour l’attribut integrity qu’il s’agit bien du fichier que vous voulez.
     
-Cependant, avec Bootstrap 4.x et versions antérieures, il est impératif d’ajouter la librairie JavaScript jQuery. Elle doit être chargée avant les fichiers JavaScript Popperet Bootstrap. C’est-à-dire que dans votre page HTML vous mettrez la balise <javascript> de jQuery avant celles de Popper et de Bootstrap. Le cas échéant, Bootstrap ne fonctionnera pas. C’est pourquoi Bootstrap 5 n’utilise plus jQuery. Le JavaScript moderne permet de s’en affranchir.
+Cependant, avec Bootstrap 4.x et versions antérieures, il est impératif d’ajouter la librairie JavaScript jQuery. Elle doit être chargée avant les fichiers JavaScript Popperet Bootstrap. C’est-à-dire que dans votre page HTML vous mettrez la balise <javascript> de jQuery avant celles de Popper et de Bootstrap. Le cas échéant, Bootstrap ne fonctionnera pas. 
+
+C’est pourquoi Bootstrap 5 n’utilise plus jQuery. Le JavaScript moderne permet de s’en affranchir.
+
 Vous aurez des exemples d’intégration à la page suivante : https://getbootstrap.com/docs/4.6/getting-started/introduction/
+
 Pour vous simplifier la tâche, j’ai créé dans le répertoire Exercices/Templates un fichier html modèle pour commencer vos exercices. Il se nomme Template.html et les ressources nécessaires pointent sur des CDN. Maintenant, libre à vous de l’utiliser ou non.
+
 Dans ce fichier, j’ai fait pointer vers la dernière version 4.6 de Bootstrap. De plus, j’ai ajouté un fichier CSS supplémentaire (Icones Bootstrap) que nous discuterons plus tard mais comme ça nous avons notre page web modèle Bootstrap déjà prête pour cela.
 
 ## IV. Intégration des Fichiers Bootstrap
 
 Sur le site Bootstrap : https://getbootstrap.com/docs/4.6/getting-started/introduction/
+
 Allez dans le répertoire Note-de-Cours/IV.Integration-de-Bootstrap
 Vous verrez dans le fichier exemple1.html comment intégrer les CDN pour utiliser Bootstrap.
+
 Ensuite dans le fichier exemple2.html, vous verrez comment héberger vos fichiers au lieu d’utiliser les CDN. C’est assez trivial mais comme ça vous aurez un exemple de chaque.
+
 Vous pouvez tester et constater que le résultat est le même avec et sans CDN. Sauf que dans le cas des CDN, vous aurez besoin d’une connexion Internet et pas pour des fichiers locaux.
 
 ## V. Fonctionnement de Bootstrap
@@ -93,7 +102,10 @@ Vous pouvez tester et constater que le résultat est le même avec et sans CDN. 
 Sur le site Bootstrap : https://getbootstrap.com/docs/4.6/layout/overview/
 Bootstrap fonctionne principalement avec l’utilisation de classes. Il faut savoir que le fichier CSS de Bootstrap quand il n’est pas minifié (ramené sur une ligne pour qu’il prenne moins de place) fait 10600 lignes… Il n’est pas nécessaire de connaître par cœur toutes les classes. Personnellement j’utilise le site principal et Google.
 
-La première classe que l’on va utiliser est la classe .container que l’on applique à un div. Elle permettra d’adapter la largeur du div en fonction de la résolution de l’écran du périphérique utilisé.
+La première classe que l’on va utiliser est la classe .container que l’on applique à un div. Elle permettra d’adapter la largeur du div en fonction de la résolution de l’écran du périphérique utilisé. Elle effectue aussi un léger padding gauche et droit.
+
+J'utilise la notation .container (point container) que c'est une classe définie dans le fichier css de Bootstrap. Mais son utilisation avec l'attribut class d'une balise se fera sans ce point.
+
 Exemple :
 ```html
 <body>
@@ -115,93 +127,127 @@ Regardons rapidement ce CSS pour la classe .container On voit que tout changera 
 .container-lg,
 .container-md,
 .container-sm,
-.container-xl {
-width: 100%;
-padding-right: 15px;
-padding-left: 15px;
-margin-right: auto;
-margin-left: auto
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media (min-width:576px) {
-    .container,
-    .container-sm {
-max-width: 540px
-    }
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
 }
-
-@media (min-width:768px) {
-    .container,
-    .container-md,
-    .container-sm {
-max-width: 720px
-    }
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+  }
 }
-
-@media (min-width:992px) {
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm {
-max-width: 960px
-    }
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
 }
-
-@media (min-width:1200px) {
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
-max-width: 1140px
-    }
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1320px;
+  }
 }
 ```
-.container agit différemment en fonction des résolutions des périphériques (d’après l’analyse du morceau de CSS mis plus haut) :
-Cas n°1 : résolution inférieure à 576 pixels => 100% de l’écran
-Cas n°2 : résolution supérieure ou égale à 576 pixels et inférieure à 768 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 540 pixels.
-Cas n°3 : résolution supérieure ou égale à 768 pixels et inférieure à 992 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 720 pixels.
-Cas n°4 : résolution supérieure ou égale à 992 pixels et inférieure à 1200 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 960 pixels.
-Cas n°5 : résolution ou égale à 1200 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 1140 pixels.
+.container agit différemment en fonction des résolutions des périphériques (d’après l’analyse du morceau de CSS mis plus haut) :  
+- Cas n°1 : résolution inférieure à 576 pixels => 100% de l’écran
+- Cas n°2 : résolution supérieure ou égale à 576 pixels et inférieure à 768 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 540 pixels.
+- Cas n°3 : résolution supérieure ou égale à 768 pixels et inférieure à 992 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 720 pixels.
+- Cas n°4 : résolution supérieure ou égale à 992 pixels et inférieure à 1200 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 960 pixels.
+- Cas n°5 : résolution supérieure ou égale à 1200 pixels et inférieure à 1140 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 1140 pixels.
+- Cas n°6 (nouveau Bootstrap 5) : résolution supérieure ou égale à 1400 pixels et inférieure à 1320 pixels, l'élément s'affichera au centre de l'écran et sa largeur sera de 1320 pixels.
+
 .container-fluid permet d’utiliser 100% de la taille de votre écran et n’est pas fixée comme l’est .container.
+
 Cependant, avec la classe .container, comme nous l’avons vu plus haut au cas n°1, si l’écran est inférieur à 576 pixels alors 100% sera utilisé comme .container-fluid.
+
 Reprenons l’exemple précédent avec .container-fluid
 ```html
 <body>
-<div class= "container-fluid">
-<h1>Hello, World !</h1>
-<p>
-<span class="font-weight-bold">Le Lorem Ipsum</span> est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme AldusPageMaker.
-</p>
-</div>
+    <div class= "container-fluid">
+        <h1>Hello, World !</h1>
+        <p>
+            <span class="font-weight-bold">Le Lorem Ipsum</span> est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme AldusPageMaker.
+        </p>
+    </div>
 </body>
 ```
 Si vous en avez la possibilité, comparez le résultat de la page sur un smartphone et un ordinateur de bureau. Ou encore, jouez sur la largeur du navigateur sur votre desktop, la largeur s’auto adapte.
     
-# VI. Manipulation du texte
-Sur le site Bootstrap : https://getbootstrap.com/docs/4.6/utilities/text/
-    1. Alignement du texte
-a. La classe .text-justify
-Elle permet de justifier le texte.
-b. La classe .text-center
-Elle permet de centrer le texte.
-c. La classe .text-left
+## VI. Manipulation du texte
+
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/utilities/text/
+### 1. Alignement du texte
+
+- La classe .text-start (en bs4 .text-left)
 Elle permet d’aligner à gauche votre texte.
-d. La classe .text-right
+
+- La classe .text-center
+Elle permet de centrer le texte.
+
+- La classe .text-end (en bs4 .text-right)
 Elle permet d’aligner à droite votre texte.
-    2. Alignement du texte fonction de l’écran
+
+- La classe .text-justify
+Elle n'existe plus dans Bootstrap 5. Elle permettait de justifier le texte. La raison de Bootstrap d'après la documentation:
+> Notez que nous ne fournissons pas de classes utilitaires pour le texte justifié. Bien que, d'un point de vue esthétique, un texte justifié puisse sembler plus attrayant, il rend l'espacement des mots plus aléatoire et donc plus difficile à lire.
+
+```html
+<p class="text-start">Le texte est aligné à gauche sur tout type d'écran.</p>
+<p class="text-center">Le texte est centré sur tout type d'écran.</p>
+<p class="text-end">Le texte est aligné à droite sur tout type d'écran.</p>
+```
+
+
+
+### 2. Alignement du texte fonction de l’écran
+
 Des abréviations peuvent s’ajouter à certaines classes pour conditionner l’action en fonction de l’écran.
     • sm (small) :résolution supérieure ou égale à 576 pixels et inférieure à 768 pixels.
     • md (medium): résolution supérieure ou égale à 768 pixels et inférieure à 992 pixels. 
     • lg (large): résolution supérieure ou égale à 992 pixels et inférieure à 1200 pixels
     • xl (extra large): résolution ou égale à 1200 pixels.
+
 Dans la littérature Bootstrap on voit souvent l’utilisation du caractère * pour certaines classes. Ça veut dire qu’il le faut remplacer par une valeur numérique ou du texte.
 Exemples :
-.text-*-right : .text-xl-right
-.text-*-center : .text-md-center
-.text-*-left : .text-sm-left
+    .text-*-right : .text-xl-right
+    .text-*-center : .text-md-center
+    .text-*-left : .text-sm-left
+
 D’après la feuille de style de Bootstrap, je n’ai pas trouvé ces abréviations pour la classe text-justify.
-    3. Les classes de mise en forme
+
+### 3. Les classes de mise en forme
+
 La classe .font-weight-bold: met en gras.
 La classe .font-weight-bolder: met en plus gras.
 La classe .font-weight-normal: met le texte normal.
