@@ -1,7 +1,7 @@
 # Bootstrap 5
 ## I. A propos
 
-Ce document contient les notes de cours sur Bootstrap. En complément, vous avez un autre document qui contient les instructions pour réaliser les différents exercices/manipulations que nous ferons en classe. A ce document d’exercices viendra se greffer un ensemble de répertoires reprenant les différents exercices/manipulations. Si vous vous en sortez, n’allez pas voir le résultat final de ces exercices.
+Ce document contient les notes de cours sur Bootstrap. Il est difficile de voir tout Bootstrap. En effet, généralement Bootstrap consiste dans l'application d'une multitude de classes. On consulte la documentation concernant l'aspect que l'on veut avoir des informations. C'est pourquoi, ici je verrai Bootstrap dans les grandes lignes. Mais pas dans les détails car nous n'avons pas le temps.
 
 <!-- De plus, il est complémentaire au site http://eqla.ddns.net que je vous invite à visiter.-->
 
@@ -69,12 +69,12 @@ Bootstrap est un Framework qui est composé d’un ensemble de fichiers. Pour ut
 
 Il y a deux manières d’utiliser ces fichiers :
 
-    • Soit vous les téléchargez (1 fichier CSS et 1 ou 2 fichiers JS) sur le site Bootstrap. Et vous ajoutez le lien dans votre HTML. Vous voyez que j’ai mis 1 ou 2 fichiers JS :
-        ◦ 2 fichiers JavaScript :
-            ▪ L’un pour Popper.js qui permet d’avoir des Tooltips (info-bulles) sur des éléments de votre page. Donnant un bel effet.
-            ▪ L’autre pour le JavaScript de Bootstrap.
-        ◦ 1 fichier JavaScript : c’est un bundle (un paquet) qui contient Popper et Bootstrap.
-    • Soit vous utilisez des adresses qui pointent sur ce qu’on appelle des CDN(Content Delivery Network). L’avantage des CDN c’est qu’ils sont super rapides mais si vous voulez les utiliser, vous devez ajouter l’attribut integrity pour vérifier que c’est le code javascript que vous voulez et qu’il n’a pas été remplacé par un hacker. Les navigateurs modernes vérifieront grâce à la valeur mise pour l’attribut integrity qu’il s’agit bien du fichier que vous voulez.
+- Soit vous les téléchargez (1 fichier CSS et 1 ou 2 fichiers JS) sur le site Bootstrap. Et vous ajoutez le lien dans votre HTML. Vous voyez que j’ai mis 1 ou 2 fichiers JS :
+    - 2 fichiers JavaScript :
+        - L’un pour Popper.js qui permet d’avoir des Tooltips (info-bulles) sur des éléments de votre page. Donnant un bel effet.
+        - L’autre pour le JavaScript de Bootstrap.
+    - 1 fichier JavaScript : c’est un bundle (un paquet) qui contient Popper et Bootstrap. (C'est celui que je prends personnellement)
+- Soit vous utilisez des adresses qui pointent sur ce qu’on appelle des CDN(Content Delivery Network). L’avantage des CDN c’est qu’ils sont super rapides mais si vous voulez les utiliser, vous devez ajouter l’attribut integrity pour vérifier que c’est le code javascript que vous voulez et qu’il n’a pas été remplacé par un hacker. Les navigateurs modernes vérifieront grâce à la valeur mise pour l’attribut integrity qu’il s’agit bien du fichier que vous voulez.
     
 Cependant, avec Bootstrap 4.x et versions antérieures, il est impératif d’ajouter la librairie JavaScript jQuery. Elle doit être chargée avant les fichiers JavaScript Popperet Bootstrap. C’est-à-dire que dans votre page HTML vous mettrez la balise <javascript> de jQuery avant celles de Popper et de Bootstrap. Le cas échéant, Bootstrap ne fonctionnera pas. 
 
@@ -219,6 +219,8 @@ Reprenons l’exemple précédent avec .container-fluid
 </body>
 ```
 Si vous en avez la possibilité, comparez le résultat de la page sur un smartphone et un ordinateur de bureau. Ou encore, jouez sur la largeur du navigateur sur votre desktop, la largeur s’auto adapte.
+
+Passons à la pratique avec l'[exercice n°2](/Exercices/Exercice2.md "Exercice sur l'utilisation de la classe container").
     
 ## VI. Manipulation du texte
 
@@ -289,7 +291,6 @@ Exemples:
 <p class="fw-lighter">Je suis en lighter</p>
 ```
 
-
 Pour mettre en italic on va utiliser le préfixe fst-* pour font style. Il correspond en css à la propriété [font-style](https://developer.mozilla.org/fr/docs/Web/CSS/font-style "font-style sur Mozilla").
 
 La classe .fst-italic: met le texte en italic.
@@ -308,15 +309,17 @@ Exemples :
 ```
 Résultat:
 ```
-texte converti en miniscules.
+texte converti en minuscules.
 TEXTE CONVERTI EN MAJUSCULES.
 Première Lettre De Chaque Mot Est En Majuscule.
 ```
+Passons à la pratique avec l'[exercice n°3](/Exercices/Exercice3.md "Exercice sur la manipulation du texte").
+
 
 ## VII. Les images
 Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/content/images/
 Nous allons voir que Bootstrap permet de facilement rendre une image responsive, en faire une jolie vignette, aligner celle-ci.
-Evidemment toutes ces classes peuvent être combinées entre elles comme dans le précédent exemple.
+Évidemment toutes ces classes peuvent être combinées entre elles comme dans le précédent exemple.
 
 ### 1. Responsive
 Bootstrap permet de rapidement permettre à une image d’être responsive. Ajouter la classe .img-fluid et votre image va s’auto-adapter en fonction de l’écran. 
