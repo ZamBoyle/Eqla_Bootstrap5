@@ -98,6 +98,7 @@ Nous allons le faire depuis l'[exercice n°1](/Exercices/Exercice1.md "Exercice 
 Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/getting-started/introduction/
 Bootstrap fonctionne principalement avec l’utilisation de [classes css](https://developer.mozilla.org/fr/docs/Web/CSS/Class_selectors "Sélecteurs de classe sur Mozilla"). Il faut savoir que le fichier CSS de Bootstrap quand il n’est pas minifié (ramené sur une ligne pour qu’il prenne moins de place) fait 10400 lignes… Il n’est pas nécessaire de connaître par cœur toutes les classes. Personnellement j’utilise le site principal et Google.
 
+### La classe .container
 La première classe que l’on va utiliser est la classe [.container](https://getbootstrap.com/docs/5.2/layout/containers/ "Les classes containers sur Bootstrap") que l’on applique à un div. Elle permettra d’adapter la largeur du div en fonction de la résolution de l’écran du périphérique utilisé. Elle effectue aussi un léger padding gauche et droit.
 
 J'utilise la notation .container (point container) que c'est une classe définie dans le fichier css de Bootstrap. Mais son utilisation avec l'attribut class d'une balise se fera sans ce point.
@@ -105,12 +106,21 @@ J'utilise la notation .container (point container) que c'est une classe définie
 Exemple :
 ```html
 <body>
-<div class= "container">
-<h1>Hello, World !</h1>
-<p>
-<span class="font-weight-bold">Le Lorem Ipsum</span> est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme AldusPageMaker.
-</p>
-</div>
+    <div class= "container">
+        <h1>Hello, World !</h1>
+        <p>
+            <span class="fw-bold">Le Lorem Ipsum</span> est simplement du faux
+                texte employé dans la composition et la mise en page avant impression. Le
+                Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années
+                1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte 
+                pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que 
+                survivre cinq siècles, mais s'est aussi adapté à la bureautique 
+                informatique, sans que son contenu n'en soit modifié. Il a été popularisé 
+                dans les années 1960 grâce à la vente de feuilles Letraset contenant des 
+                passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des 
+                applications de mise en page de texte, comme AldusPageMaker.
+        </p>
+    </div>
 </body>
 ```
 Si l’on regarde le CSS de Bootstrap, on voit que dès que l’on utilise la classe .container, que tout va s’adapter.
@@ -183,6 +193,7 @@ Regardons rapidement ce CSS pour la classe .container On voit que tout changera 
 - Cas n°5 : résolution supérieure ou égale à 1200 pixels et inférieure à 1140 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 1140 pixels.
 - Cas n°6 (nouveau Bootstrap 5) : résolution supérieure ou égale à 1400 pixels et inférieure à 1320 pixels, l'élément s'affichera au centre de l'écran et sa largeur sera de 1320 pixels.
 
+### La classe .container-fluid
 .container-fluid permet d’utiliser 100% de la taille de votre écran et n’est pas fixée comme l’est .container.
 
 Cependant, avec la classe .container, comme nous l’avons vu plus haut au cas n°1, si l’écran est inférieur à 576 pixels alors 100% sera utilisé comme .container-fluid.
