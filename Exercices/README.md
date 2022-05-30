@@ -10,6 +10,6 @@ Comme ça, je verrai comment vous progressez.
 
 Chaque exercice sera nommé par exemple Exercice1.html, Exercice2.html, etc.
 
-[Exercice n°1](Exercice1.md) - Intégration des fichiers Bootstrap: css et js
+[Exercice n°1](Exercice1.md) - Intégration des fichiers Bootstrap: css et js  
 [Exercice n°2](Exercice2.md) - 
 
