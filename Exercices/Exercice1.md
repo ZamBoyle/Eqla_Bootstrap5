@@ -40,3 +40,20 @@ Mettez le texte suivant en titre1: Hello World from Exercice 1 !
 ## Partie 8 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
 Appelez-moi pour qu'on vérifie ensemble.
+
+Sur le site [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/ "Au point \"2. Include Bootstrap’s CSS and JS.\""), vous trouverez un exemple d'intégration. Votre exercice devrait ressembler un PEU à ça mais en travaillant sur des fichiers locaux (qui sont sur votre ordinateur). Donc ce n'est pas la solution de l'exercice mais cet exemple peut vous aider.
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
+```
