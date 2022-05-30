@@ -3,7 +3,7 @@
 
 Ce document contient les notes de cours sur Bootstrap. En complément, vous avez un autre document qui contient les instructions pour réaliser les différents exercices/manipulations que nous ferons en classe. A ce document d’exercices viendra se greffer un ensemble de répertoires reprenant les différents exercices/manipulations. Si vous vous en sortez, n’allez pas voir le résultat final de ces exercices.
 
-De plus, il est complémentaire au site http://eqla.ddns.net que je vous invite à visiter.
+<!-- De plus, il est complémentaire au site http://eqla.ddns.net que je vous invite à visiter.-->
 
 ## II. Prérequis
 
@@ -14,7 +14,7 @@ Pour aborder Bootstrap les prérequis suivants sont nécessaires :
 
 En effet, Bootstrap étant un Framework basé sur la présentation, les notions de class et id sur des balises sont nécessaires.
 
-Petit rappel : Quelle est la différence entre les attributsid et class ?
+Petit rappel : Quelle est la différence entre les attributs id et class ?
 
 Tous les deux se trouvent sur des balises HTML.
     • id : cet attribut doit être unique. Il peut être utilisé pour appliquer un style très précis à une balise.
@@ -58,6 +58,10 @@ En ce moment, février 2021, nous sommes au moment où Bootstrap 5 va bientôt p
 La version 4.x dépend de la librairie JavaScript jQuery qui doit impérativement être chargée avant le fichier JavaScript de Bootstrap.
 
 Mais le passage à Bootstrap 5 ne devrait pas être trop difficile normalement. De plus Bootstrap 5 va se libérer de sa dépendance à jQuery et fera du pur JavaScript (appelé parfois Vanilla JS).
+
+En mai 2022, la version 5.2 est la dernière version de Bootstrap. Et comme dit précédemment, elle se libère de sa dépendance avec jQuery. Cependant, il ne vous est pas interdit d'utiliser jQuery.
+
+Si vous devez continuer de supporter Internet Explorer alors vous devrez vous tourner vers Bootstrap 4. Car Internet Explorer n'est plus supporté depuis la version 5. Sachez que maintenant, Microsoft Edge (basé sur Chromium) est le nouveau navigateur de Microsoft.
 
 ### 5. Comment Utiliser Bootstrap ?
 
