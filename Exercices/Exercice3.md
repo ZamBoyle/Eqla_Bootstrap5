@@ -26,9 +26,9 @@ A votre paragraphe vous devrez utiliser une classe bien précise.
 Le texte de votre paragraphe sera: Je suis un paragraphe positionné sur la gauche de l'écran.
 
 ## Partie 6 - Centrez du texte et le mettre en gras
-Ajoutez un paragraphe qui sera positionné au centre de l'écran et en gras.
+Ajoutez un paragraphe qui sera positionné au centre de l'écran et en gras.  
 A votre paragraphe vous devrez utiliser une classe bien précise.  
-Le texte de votre paragraphe sera: Je suis un paragraphe positionné au centre de l'écran.
+Le texte de votre paragraphe sera: Je suis un paragraphe positionné au centre de l'écran.  
 
 Vous pouvez donc combiner des classes dans bootstrap avec un espace entre chaque classe.
 
