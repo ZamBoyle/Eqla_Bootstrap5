@@ -88,7 +88,7 @@ Dans ce fichier, j’ai fait pointer vers la dernière version 4.6 de Bootstrap.
 
 ## IV. Intégration des Fichiers Bootstrap
 
-Sur le site Bootstrap : https://getbootstrap.com/docs/4.6/getting-started/introduction/
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/getting-started/introduction/
 
 Allez dans le répertoire Note-de-Cours/IV.Integration-de-Bootstrap
 Vous verrez dans le fichier exemple1.html comment intégrer les CDN pour utiliser Bootstrap.
@@ -99,7 +99,7 @@ Vous pouvez tester et constater que le résultat est le même avec et sans CDN. 
 
 ## V. Fonctionnement de Bootstrap
 
-Sur le site Bootstrap : https://getbootstrap.com/docs/4.6/layout/overview/
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/getting-started/introduction/
 Bootstrap fonctionne principalement avec l’utilisation de classes. Il faut savoir que le fichier CSS de Bootstrap quand il n’est pas minifié (ramené sur une ligne pour qu’il prenne moins de place) fait 10600 lignes… Il n’est pas nécessaire de connaître par cœur toutes les classes. Personnellement j’utilise le site principal et Google.
 
 La première classe que l’on va utiliser est la classe .container que l’on applique à un div. Elle permettra d’adapter la largeur du div en fonction de la résolution de l’écran du périphérique utilisé. Elle effectue aussi un léger padding gauche et droit.
@@ -218,15 +218,24 @@ Elle permet de centrer le texte.
 - La classe .text-end (en bs4 .text-right)
 Elle permet d’aligner à droite votre texte.
 
-- La classe .text-justify
-Elle n'existe plus dans Bootstrap 5. Elle permettait de justifier le texte. La raison de Bootstrap d'après la documentation:
-> Notez que nous ne fournissons pas de classes utilitaires pour le texte justifié. Bien que, d'un point de vue esthétique, un texte justifié puisse sembler plus attrayant, il rend l'espacement des mots plus aléatoire et donc plus difficile à lire.
-
+Exemples:
 ```html
 <p class="text-start">Le texte est aligné à gauche sur tout type d'écran.</p>
 <p class="text-center">Le texte est centré sur tout type d'écran.</p>
 <p class="text-end">Le texte est aligné à droite sur tout type d'écran.</p>
 ```
+
+- La classe .text-justify
+Elle n'existe plus dans Bootstrap 5. Elle permettait de justifier le texte. La raison de Bootstrap d'après la documentation:
+> Notez que nous ne fournissons pas de classes utilitaires pour le texte justifié. Bien que, d'un point de vue esthétique, un texte justifié puisse sembler plus attrayant, il rend l'espacement des mots plus aléatoire et donc plus difficile à lire.
+
+Si maintenant, vous voudriez avoir à nouveau la classe text-justify, ajoutez soit dans le head de votre page ou mieux dans un fichier css, le code suivant:
+```css
+.text-justify {
+    text-align: justify!important
+}
+```
+Pour info, j'ai simplement copié le code du fichier css de Bootstrap 4. ;)
 
 ### 2. Alignement du texte fonction de l’écran
 
@@ -241,18 +250,34 @@ Des abréviations peuvent s’ajouter à certaines classes pour conditionner l�
 Dans la littérature Bootstrap on voit souvent l’utilisation du caractère * pour certaines classes. Ça veut dire qu’il le faut remplacer par une valeur numérique ou du texte.
 
 Exemples :
-    .text-\*-start : .text-xl-right
-    .text-\*-center : .text-md-center
-    .text-\*-end : .text-sm-left
+    .text-\*-start : .text-xl-start (mets à gauche pour une résolution à partir de xl)
+    .text-\*-center : .text-md-center (centre pour résolution à partir de md)
+    .text-\*-end : .text-sm-end (mets à droite pour une résolution à partir de sm)
 
 ### 3. Les classes de mise en forme
 
-La classe .font-weight-bold: met en gras.
-La classe .font-weight-bolder: met en plus gras.
-La classe .font-weight-normal: met le texte normal.
-La classe .font-weight-light: met dans une font claire.
-La classe .font-weight-lighter: met dans une font encore plus claire.
-La classe .font-italic: met en le texte en italic.
+Dans les exemples suivants on va souvent utiliser le préfixe fw-* pour font weight.
+En fait, il correspond en css à la propriété [font-weight](https://developer.mozilla.org/fr/docs/Web/CSS/font-weight "font-weight sur Mozilla"). Font-weight définit la finesse ou l'épaisseur d'une police.
+
+La classe .fw-bold: met en gras.
+La classe .fw-bolder: met en plus gras.
+La classe .fw-normal: met le texte normal.
+La classe .fw-light: met dans une font claire (en fait la police est plus fine)
+La classe .fw-lighter: met dans une font encore plus claire (encore plus fine).
+
+Exemples:
+```html
+<p class="fw-bold">Je suis en gras</p>
+<p class="fw-bolder">Je suis plus gras que le paragraphe précédent</p>
+<p class="fw-light">Je suis en light</p>
+<p class="fw-lighter">Je suis en lighter</p>
+```
+
+
+Pour mettre en italic on va utiliser le préfixe fst-* pour font style. Il correspond en css à la propriété [font-style](https://developer.mozilla.org/fr/docs/Web/CSS/font-style "font-style sur Mozilla").
+
+La classe .fst-italic: met le texte en italic.
+La classe .fst-normal: met le texte en normal. 
 
 ### 4. Transformation du texte
 La classe .text-lowercase: texte converti en minuscules.
