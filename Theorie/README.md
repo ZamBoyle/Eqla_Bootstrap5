@@ -99,7 +99,7 @@ Vous pouvez tester et constater que le résultat est le même avec et sans CDN. 
 
 ## V. Fonctionnement de Bootstrap
 
-Sur le site Bootstrap : https://getbootstrap.com/docs/4.6/layout/overview/
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/getting-started/introduction/
 Bootstrap fonctionne principalement avec l’utilisation de classes. Il faut savoir que le fichier CSS de Bootstrap quand il n’est pas minifié (ramené sur une ligne pour qu’il prenne moins de place) fait 10600 lignes… Il n’est pas nécessaire de connaître par cœur toutes les classes. Personnellement j’utilise le site principal et Google.
 
 La première classe que l’on va utiliser est la classe .container que l’on applique à un div. Elle permettra d’adapter la largeur du div en fonction de la résolution de l’écran du périphérique utilisé. Elle effectue aussi un léger padding gauche et droit.
