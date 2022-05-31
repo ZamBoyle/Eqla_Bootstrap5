@@ -1,7 +1,6 @@
 # Bootstrap 5
 
-Chers Stagiaires,  
-  
+Chers Stagiaires,<br/><br/>
 
 Ce dépôt concerne le cours Bootstrap dans le cadre de la formation BlindCode.  
 
