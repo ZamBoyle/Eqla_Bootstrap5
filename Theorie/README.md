@@ -8,17 +8,17 @@ Ce document contient les notes de cours sur Bootstrap. Il est difficile de voir 
 ## II. Prérequis
 
 Pour aborder Bootstrap les prérequis suivants sont nécessaires :
-    • HTML
-    • CSS
-    • Un peu de JS pour certains composants.
+- HTML
+- CSS
+- Un peu de JS pour certains composants.
 
 En effet, Bootstrap étant un Framework basé sur la présentation, les notions de class et id sur des balises sont nécessaires.
 
 Petit rappel : Quelle est la différence entre les attributs id et class ?
 
 Tous les deux se trouvent sur des balises HTML.
-    • id : cet attribut doit être unique. Il peut être utilisé pour appliquer un style très précis à une balise.
-    • class : n’a pas la prétention d’être unique mais peut l’être. Il est utilisé pour appliquer un même style à différentes balises.
+- id : cet attribut doit être unique. Il peut être utilisé pour appliquer un style très précis à une balise.
+- class : n’a pas la prétention d’être unique mais peut l’être. Il est utilisé pour appliquer un même style à différentes balises.
 
 L’utilisation des class dans Bootstrap est omniprésente donc il est important de bien comprendre ce qu’est un attribut.
 
@@ -45,12 +45,12 @@ En avril 2020, il est le 7ème projet le plus populaire sur GitHub.
 Il n’est pas obligatoire de l’utiliser mais il peut vous faire gagner pas mal de temps dans certaines situations. Il permet d’avoir une certaine cohérence graphique pour les sites.  Il est possible de trouver des thèmes gratuits et payants.
 
 Les avantages d’utiliser Bootstrap sont les suivants :
-    • Gain de temps en développement.
-    • Cohérence dans le design de votre site.
-    • Pensé Mobile First : Android, IOS, Windows 10 mobile.
-    • Compatible à la majorité des navigateurs : tous les navigateurs. Sauf IE pour Bootstrap 5.
-    • Responsive.
-    • Open Source.
+- Gain de temps en développement.
+- Cohérence dans le design de votre site.
+- Pensé Mobile First : Android, IOS, Windows 10 mobile.
+- Compatible à la majorité des navigateurs : tous les navigateurs. Sauf IE pour Bootstrap 5.
+- Responsive.
+- Open Source.
 ### 4. Bootstrap 4.x et Bootstrap 5
 
 En ce moment, février 2021, nous sommes au moment où Bootstrap 5 va bientôt pointer le bout de son nez. Il est toujours en phase béta. Comme la version 4.x est la plus déployée, je pense qu’il est plus intéressant pour vous de voir la version 4.x qui est la plus installée et utilisée.
@@ -76,7 +76,7 @@ Il y a deux manières d’utiliser ces fichiers :
     - 1 fichier JavaScript : c’est un bundle (un paquet) qui contient Popper et Bootstrap. (C'est celui que je prends personnellement)
 - Soit vous utilisez des adresses qui pointent sur ce qu’on appelle des CDN(Content Delivery Network). L’avantage des CDN c’est qu’ils sont super rapides mais si vous voulez les utiliser, vous devez ajouter l’attribut integrity pour vérifier que c’est le code javascript que vous voulez et qu’il n’a pas été remplacé par un hacker. Les navigateurs modernes vérifieront grâce à la valeur mise pour l’attribut integrity qu’il s’agit bien du fichier que vous voulez.
     
-Cependant, avec Bootstrap 4.x et versions antérieures, il est impératif d’ajouter la librairie JavaScript jQuery. Elle doit être chargée avant les fichiers JavaScript Popperet Bootstrap. C’est-à-dire que dans votre page HTML vous mettrez la balise <javascript> de jQuery avant celles de Popper et de Bootstrap. Le cas échéant, Bootstrap ne fonctionnera pas. 
+Cependant, avec Bootstrap 4.x et versions antérieures, il est impératif d’ajouter la librairie JavaScript jQuery. Elle doit être chargée avant les fichiers JavaScript Popperet Bootstrap. C’est-à-dire que dans votre page HTML vous mettrez la balise \<javascript> de jQuery avant celles de Popper et de Bootstrap. Le cas échéant, Bootstrap ne fonctionnera pas. 
 
 C’est pourquoi Bootstrap 5 n’utilise plus jQuery. Le JavaScript moderne permet de s’en affranchir.
 
