@@ -2,7 +2,8 @@
 
 Chers Stagiaires,
 
-Ce dépôt concerne le cours Bootstrap dans le cadre de la formation BlindCode.
+
+Ce dépôt concerne le cours Bootstrap dans le cadre de la formation BlindCode.  
 
 Vous trouverez dans ce dépôts les points suivants:
 - La [théorie](Theorie/README.md).
