@@ -1,4 +1,8 @@
+# Bootstrap 5
+
 Chers Stagiaires,
+
+Ce dépôt concerne le cours Bootstrap dans le cadre de la formation BlindCode.
 
 Vous trouverez dans ce dépôts les points suivants:
 - La [théorie](Theorie/README.md).
@@ -8,4 +12,4 @@ Vous trouverez dans ce dépôts les points suivants:
 - Le [fichier js bootstrap 5.2](Exercices/bootstrap.bundle.min.js?raw=1)
 - Le [fichier css bootstrap 5.2](Exercices/bootstrap.min.css?raw=1)
 
-Bon travail ! :-)
+Bon travail ! :)
