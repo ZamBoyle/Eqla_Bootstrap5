@@ -39,3 +39,10 @@ Le texte de votre paragraphe sera: Je suis un paragraphe positionné au centre d
 La partie du paragraphe qui sera en gras: au centre  
 
 Ici je vous propose d'ajouter au paragraphe la balise **span** qui encadre les mots "au centre" sur lequel vous appliquerez la classe pour mettre en gras.
+
+## Partie 8 - Alignements fonction de la résolution
+Ici on va voir via cet exercice qu'il est possible de position son texte en fonction de la résolution de l'écran. Attention, n'oubliez que si vous appliquez de base un énorme zoom, le css va considérer que vous avez un écran de faible résolution.
+
+- Positionnez le texte suivant à droite quand la résolution est sm:"Je suis un texte à droite car la résolution est sm.
+
+<script>alert("hello world");</script>
