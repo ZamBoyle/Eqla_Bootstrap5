@@ -324,13 +324,13 @@ Nous allons voir que Bootstrap permet de facilement rendre une image responsive,
 ### 1. Responsive
 Bootstrap permet de rapidement permettre à une image d’être responsive. Ajouter la classe .img-fluid et votre image va s’auto-adapter en fonction de l’écran. 
 ```html
-<img src="Images/logo_eqla.png" class="img-fluid" alt="logo d'Eqla" width="10000px"  />
+<img src="https://zamboyle.github.io/Cours/2022/Bootstrap/Exercices/Images/Logo_Eqla.png" class="img-fluid" alt="logo d'Eqla" width="10000px"  />
 ```
 Ici on a ajouté l’attribut width="10000px". L’image ne fera bien sûr jamais 10000 pixels. Bootstrap veille au grain. 😊 
 ### 2. Thumbnail
 La classe .img-thumbnail ajoute à l’image un bord blanc arrondi.
 ```html
-<img src="/Images/paris.jpg" class="img-thumbnail" alt="Image de paris" />
+<img src="https://zamboyle.github.io/Cours/2022/Bootstrap/Exercices/Images/Paris.jpg" class="img-thumbnail" alt="Image de paris" />
 ```
 ### 3. Alignement
 Permet de mettre des images à gauche .float-start ou à droite .float-end quel que soit la taille de l’écran.
