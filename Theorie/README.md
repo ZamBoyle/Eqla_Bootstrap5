@@ -319,7 +319,8 @@ Passons à la pratique avec l'[exercice n°3](/Exercices/Exercice3.md "Exercice 
 ## VII. Les images
 Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/content/images/
 Nous allons voir que Bootstrap permet de facilement rendre une image responsive, en faire une jolie vignette, aligner celle-ci.
-Évidemment toutes ces classes peuvent être combinées entre elles comme dans le précédent exemple.
+
+Évidemment toutes ces classes peuvent être combinées entre elles.
 
 ### 1. Responsive
 Bootstrap permet de rapidement permettre à une image d’être responsive. Ajouter la classe .img-fluid et votre image va s’auto-adapter en fonction de l’écran. 
@@ -335,8 +336,8 @@ La classe .img-thumbnail ajoute à l’image un bord blanc arrondi.
 ### 3. Alignement
 Permet de mettre des images à gauche .float-start ou à droite .float-end quel que soit la taille de l’écran.
 ```html
-<img src="/Images/logo_eqla.png" class="img-fluid float-start" alt="logo d'Eqla" />
-<img src="/Images/paris.jpg" class="img-fluid img-thumbnail float-end" alt="Image de paris" />
+<img src="https://zamboyle.github.io/assets/img/Logo_Eqla.png" class="img-fluid float-start" alt="logo d'Eqla" />
+<img src="https://zamboyle.github.io/assets/img/Paris.jpg" class="img-fluid img-thumbnail float-end" alt="Image de paris" />
 ```
 On peut aussi définir ces alignements en fonction du périphérique :.float-\*-start ou .float-\*-end où * peut avoir différentes valeurs.
 - sm : small
@@ -344,3 +345,10 @@ On peut aussi définir ces alignements en fonction du périphérique :.float-\*
 - lg : large
 - xl : extra-large
 - xxl: extra extra-large
+
+### 4. Images aux bords arrondis
+Il suffit d'utiliser la classe .rounded
+
+```html
+<img src="https://zamboyle.github.io/assets/img/Logo_Eqla.png" class="img-fluid rounded" alt="logo d'Eqla" />
+```
