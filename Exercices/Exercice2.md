@@ -17,7 +17,7 @@ Ajoutez le titre 1 suivant: Exercice n°2 sur la classe .container
 ## Partie 5 - Ajout d'un titre 2
 - Ajoutez le titre 2 suivant: Bootstrap Container
 - Ajoutez le paragraphe suivant:  
-> En HTML, un container est un élément qui peut contenir d'autres éléments, par exemple \<div>, \<span>, .. La classe .container ou la classe .container-fluid peuvent utiliser ces éléments.
+> En HTML, un container est un élément qui peut contenir d'autres éléments, par exemple div, span,.. La classe .container ou la classe .container-fluid peuvent utiliser ces éléments.
 
 ## Partie 6 - Ajout de titres 3
 - Ajoutez le titre 3 suivant: Qu'est-ce que la classe .container ?
