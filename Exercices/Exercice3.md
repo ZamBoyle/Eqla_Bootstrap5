@@ -63,8 +63,8 @@ Ici vous allez chaîner les classes d'alignements en fonction des résolutions.
 
 - Positionnez le texte à gauche si la résolution est d'au moins sm, sinon si la résolution est d'au moins lg centrez sinon si la résolution est d'au moins xl alignez à droite. Le texte sera: "Je suis un texte qui a la bougeotte :-)"
 
-## Partie 9 - Mettre en majuscules/minuscules
-Mettez en titre 2: Partie 9 - Mettre en majuscules/minuscules
+## Partie 9 - Transformation du texte
+Mettez en titre 2: Partie 9 - Transformation du texte
 
 Soit le texte suivant:"Je suis un texte sans défense ! Ne me transformez pas ! Je suis juste parfait !"
 
@@ -73,10 +73,18 @@ Soit le texte suivant:"Je suis un texte sans défense ! Ne me transformez pas ! 
 - Faites-en un paragraphe en utilisant une classe qui mettra la première lettre de chaque mot en majuscules.
 
 ## Partie 10 - Les classes de mise en forme
-Mettez en titre 2: Partie 10 - Les classes de mise en forme
+- Mettez en titre 2: Partie 10 - Les classes de mise en forme
+- Mettez en titre 3: Texte en gras/très gras
+    - Mettez le texte suivant en gras: Je suis gras et j'ai une belle corpulence.
+    - Mettez le texte suivant en plus gras: Je suis très gras et je dois faire régime.
+- Mettez en titre 3: Texte clair/très clair
+    - Mettez le texte suivant en clair: Je suis en clair.
+    - Mettez le texte suivant en clair: Je suis en très clair.
+    - Mettez le texte suivant en italique: Je suis en italique.
 
-Reprenez    
-
+## Partie 11 - Envoi sur GitHub
+Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
+Appelez-moi pour qu'on vérifie ensemble.
 
 <!--
 <script>alert("hello world");</script>
