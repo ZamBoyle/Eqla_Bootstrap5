@@ -30,6 +30,7 @@ Ajoutez le titre 1 suivant: Exercice n°2 sur la classe .container
 
 ## Partie 7 - fermeture du div
 Précédemment, vous avez ouvert div avec la classe .container. Vous devez maintenant le fermer si ce n'est déjà fait.
+
 ## Partie 8 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
 Appelez-moi pour qu'on vérifie ensemble.
