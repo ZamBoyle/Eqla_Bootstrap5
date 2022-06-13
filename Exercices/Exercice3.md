@@ -75,7 +75,7 @@ Soit le texte suivant:"Je suis un texte sans défense ! Ne me transformez pas ! 
 ## Partie 10 - Les classes de mise en forme
 Mettez en titre 2: Partie 10 - Les classes de mise en forme
 
-Reprenez
+Reprenez    
 
 
 <!--
