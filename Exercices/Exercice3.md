@@ -8,7 +8,7 @@ Copiez le contenu du fichier [template2.html](/Exercices/Templates/template2.htm
 
 J'insiste bien sur le fait d'utiliser le [template2.html](/Exercices/Templates/template2.html?raw=1) et non template1.html.
 ## Partie 2 - Ajout d'un titre
-Mettez comme titre: Exercice3
+Mettez comme titre h1: Exercice3
 
 ## Partie 3 - Alignez du texte à droite
 Ajoutez en titre 2: Partie 3 - Alignez du texte à droite
