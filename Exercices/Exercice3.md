@@ -83,7 +83,7 @@ Soit le texte suivant:"Je suis un texte sans défense ! Ne me transformez pas ! 
     - Mettez le texte suivant en italique: Je suis en italique.
 
 ## Partie 11 - Envoi sur GitHub
-Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
+Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.  
 Appelez-moi pour qu'on vérifie ensemble.
 
 <!--
