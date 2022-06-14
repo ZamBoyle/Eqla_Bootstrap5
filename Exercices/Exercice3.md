@@ -24,10 +24,10 @@ Ajoutez un paragraphe qui sera positionné au centre de l'écran.
 A votre paragraphe vous devrez utiliser une classe bien précise.  
 Le texte de votre paragraphe sera: Je suis un paragraphe positionné au centre de l'écran.
 
-## Partie 5 - Alignez du texte à droite
-Mettez en titre 2: Partie 5 - Alignez du texte à droite
+## Partie 5 - Alignez du texte à gauche
+Mettez en titre 2: Partie 5 - Alignez du texte à gauche
 
-Ajoutez un paragraphe qui sera positionné sur la droite de l'écran.  
+Ajoutez un paragraphe qui sera positionné sur la gauche de l'écran.  
 A votre paragraphe vous devrez utiliser une classe bien précise.  
 Le texte de votre paragraphe sera: Je suis un paragraphe positionné sur la gauche de l'écran.
 
