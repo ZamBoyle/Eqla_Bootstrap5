@@ -57,7 +57,7 @@ Ici on va voir via cet exercice qu'il est possible de position son texte en fonc
 
 - Positionnez le texte suivant à droite quand la résolution est d'au moins sm et plus: "Je suis un texte à droite car la résolution est sm.
 - Positionnez le texte suivant au centre quand la résolution est d'au moins xl et plus: "Je suis un texte centré car la résolution est xl.
-- Positionnez le texte suivant à gauche quand la résolution est d'au moins sm et plus: "Je suis un texte à droite car la résolution est sm.
+- Positionnez le texte suivant à gauche quand la résolution est d'au moins sm et plus: "Je suis un texte à gauche car la résolution est sm.
 
 Ici vous allez chaîner les classes d'alignements en fonction des résolutions.
 
