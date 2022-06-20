@@ -352,3 +352,26 @@ Il suffit d'utiliser la classe .rounded
 ```html
 <img src="https://zamboyle.github.io/assets/img/Logo_Eqla.png" class="img-fluid rounded" alt="logo d'Eqla" />
 ```
+
+## VIII. Accessibilité
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.0/getting-started/accessibility/
+Bootstrap fournit différentes classes permettant à des messages d'être lues seulement pour les utilisateurs de lecteurs d'écran.
+
+Bootstrao fournit aussi des classes permettant de réduire certaines animations de Bootstrap.
+
+### 1. Lecteur d'écran
+La classe <code>.visually-hidden</code> permet d'afficher des messages lisibles uniquement par un lecteur d'écran.  
+
+Dans l'exemple suivant, le texte ne sera jamais affiché mais lu par les lecteurs d'écran.
+``` html
+<p class="text-danger">
+    <span class="visually-hidden">Danger: </span>
+    Cette action est irréversible !
+  </p>
+</div>
+```
+La classe .visually-hidden-focusable, à utiliser sur les liens, permet de mettre le focus et d'afficher le texte du lien même si c'est caché: via les tabulations.
+Exemple:
+```html
+<a class="visually-hidden-focusable" href="#content">Je suis un lien d'évitement</a>
+```
