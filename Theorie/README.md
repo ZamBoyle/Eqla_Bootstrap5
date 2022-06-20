@@ -362,7 +362,7 @@ Bootstrap fournit aussi des classes permettant de réduire certaines animations 
 ### 1. Lecteur d'écran
 La classe <code>.visually-hidden</code> permet d'afficher des messages lisibles uniquement par un lecteur d'écran.  
 
-Dans l'exemple suivant, le texte ne sera jamais affiché mais lu par les lecteurs d'écran.
+Dans l'exemple suivant, le texte ne sera jamais affiché mais lu par les lecteurs d'écran:
 ``` html
 <p class="text-danger">
     <span class="visually-hidden">Danger: </span>
@@ -370,7 +370,7 @@ Dans l'exemple suivant, le texte ne sera jamais affiché mais lu par les lecteur
   </p>
 </div>
 ```
-La classe .visually-hidden-focusable, à utiliser sur les liens, permet de mettre le focus et d'afficher le texte du lien même si c'est caché: via les tabulations.
+La classe <code>.visually-hidden-focusable</code>, à utiliser avec la balise a, permet de mettre le focus et d'afficher le texte du lien même s'il est caché: via les tabulations.
 
 Exemple:
 ```html
