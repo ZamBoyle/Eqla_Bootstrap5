@@ -377,9 +377,24 @@ Exemple:
 <a class="visually-hidden-focusable" href="#content">Je suis un lien d'évitement</a>
 ```
 
-### 2. 
+### 2. Animation réduite
+Bootstrap permet de diminuer un maximum ses animations si <code>prefers-reduced-motion</code> est activé. Cela s'active de différentes manières.
 
-### IX. Les breakpoints
+Voici comment faire (en anglais):
+> - In GTK/GNOME: GNOME Tweaks > General tab (or Appearance, depending on version) > Animations is turned off.
+> Alternatively, add gtk-enable-animations = false to the [Settings] block of the GTK 3 configuration file.
+> - In Plasma/KDE: System Settings > Workspace Behavior -> General Behavior > “Animation speed” is set all the way to right to “Instant”.
+> - In Windows 10: Settings > Ease of Access > Display > Show animations in Windows.
+> - In Windows 11: Settings > Accessibility > Visual Effects > Animation Effects
+> - In Windows 7: Control Panel > Ease of Access > Make the computer easier to see > Turn off all unnecessary animations (when possible).
+> - In macOS: System Preferences > Accessibility > Display > Reduce motion.
+> - In iOS: Settings > General > Accessibility > Reduce Motion.
+> - In Android 9+: Settings > Accessibility > Remove animations.
+> - In Firefox about:config: Add a number preference called ui.prefersReducedMotion and set its value to either 0 for full animation or to 1 to indicate a preference for reduced motion. Changes to this preference take effect immediately.
+
+En effet, en termes d'accessibilité, il vaut mieux éviter les animations.
+
+## IX. Les breakpoints
 Sur Bootstrap: https://getbootstrap.com/docs/5.2/layout/breakpoints/
 
 Comme nous l'avons déjà vu il existe différents breakpoints (points d'arrêt) que nous avons déjà utilisés et vu dans le fichier css de Bootstrap.
@@ -395,7 +410,7 @@ En voici le résumé car vous me l'avez souvent demandé.;-)
 |Extra| large|	xl|	≥1200px
 |Extra| extra large|	xxl|	≥1400px
 
-### X. Les classes d'affichages
+## X. Les classes d'affichages
 Sur Bootstrap: https://getbootstrap.com/docs/5.2/utilities/display
 Reprenons le synopsis de la page de Bootstrap traduite avec Google Translate bien entendu ;-)
 > Basculez rapidement et de manière réactive la valeur d'affichage des composants et plus encore avec nos utilitaires d'affichage. Inclut la prise en charge de certaines des valeurs les plus courantes, ainsi que des extras pour contrôler l'affichage lors de l'impression.
@@ -404,6 +419,87 @@ On voit donc qu'il est possible de gérer de manière responsive l'affichage au 
 
 Nous allons voir avec quelles classes car évidemment tout se passe dans des classes avec Bootstrap. ;-)
 
+### 1. Notation
+Les classes s'écrivent de la manière suivante:
+- <code>.d-{value}</code>
+- <code>.d-{breakpoint}-{value}</code> for sm, md, lg, xl, xxl
 
+Les valeurs peuvent être les suivantes:
+- none
+- inline
+- inline-block
+- block
+- grid
+- table
+- table-cell
+- table-row
+- flex
+- inline-flex
 
+Exemple inline:
+``` html
+<div class="d-inline p-2 bg-primary text-white">d-inline</div>
+<div class="d-inline p-2 bg-dark text-white">d-inline</div>
+```
+Exemple block:
+``` html
+<span class="d-block p-2 bg-primary text-white">d-block</span>
+<span class="d-block p-2 bg-dark text-white">d-block</span>
+```
+
+Le résultat d'affichage des exemples précédents peut être vu à cette [page](https://getbootstrap.com/docs/5.0/utilities/display/#examples).
+
+### 2. Cacher/Montrer des éléments en fonction de l'écran
+En fonction du type d'écran, il est possible de cacher/montrer du contenu.
+
+Exemple:
+```html
+<div class="d-lg-none">Caché pour les écrans lg et plus</div>
+<div class="d-none d-lg-block">Caché pour les écrans plus petit que lg</div>
+```
+
+#### 2.1 Cacher des éléments
+| Taille d'écran      | Class                           |
+|---------------------|---------------------------------|
+| Caché pour tout     | .d-none                         |
+| Caché seulement sur xs   | .d-none .d-sm-block             |
+| Caché seulement sur sm   | .d-sm-none .d-md-block          |
+| Caché seulement sur md   | .d-md-none .d-lg-block          |
+| Caché seulement sur lg   | .d-lg-none .d-xl-block          |
+| Caché seulement sur xl   | .d-xl-none .d-xxl-block         |
+| Caché seulement sur xxl  | .d-xxl-none                     |
+
+#### 2.1 Montrer des éléments
+| Taille d'écran      | Class                           |
+|---------------------|---------------------------------|
+| Visible pour tout      | .d-block                        |
+| Visible seulement pour xs  | .d-block .d-sm-none             |
+| Visible seulement pour sm  | .d-none .d-sm-block .d-md-none  |
+| Visible seulement pour md  | .d-none .d-md-block .d-lg-none  |
+| Visible seulement pour lg  | .d-none .d-lg-block .d-xl-none  |
+| Visible seulement pour xl  | .d-none .d-xl-block .d-xxl-none |
+| Visible seulement pour xxl | .d-none .d-xxl-block            |
+
+### 3. Affichage lors de l'impression
+Il est possible de conditionner l'affichage lors de l'impression d'une page.
+
+- .d-print-none
+- .d-print-inline
+- .d-print-inline-block
+- .d-print-block
+- .d-print-grid
+- .d-print-table
+- .d-print-table-row
+- .d-print-table-cell
+- .d-print-flex
+- .d-print-inline-flex
+
+Ces différentes classes peuvent être combinées.
+
+Exemple:
+```html
+<div class="d-print-none">S'affichera uniquement sur écran et sera caché lors de l'impression.</div>
+<div class="d-none d-print-block">S'affichera uniquement lors de l'impression et sera caché à l'écran.</div>
+<div class="d-none d-lg-block d-print-block">Caché jusqu'à un écran large mais sera toujours affiché lors de l'impression.</div>
+```
 
