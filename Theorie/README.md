@@ -353,7 +353,7 @@ Il suffit d'utiliser la classe .rounded
 <img src="https://zamboyle.github.io/assets/img/Logo_Eqla.png" class="img-fluid rounded" alt="logo d'Eqla" />
 ```
 
-## VIII. Accessibilité
+## VIII. L'Accessibilité
 Sur le site Bootstrap : https://getbootstrap.com/docs/5.0/getting-started/accessibility/
 Bootstrap fournit différentes classes permettant à des messages d'être lues seulement pour les utilisateurs de lecteurs d'écran.
 
