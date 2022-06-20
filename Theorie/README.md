@@ -357,7 +357,7 @@ Il suffit d'utiliser la classe .rounded
 Sur le site Bootstrap : https://getbootstrap.com/docs/5.0/getting-started/accessibility/
 Bootstrap fournit différentes classes permettant à des messages d'être lues seulement pour les utilisateurs de lecteurs d'écran.
 
-Bootstrap fournit aussi des classes permettant de réduire certaines animations de Bootstrap.
+Bootstrap fournit aussi des classes permettant de réduire certaines de ses animations: transition, ouverture, d'une fenêtre modale, etc.
 
 ### 1. Lecteur d'écran
 La classe <code>.visually-hidden</code> permet d'afficher des messages lisibles uniquement par un lecteur d'écran.  
@@ -376,3 +376,34 @@ Exemple:
 ```html
 <a class="visually-hidden-focusable" href="#content">Je suis un lien d'évitement</a>
 ```
+
+### 2. 
+
+### IX. Les breakpoints
+Sur Bootstrap: https://getbootstrap.com/docs/5.2/layout/breakpoints/
+
+Comme nous l'avons déjà vu il existe différents breakpoints (points d'arrêt) que nous avons déjà utilisés et vu dans le fichier css de Bootstrap.
+
+En voici le résumé car vous me l'avez souvent demandé.;-)
+
+|Breakpoint|	Class infixe |	Dimensions|
+|---|---|---|
+|Extra small	|xs|	<576px
+|Small|	sm|	≥576px
+|Medium|	md|	≥768px
+|Large|	lg|	≥992px
+|Extra| large|	xl|	≥1200px
+|Extra| extra large|	xxl|	≥1400px
+
+### X. Les classes d'affichages
+Sur Bootstrap: https://getbootstrap.com/docs/5.2/utilities/display
+Reprenons le synopsis de la page de Bootstrap traduite avec Google Translate bien entendu ;-)
+> Basculez rapidement et de manière réactive la valeur d'affichage des composants et plus encore avec nos utilitaires d'affichage. Inclut la prise en charge de certaines des valeurs les plus courantes, ainsi que des extras pour contrôler l'affichage lors de l'impression.
+
+On voit donc qu'il est possible de gérer de manière responsive l'affichage au sens large comprenant aussi l'impression sur une imprimante.
+
+Nous allons voir avec quelles classes car évidemment tout se passe dans des classes avec Bootstrap. ;-)
+
+
+
+

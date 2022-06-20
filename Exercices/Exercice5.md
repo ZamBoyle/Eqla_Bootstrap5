@@ -1,5 +1,5 @@
-# Exercice n°5 - texte & Images
-L'exercice portera l'utilisation de la classe [.container](/Theorie/README.md#la-classe-container "La classe .container dans le cours").
+# Exercice n°5 - L'Accessibilité 
+L'exercice portera l'utilisation des classes d'[accessibilité](/Theorie/README.md#viii-laccessibilité "L'Acessibilité dans le cours").
 
 ## Partie 1 - Création du fichier Exercice2.html
 Créez un fichier nommé Exercice2.html dans le répertoire EqlaExercices\Bootstrap.  
