@@ -357,7 +357,7 @@ Il suffit d'utiliser la classe .rounded
 Sur le site Bootstrap : https://getbootstrap.com/docs/5.0/getting-started/accessibility/
 Bootstrap fournit différentes classes permettant à des messages d'être lues seulement pour les utilisateurs de lecteurs d'écran.
 
-Bootstrao fournit aussi des classes permettant de réduire certaines animations de Bootstrap.
+Bootstrap fournit aussi des classes permettant de réduire certaines animations de Bootstrap.
 
 ### 1. Lecteur d'écran
 La classe <code>.visually-hidden</code> permet d'afficher des messages lisibles uniquement par un lecteur d'écran.  
