@@ -371,6 +371,7 @@ Dans l'exemple suivant, le texte ne sera jamais affiché mais lu par les lecteur
 </div>
 ```
 La classe .visually-hidden-focusable, à utiliser sur les liens, permet de mettre le focus et d'afficher le texte du lien même si c'est caché: via les tabulations.
+
 Exemple:
 ```html
 <a class="visually-hidden-focusable" href="#content">Je suis un lien d'évitement</a>
