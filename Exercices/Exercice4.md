@@ -32,5 +32,3 @@ Ajoutez le titre 1: Les Images dans Bootstrap
 ## Partie 7 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
 Appelez-moi pour qu'on vérifie ensemble.
-
-
