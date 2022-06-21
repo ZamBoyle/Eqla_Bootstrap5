@@ -8,28 +8,28 @@ Copiez le contenu du fichier [template2.html](/Exercices/Templates/template2.htm
 
 J'insiste bien sur le fait d'utiliser le [template2.html](/Exercices/Templates/template2.html?raw=1) et non template1.html.
 
+## Partie 2 - Ajout d'un titre
+Ajoutez le titre 1: Les Images dans Bootstrap
 
-## Partie 2 - Ajouter une image traditionnelle
-- Ajoutez un titre 2: Image traditionnelle
-- Ajoutez l'image qui se trouve à [cette adresse](https://zamboyle.github.io/assets/img/Paris.jpg "Image de Paris") en utilisant la bonne balise html.
+## Partie 3 - Ajouter une image responsive
+- Ajoutez un titre 2: Image Responsive
+- Ajoutez tout simplement l'image qui se trouve à [cette adresse](https://zamboyle.github.io/assets/img/Paris.jpg "Image de Paris") en utilisant la bonne balise html et sans l'attribut class.
+- Ajoutez ensuite la classe qui rendra cette image responsive.
+- Essayez de jouer sur la Hauteur et la Largeur de votre navigateur pour constater qu'elle va s'auto adapter aux dimensions de l'écran.
 
-## Partie 2 - Ajouter une image responsive
-- Ajoutez un titre2: Image responsive
-- Ajoutez l'image qui pointe vers la même adresse que précédemment mais cette fois-ci cette image doit être responsive.
-
-## Partie 3 - Ajouter une mignature d'image
+## Partie 4 - Ajouter une mignature d'image
 - Ajoutez le titre 2: Mignature d'image
 - Ajoutez l'image qui pointe vers la même adresse que précédemment mais cette fois-ci cette image doit être une mignature de celle-ci.
  
-## Partie 4 - Ajouter une image aux coins arrondis
+## Partie 5 - Ajouter une image aux coins arrondis
 - Ajoutez le titre 2: Image aux coins arrondis
 - Ajoutez l'image qui pointe vers la même adresse que précédemment mais cette fois-ci cette image doit avoir les coins arrondis.
 
-## Partie 5 - Ajoutez une mignature d'image aux coins arrondis
+## Partie 6 - Ajoutez une mignature d'image aux coins arrondis
 - Ajoutez le titre 2: Mignature d'image aux coins arrondis
 - Ajoutez l'image qui pointe vers la même adresse que précédemment mais cette fois-ci cette image doit être une mignature de celle-ci et avoir les coins arrondis.
 
-## Partie 6 - Envoi sur GitHub
+## Partie 7 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
 Appelez-moi pour qu'on vérifie ensemble.
 
