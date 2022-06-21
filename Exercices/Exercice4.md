@@ -25,8 +25,8 @@ Ajoutez le titre 1: Les Images dans Bootstrap
 - Ajoutez le titre 2: Image aux coins arrondis
 - Ajoutez l'image qui pointe vers la même adresse que précédemment mais cette fois-ci cette image doit avoir les coins arrondis.
 
-## Partie 6 - Ajoutez Image avec coins arrondis
-- Ajoutez le titre 2: Image avec coins arrondis
+## Partie 6 - Ajoutez Image responsive avec coins arrondis
+- Ajoutez le titre 2: Image responsive avec coins arrondis
 - Ajoutez l'image qui pointe vers la même adresse que précédemment mais cette fois-ci cette image doit avoir les coins arrondis et responsive.
 
 ## Partie 7 - Envoi sur GitHub
