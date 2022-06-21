@@ -17,9 +17,9 @@ Ajoutez le titre 1: Les Images dans Bootstrap
 - Ajoutez ensuite la classe qui rendra cette image responsive.
 - Essayez de jouer sur la Hauteur et la Largeur de votre navigateur pour constater qu'elle va s'auto adapter aux dimensions de l'écran.
 
-## Partie 4 - Ajouter une mignature d'image
-- Ajoutez le titre 2: Mignature d'image
-- Ajoutez l'image qui pointe vers la même adresse que précédemment mais cette fois-ci cette image doit être une mignature de celle-ci.
+## Partie 4 - Ajouter un thumbnail d'image
+- Ajoutez le titre 2: Thumbnail d'image
+- Ajoutez l'image qui pointe vers la même adresse que précédemment mais cette fois-ci cette image doit être un thumbnail de celle-ci.
  
 ## Partie 5 - Ajouter une image aux coins arrondis
 - Ajoutez le titre 2: Image aux coins arrondis
