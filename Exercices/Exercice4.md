@@ -25,9 +25,9 @@ Ajoutez le titre 1: Les Images dans Bootstrap
 - Ajoutez le titre 2: Image aux coins arrondis
 - Ajoutez l'image qui pointe vers la même adresse que précédemment mais cette fois-ci cette image doit avoir les coins arrondis.
 
-## Partie 6 - Ajoutez une mignature d'image aux coins arrondis
-- Ajoutez le titre 2: Mignature d'image aux coins arrondis
-- Ajoutez l'image qui pointe vers la même adresse que précédemment mais cette fois-ci cette image doit être une mignature de celle-ci et avoir les coins arrondis.
+## Partie 6 - Ajoutez Image avec coins arrondis
+- Ajoutez le titre 2: Image avec coins arrondis
+- Ajoutez l'image qui pointe vers la même adresse que précédemment mais cette fois-ci cette image doit avoir les coins arrondis et responsive.
 
 ## Partie 7 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
