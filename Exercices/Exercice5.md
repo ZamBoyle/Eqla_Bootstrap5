@@ -14,8 +14,8 @@ Ajoutez le titre 1 suivant: L'Accessibilité
 ## Partie 4 - Texte pour lecteur d'écran
 - Ajoutez un titre 2: Texte pour lecteur d'écran
 - Soit le paragraphe suivant: Je suis affiché sur l'écran et lu par le lecteur d'écran.
-- Soit le paragraphe suivant: Je suis lu uniquement par les lecteur d'écran.
-- 
+- Soit le paragraphe suivant: Je suis lu uniquement par les lecteurs d'écran.
+
 - Utilisez la bonne classe css pour qu'il soit lu uniquement par un lecteur d'écran.
 
 
