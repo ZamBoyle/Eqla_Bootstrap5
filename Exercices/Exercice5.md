@@ -18,6 +18,9 @@ Ajoutez le titre 1 suivant: L'Accessibilité
 
 - Utilisez la bonne classe css pour qu'il soit lu uniquement par un lecteur d'écran.
 
+## Partie 5 - Envoi sur GitHub
+Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
+Appelez-moi pour qu'on vérifie ensemble.
 
 
 
