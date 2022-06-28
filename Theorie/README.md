@@ -435,6 +435,22 @@ Les valeurs peuvent être les suivantes:
 - flex
 - inline-flex
 
+Nous allons nous attarder uniquement sur les valeurs: none, inline, block et inline-block.
+
+En css, cela correspond à respectivement:
+display: none;
+display: inline;
+display: block;
+display: inline-block.
+
+
+
+
+
+
+
+
+
 Exemple inline:
 ``` html
 <div class="d-inline p-2 bg-primary text-white">d-inline</div>
