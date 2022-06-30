@@ -438,10 +438,13 @@ Les valeurs peuvent être les suivantes:
 Nous allons nous attarder uniquement sur les valeurs: none, inline, block et inline-block.
 
 En css, cela correspond à respectivement:
-display: none;
-display: inline;
-display: block;
-display: inline-block.
+
+|css| Explication|
+|---|---|
+|display: none; | - N'affiche pas l'élément. <br/> - Il est invisible.|
+|display: inline; |- S'affiche sur une ligne.<br/> - La hauteur et la largeur ne sont pas variables.<br/>- Ne pousse pas l'élément suivant à la ligne suivante.|
+|display: block;|
+|display: inline-block.|
 
 
 
