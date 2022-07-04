@@ -417,7 +417,7 @@ Ce chapitre est une synthèse des deux pages Bootstrap 5:
 
 Comme GitHub ne va pas interprêter nos couleurs, j'ai fait une page web qui vous montrera visuellement les couleurs que Bootstrap gère.  
 
-Pour avoir un visuel de cette partie, allez à la page suivante: https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Theorie/Exemples/couleurs.html
+Pour avoir un visuel de cette partie, allez à la page [suivante](http://zamboyle.github.io/htmlpreview?https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Theorie/Exemples/couleurs.html).
 
 ## XI. Les classes d'affichages
 Sur Bootstrap: https://getbootstrap.com/docs/5.2/utilities/display
