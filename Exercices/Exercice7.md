@@ -36,10 +36,6 @@ Ajoutez le titre 1 suivant: Les affichages / displays
 - Ajoutez un fond dégradé warning au paragraphe.
 - Ajoutez un fond dégradé dark au div avec un texte blanc.
 
-
-
-
-
 ## Partie 7 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
 Appelez-moi pour qu'on vérifie ensemble.
