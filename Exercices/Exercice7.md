@@ -8,7 +8,7 @@ Copiez le contenu du fichier [template2.html](/Exercices/Templates/template2.htm
 ## Partie 2 - Ajout d'un titre de page
 Mettez comme titre: Exercice7
 
-## Partie 3 - L'Accessibilité
+## Partie 3 - Ajout d'un titre 1
 Ajoutez le titre 1 suivant: Les affichages / displays
 
 ## Partie 4 - Affichage inline (d-inline)
