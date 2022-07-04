@@ -1,7 +1,7 @@
 # Exercice n°6 - Les couleurs / Arrières plans
-L'exercice portera l'utilisation des classes d'[accessibilité](/Theorie/README.md#viii-laccessibilité "L'Acessibilité dans le cours").
+L'exercice portera l'utilisation des classes des [couleurs](/Theorie/README.md#x-les-couleurs--couleurs-darrière-plan"): texte et arrière plan.
 
-## Partie 1 - Création du fichier Exercice5.html
+## Partie 1 - Création du fichier Exercice6.html
 Créez un fichier nommé Exercice6.html dans le répertoire EqlaExercices\Bootstrap.  
 
 Copiez le contenu du fichier [template2.html](/Exercices/Templates/template2.html?raw=1) dans le fichier Exercice6.html
@@ -40,8 +40,8 @@ Ajoutez le titre 1 suivant: Les couleurs / Arrières plans
 - Remplace les xxxx par ton prénom.
 - Ajoute à ce div les classes permettant d'avoir un fond info et un texte en blanc.
 
-## Partie 6 - Différentes couleurs d'arrières plans dégradés
-- Ajoutez un titre 2: Différentes couleurs d'arrières plans.
+## Partie 6 - Différentes couleurs d'arrières plans en dégradé
+- Ajoutez un titre 2: Différentes couleurs d'arrières plans en dégradé.
 - Reprenez tous les paragraphes/div de la partie précédente et ajoutez-y un fond dégradé.
 - Comparez ensuite les différences avec et sans dégradé de couleurs.
 

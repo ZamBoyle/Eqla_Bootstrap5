@@ -26,6 +26,26 @@
         padding: 5px;
         border: 1px solid gainsboro;
     }
+
+    .elementBlock {
+        display: block;
+        background: dodgerblue;
+        color: snow;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid gainsboro;
+    }
+
+    .elementInlineBlock {
+        display: inline-block;
+        background: dodgerblue;
+        color: snow;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid gainsboro;
+    }
 </style>
     <!-- Bootstrap CSS v5.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -39,6 +59,15 @@
         <p class="bg-primary bg-gradient text-white">Je suis un stagiaire très studieux de jour comme de nuit.</p>
         <p class="bg-dark text-light">Je suis un stagiaire très studieux de jour comme de nuit.</p>
         <div class="bg-warning">Attention vous entrez dans une zone dangereuse !</div>
+        <p class="bs5- bg-primary text-white d-inline">Je suis un paragraphe.</p>  <div class="bg-danger text-white d-inline">Je suis un div collé au paragraphe grâce à une classe magique</div>.
+        <hr/>
+        <p>Je suis un paragraphe.</p>  <div>Je suis un div collé au paragraphe grâce à une classe magique.</div>
+
+        <p class="d-inline-block p-2 bg-primary text-center text-white w-50" >d-inline-block<br/>Je sui très bien tu sais ?</p>
+        <div class="d-inline-block p-2 bg-dark text-white w-25">Je serai un autre inline-block<br/>Et moi je suis encore plus beau !</div>
+
+        <p class="p-2 bg-primary text-center text-white w-50 ">Je serai inline-block<br/>Je suis très bien tu sais ?</p>
+        <div class="p-2 bg-dark text-white w-25">Je serai un autre inline-block<br/>Et moi je suis encore plus beau !</div>
         <div class="px-2 mt-2 w-50 bg-info bg-gradient text-light">
             <p>Bonjour !</p>
             <p>Ce message pour te souhaiter un très bon anniversaire !</p>
@@ -90,6 +119,10 @@
         <div>Je suis un stagiaire <span class="element">très studieux.</span>. J'aime beaucoup <div class="elementInline">relire mon cours</div> le jour avant pour mieux le comprendre.</div>
     </div>
 
+    <div class="border mt-1 p-3">
+        <div>Je suis un stagiaire <span class="elementInlineBlock">très studieux.</span>. J'aime beaucoup <div class="elementInlineBlock">relire mon cours</div> le jour avant pour mieux le comprendre.</div>
+        </div>
+        <p class="lead">On voit donc qu'inline-block va disposer sur une même ligne nos éléments appelant notre classe. On aura des blocks de hauteur/largeur variables sur une seule ligne sans qu'ils poussent les autres éléments à la ligne suivante.</p>
 
 </div>
     <!-- Bootstrap Librairie JavaScript -->

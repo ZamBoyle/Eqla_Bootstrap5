@@ -15,3 +15,5 @@ Chaque exercice sera nommé par exemple Exercice1.html, Exercice2.html, etc.
 - [Exercice n°3](Exercice3.md) - Manipulation du texte.
 - [Exercice n°4](Exercice4.md) - Les Images.
 - [Exercice n°5](Exercice5.md) - L'Accessibilité.
+- [Exercice n°6](Exercice6.md) - Les couleurs / Arrières plans.
+- [Exercice n°7](Exercice7.md) - Les affichages/displays.
