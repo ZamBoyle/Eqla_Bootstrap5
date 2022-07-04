@@ -409,7 +409,40 @@ En voici le résumé car vous me l'avez souvent demandé.;-)
 |Extra large|	xl|	≥1200px
 |Extra extra large|	xxl|	≥1400px
 
-## X. Les classes d'affichages
+## X. Les couleurs
+
+Bootstrap utilise un ensemble de suffixes de couleurs bien connus. Ce sont toujours les mêmes. A nouveau pour rester cohérent.
+
+<p class="lead">Les voici: <span class="font-italic">primary, secondary, success, danger, warning, info, light, dark, muted, white</span>.</p>
+<h3>1. Le texte</h3>
+<p class="lead">Dans les exemples suivants, nous avons appliqué un <code>.text-*</code> à des balises <code>p</code>.</p>
+<p class="text-primary">.text-primary, ce texte est bleu.</p>
+<p class="text-secondary">.text-secondary, ce texte est gris.</p>
+<p class="text-success">.text-success, ce texte est vert.</p>
+<p class="text-danger">.text-danger, ce texte est rouge.</p>
+<p class="text-warning">.text-warning, ce texte est orange.</p>
+<p class="text-info">.text-info, ce texte est bleu cyan.</p>
+<p class="text-light bg-dark">.text-light, ce texte est très clair. On a jouté un fond noir .bg-dark pour le voir.</p>
+<p class="text-dark">.text-dark, ce texte est gris noir.</p>
+<p class="text-muted">.text-muted, ce texte est gris clair.</p>
+<p class="text-white bg-dark">.text-white, ce texte est blanc. On a jouté un fond noir .bg-dark pour le voir.</p>
+
+<h3>2. L'arrière-plan/background</h3>
+<p class="lead">Dans les exemples suivants, nous avons appliqué un <code>.bg-*</code> à des <code>div</code>.</p>
+<div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+<div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+<div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+<div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+<div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+<div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+<div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+<div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+<div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+  
+
+Pour avoir un visuel de cette partie, allez à la page suivante: https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/eqla-bootstrap/blob/master/Notes-de-cours/XII.Les%20couleurs/index.html 
+
+## XI. Les classes d'affichages
 Sur Bootstrap: https://getbootstrap.com/docs/5.2/utilities/display
 Reprenons le synopsis de la page de Bootstrap traduite avec Google Translate bien entendu ;-)
 > Basculez rapidement et de manière réactive la valeur d'affichage des composants et plus encore avec nos utilitaires d'affichage. Inclut la prise en charge de certaines des valeurs les plus courantes, ainsi que des extras pour contrôler l'affichage lors de l'impression.
@@ -441,9 +474,9 @@ En css, cela correspond à respectivement:
 
 |css| Explication|
 |---|---|
-|display: none; | - N'affiche pas l'élément. <br/> - Il est invisible.|
-|display: inline; |- S'affiche sur une ligne.<br/> - La hauteur et la largeur ne sont pas variables.<br/>- Ne pousse pas l'élément suivant à la ligne suivante.|
-|display: block;|
+|display: none; | - N'affiche pas l'élément. <br/> - Il est invisible mais présent dans le code html.|
+|display: inline; |- S'affiche à la suite sur une ligne.<br/> - La hauteur et la largeur ne sont pas variables.<br/>- Ne pousse pas l'élément suivant à la ligne suivante.|
+|display: block;|- S'affiche sur une ligne|
 |display: inline-block.|
 
 
