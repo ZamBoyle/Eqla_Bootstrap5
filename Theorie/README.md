@@ -411,36 +411,13 @@ En voici le résumé car vous me l'avez souvent demandé.;-)
 
 ## X. Les couleurs
 
-Bootstrap utilise un ensemble de suffixes de couleurs bien connus. Ce sont toujours les mêmes. A nouveau pour rester cohérent.
+Ce chapitre est une synthèse des deux pages Bootstrap 5:
+- [Colors](https://getbootstrap.com/docs/5.0/utilities/colors/)
+- [Background](https://getbootstrap.com/docs/5.0/utilities/background/)
 
-<p class="lead">Les voici: <span class="font-italic">primary, secondary, success, danger, warning, info, light, dark, muted, white</span>.</p>
-<h3>1. Le texte</h3>
-<p class="lead">Dans les exemples suivants, nous avons appliqué un <code>.text-*</code> à des balises <code>p</code>.</p>
-<p class="text-primary">.text-primary, ce texte est bleu.</p>
-<p class="text-secondary">.text-secondary, ce texte est gris.</p>
-<p class="text-success">.text-success, ce texte est vert.</p>
-<p class="text-danger">.text-danger, ce texte est rouge.</p>
-<p class="text-warning">.text-warning, ce texte est orange.</p>
-<p class="text-info">.text-info, ce texte est bleu cyan.</p>
-<p class="text-light bg-dark">.text-light, ce texte est très clair. On a jouté un fond noir .bg-dark pour le voir.</p>
-<p class="text-dark">.text-dark, ce texte est gris noir.</p>
-<p class="text-muted">.text-muted, ce texte est gris clair.</p>
-<p class="text-white bg-dark">.text-white, ce texte est blanc. On a jouté un fond noir .bg-dark pour le voir.</p>
+Comme GitHub ne va pas interprêter nos couleurs, j'ai fait une page web qui vous montrera visuellement les couleurs que Bootstrap gère.  
 
-<h3>2. L'arrière-plan/background</h3>
-<p class="lead">Dans les exemples suivants, nous avons appliqué un <code>.bg-*</code> à des <code>div</code>.</p>
-<div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
-<div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
-<div class="p-3 mb-2 bg-success text-white">.bg-success</div>
-<div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
-<div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
-<div class="p-3 mb-2 bg-info text-white">.bg-info</div>
-<div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
-<div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
-<div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
-  
-
-Pour avoir un visuel de cette partie, allez à la page suivante: https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/eqla-bootstrap/blob/master/Notes-de-cours/XII.Les%20couleurs/index.html 
+Pour avoir un visuel de cette partie, allez à la page suivante: https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Theorie/Exemples/couleurs.html
 
 ## XI. Les classes d'affichages
 Sur Bootstrap: https://getbootstrap.com/docs/5.2/utilities/display
