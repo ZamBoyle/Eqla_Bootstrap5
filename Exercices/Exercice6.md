@@ -63,7 +63,7 @@ Ajoutez le titre 1 suivant: Les couleurs / Arrières plans
 <div class="border bg-info rounded p-3">
     <div class="border bg-danger rounded p-3">
         <div class="border bg-warning rounded p-3">
-            <img class="img-fluid border rounded bg-success"
+            <img class="img-fluid border rounded bg-success w-100"
                 src="https://getbootstrap.com/docs/5.2/assets/img/bootstrap-icons.png">
         </div>
     </div>
