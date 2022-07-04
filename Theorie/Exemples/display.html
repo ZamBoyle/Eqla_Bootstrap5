@@ -2,7 +2,7 @@
 <html lang="fr-BE">
 
 <head>
-    <title>Bootstrap Template</title>
+    <title>Les Displays en Bootstrap</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,6 +26,28 @@
         padding: 5px;
         border: 1px solid gainsboro;
     }
+
+    .elementBlock {
+        display: block;
+        background: dodgerblue;
+        color: snow;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid gainsboro;
+    }
+
+    .elementInlineBlock {
+        display: inline-block;
+        background: dodgerblue;
+        color: snow;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid gainsboro;
+    }
+
+
 </style>
     <!-- Bootstrap CSS v5.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -35,10 +57,15 @@
 
 <body>
     <div class="container">
-        <h1>Inline, Block et Inline-Block</h1>
+        <h1 class="text-center">inline, block et inline-block</h1>
         <p class="lead">Je vais vous montrer dans les exemples suivants les différences entre inline, block et inline-block.
         </p>
-        <h2>1. Inline</h2>
+        <ul>
+            <li><a href="#inline" class="link-primary lead">inline</a></li>
+            <li><a href="#block" class="link-primary lead">block</a></li>
+            <li><a href="#inline-block" class="link-primary lead">inline-block</a></li>
+        </ul>
+        <h2 id="inline">1. Inline</h2>
         <p>Dans un display de type inline, l'element ne pousse pas les éléments à la ligne, la hauteur et la largeur ne sont pas variables. </p>
         Dans l'exemple plus bas, nous utiliserons du css et du html.
         <p class="display-6">CSS</p>
@@ -79,8 +106,45 @@
     <span class="display-6">Résultat</span>
         <div class="border mt-1 p-3">
         <div>Je suis un stagiaire <span class="element">très studieux.</span>. J'aime beaucoup <div class="elementInline">relire mon cours</div> le jour avant pour mieux le comprendre.</div>
-    </div>
+        </div>
+        <p class="lead">On constate que notre div ne retourne plus à la ligne grâce à inline et sa taille et sa largeur ne sont pas variables.</p>
 
+        <h2 id="block">2. block</h2>
+        <p class="lead">On va modifier notre classe <code>.element</code> et mettre à la place display: block</p>
+        <pre class="border p-2 bg-dark text-white">
+.element {
+    <span class="bg-primary bg-gradient">display: block;</span>
+    background: dodgerblue;
+    color: snow;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid gainsboro;
+}
+</pre>
+        <span class="display-6">Résultat</span>
+        <div class="border mt-1 p-3">
+        <div>Je suis un stagiaire <span class="elementBlock">très studieux.</span>. J'aime beaucoup <div class="elementBlock">relire mon cours</div> le jour avant pour mieux le comprendre.</div>
+        </div>
+
+        <h3 id="inline-block">3. inline-block</h3>
+        <p class="lead">On va modifier notre classe <code>.element</code> et mettre à la place <code>display: inline-block</code>.</p>
+        <pre class="border p-2 bg-dark text-white">
+.element {
+    <span class="bg-primary bg-gradient">display: inline-block;</span>
+    background: dodgerblue;
+    color: snow;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid gainsboro;
+}
+</pre>
+        <span class="display-6">Résultat</span>
+        <div class="border mt-1 p-3">
+        <div>Je suis un stagiaire <span class="elementInlineBlock">très studieux.</span>. J'aime beaucoup <div class="elementInlineBlock">relire mon cours</div> le jour avant pour mieux le comprendre.</div>
+        </div>
+        <p class="lead">On voit donc qu'inline-block va disposer sur une même ligne nos éléments appelant notre classe. On aura des blocks de hauteur/largeur variables sur une seule ligne sans qu'ils poussent les autres éléments à la ligne suivante.</p>
 
 </div>
     <!-- Bootstrap Librairie JavaScript -->

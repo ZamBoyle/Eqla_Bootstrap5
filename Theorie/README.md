@@ -409,7 +409,7 @@ En voici le résumé car vous me l'avez souvent demandé.;-)
 |Extra large|	xl|	≥1200px
 |Extra extra large|	xxl|	≥1400px
 
-## X. Les couleurs
+## X. Les couleurs & Couleurs d'Arrière Plan.
 
 Ce chapitre est une synthèse des deux pages Bootstrap 5:
 - [Colors](https://getbootstrap.com/docs/5.0/utilities/colors/)
@@ -453,18 +453,32 @@ En css, cela correspond à respectivement:
 |---|---|
 |display: none; | - N'affiche pas l'élément. <br/> - Il est invisible mais présent dans le code html.|
 |display: inline; |- S'affiche à la suite sur une ligne.<br/> - La hauteur et la largeur ne sont pas variables.<br/>- Ne pousse pas l'élément suivant à la ligne suivante.|
-|display: block;|- S'affiche sur une ligne|
+|display: block;|- S'affiche sur une ligne.<br/>- Pousse les élèments sur la ligne suivante.<br/> - La hauteur et la largeur sont variables/définissables.|
 |display: inline-block.|
 
 
+### 2. Inline
+Exemple inline en html/css: 
+Le css
+``` css
+.element {
+        display: inline;
+        background: dodgerblue;
+        color: snow;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid gainsboro;
+}
+```
+```html
+<div>Je suis un div et j'ai <span>un span</span> sans style. Donc le display est du type Inline: ma hauteur et ma largeur ne sont pas variables. De plus, j'ai <div>un div</div> imbriqué.</div>
+```
 
 
 
 
 
-
-
-Exemple inline:
 ``` html
 <div class="d-inline p-2 bg-primary text-white">d-inline</div>
 <div class="d-inline p-2 bg-dark text-white">d-inline</div>
