@@ -36,6 +36,18 @@ Ajoutez le titre 1 suivant: Les affichages / displays
 - Ajoutez un fond dégradé warning au paragraphe.
 - Ajoutez un fond dégradé dark au div avec un texte blanc.
 
+## Partie 6 - Affichage en fonction de la taille de l'écran
+- Ajoutez un titre 2: Affichage en fonction de la taille de l'écran.
+- Soit le paragraphe 1:"Je suis un winner car l'avenir appartient à celui qui se lève tôt.".
+- Soit le paragraphe 2:"Je m'affiche sur un écran de taille de lg."
+- Soit le paragraphe 3:"Je m'affiche sur un écran de taille de xl."
+- Soit le paragraphe 4:"Je m'affiche sur un écran de taille de sm."
+
+## Partie 7 - Affichage pour l'impression
+- Ajoutez un titre 2: Affichage en fonction de la taille de l'écran.
+
+
+
 ## Partie 7 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
 Appelez-moi pour qu'on vérifie ensemble.

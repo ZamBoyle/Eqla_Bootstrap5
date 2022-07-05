@@ -350,7 +350,7 @@ On peut aussi définir ces alignements en fonction du périphérique :.float-\*
 Il suffit d'utiliser la classe .rounded
 
 ```html
-<img src="https://zamboyle.github.io/assets/img/Logo_Eqla.png" class="img-fluid rounded" alt="logo d'Eqla" />
+<img class="img-fluid rounded" src="https://zamboyle.github.io/assets/img/Logo_Eqla.png" alt="logo d'Eqla" />
 ```
 
 ## VIII. L'Accessibilité

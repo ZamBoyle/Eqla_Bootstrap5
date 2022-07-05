@@ -69,7 +69,7 @@ Ajoutez le titre 1 suivant: Les couleurs / Arrières plans
     </div>
 </div>
 ```
-- Recopiez le code et testez-le dans un navigateur.
+- Recopiez le code et testez-le dans un navigateur. Faites varier la taille du navigateur et constatez ce qu'il se passe.
 
 ## Partie 7 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
