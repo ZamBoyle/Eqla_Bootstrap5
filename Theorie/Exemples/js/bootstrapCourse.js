@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     replaceInnertHTML(".textSample-2", textSample.repeat(2));
     replaceInnertHTML(".textSample-3", textSample.repeat(3));
     replaceInnertHTML(".textSample-4", textSample.repeat(4));
-    replaceCopyToClipboard();
+    extractCode();
 
     var people = [
         { id: "1", Name: "Piette", Firstname: "Johnny", Age: 46 },
@@ -35,12 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-function replaceCopyToClipboard(){
-    copyToClipboard = "<h3>Code html<div onclick=\"CopyToClipboard('##id')\" class=\"btn btn-primary\" >Cliquer pour copier le code</div></h3>";
+function extractCode(){
     id=1;
-    document.querySelectorAll(".copyToClipboard").forEach(function(x){
-        copyToClipboard = "<br/><div class='border p-2'><h3>Code html <div onclick=\"CopyToClipboard('codeExemple"+id+"')\" class=\"btn btn-primary\" >Cliquer pour copier le code</div></h3>";
-        x.outerHTML = x.outerHTML+ copyToClipboard + "<pre id='codeExemple"+id+ "' class='border p-2 m-2'>\t"+he.encode(x.outerHTML.replace(" copyToClipboard", "").replace("copyToClipboard", ""))+"</div><br/>";
+    document.querySelectorAll(".extractCode").forEach(function(x){
+        h3 = "<br/><div class='border p-2'><h3>Code html <div onclick=\"CopyToClipboard('codeExemple"+id+"')\" class=\"btn btn-primary\" >Cliquer pour copier le code</div></h3>";
+        x.outerHTML = x.outerHTML+ h3 + "<pre id='codeExemple"+id+ "' class='border p-2 m-2'>\t"+he.encode(x.outerHTML.replace(" extractCode", "").replace("extractCode", "").replace("class=\"\"","").replace("<div >","<div>"))+"</div><br/>";
         id++;
     });
 }
