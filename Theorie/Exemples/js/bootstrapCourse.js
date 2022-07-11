@@ -40,7 +40,7 @@ function replaceCopyToClipboard(){
     id=1;
     document.querySelectorAll(".copyToClipboard").forEach(function(x){
         copyToClipboard = "<br/><h3>Code html <div onclick=\"CopyToClipboard('codeExemple"+id+"')\" class=\"btn btn-primary\" >Cliquer pour copier le code</div></h3>";
-        x.outerHTML = x.outerHTML+ copyToClipboard + "<pre id='codeExemple"+id+ "' class='border'>"+he.encode(x.outerHTML.replace(" copyToClipboard", "").replace("copyToClipboard", ""));
+        x.outerHTML = x.outerHTML+ copyToClipboard + "<pre id='codeExemple"+id+ "' class='border p-2'>"+he.encode(x.outerHTML.replace(" copyToClipboard", "").replace("copyToClipboard", ""));
         id++;
     });
 }
