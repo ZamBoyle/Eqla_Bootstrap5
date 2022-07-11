@@ -15,7 +15,8 @@
 
 <body>
     <div class="container bg-primary rounded bg-light border">
-        <h1 class="text-center">2 colonnes fixes identiques: via <code>2 .col-6</code> = <code>2 .col</code></h1>
+        <h1 class="text-center">La grille Bootstrap</h1>
+        <h2 class="text-start">A. 2 colonnes fixes identiques: via <code>2 .col-6</code> = <code>2 .col</code></h2>
         <p>Le texte sera toujours sur deux colonnes quel que soit la résolution.</p>
         <p>Ici on a utilisé 2 <code>.col-6</code> mais le résultat aurait été le même avec 2 <code>.col</code>.</p>
         <div class="row">
@@ -25,13 +26,29 @@
             </div>
             <div class="col-6 border">
                 <h2>Lorem Ipsum</h2>
-                <img class="img-fluid float-right" src="img/loremipsum.jpg" alt="visage d'une femme formé par des caractères d'imprimerie." />
+                <img class="img-fluid float-end" src="img/loremipsum.jpg" alt="visage d'une femme formé par des caractères d'imprimerie." />
                 <p class="text-justify loremipsum"> </p>
             </div>
         </div>
+        <h3>Code html
+            <div id="bce5" onclick="CopyToClipboard('ex1')" class="btn btn-primary" >Cliquer pour copier le code</div>
+        </h3>
+        <pre class="border p-2" id="ex1">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-6 border&quot;&gt;
+        &lt;h2&gt;BlindCode&lt;/h2&gt;
+        &lt;p class=&quot;text-justify blindcodeImg&quot;&gt;&lt;img class=&quot;img-fluid float-start&quot; src=&quot;img/Logo_BlindCode.jpg&quot; alt=&quot;Logo d&quot; 'eqla'=&quot;&quot;&gt;&lt;p&gt;Comme vous le savez peut-&ecirc;tre, le secteur du num&eacute;rique est porteur d&rsquo;emploi et l&rsquo;avenir s&rsquo;annonce de plus en plus digital.&lt;/p&gt;&lt;p&gt;Mais saviez-vous que toute une gamme de m&eacute;tiers du num&eacute;rique est accessible aux personnes aveugles et malvoyantes ?&lt;/p&gt;&lt;p&gt;Gr&acirc;ce &agrave; quelques adaptations et outils sp&eacute;cifiques, les personnes d&eacute;ficientes visuelles peuvent devenir d&eacute;veloppeur&middot;euse web, sp&eacute;cialiste data, helpdesk informatique, consultant&middot;e en accessibilit&eacute;, etc.&lt;/p&gt;&lt;p&gt;Ainsi, pour contribuer &agrave; l&rsquo;inclusion de tous, Eqla propose en 2020, avec le soutien du Digital Belgium Skills Fund, de Bruxelles Formation et du Fonds Social Europ&eacute;en, une formation professionnelle innovante en Belgique nomm&eacute;e &laquo; BlindCode&raquo;.&lt;/p&gt; &lt;p&gt;Elle s&rsquo;adresse aux jeunes et aux adultes int&eacute;ress&eacute;s par le num&eacute;rique, et souhaitant s&rsquo;orienter vers le m&eacute;tier de d&eacute;veloppeur.se web et mobile, ou se pr&eacute;parer &agrave; poursuivre des &eacute;tudes sup&eacute;rieures en informatique.&lt;/p&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-6 border&quot;&gt;
+        &lt;h2&gt;Lorem Ipsum&lt;/h2&gt;
+        &lt;img class=&quot;img-fluid float-end&quot; src=&quot;img/loremipsum.jpg&quot; alt=&quot;visage d'une femme form&eacute; par des caract&egrave;res d'imprimerie.&quot;&gt;
+        &lt;p class=&quot;text-justify loremipsum&quot;&gt;&lt;span class=&quot;font-weight-bold&quot;&gt;Le Lorem Ipsum&lt;/span&gt; est simplement du faux texte employ&eacute; dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les ann&eacute;es 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour r&eacute;aliser un livre sp&eacute;cimen de polices de texte. Il n'a pas fait que survivre cinq si&egrave;cles, mais s'est aussi adapt&eacute; &agrave; la bureautique informatique, sans que son contenu n'en soit modifi&eacute;. Il a &eacute;t&eacute; popularis&eacute; dans les ann&eacute;es 1960 gr&acirc;ce &agrave; la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus r&eacute;cemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
 
-        <h1 class="text-center">4 colonnes fixes: deux <code>.col-2</code> et deux <code>.col-4</code></h1>
-        <div class="row d-flex flex-wrap">
+        <h2 class="text-start">B. 4 colonnes fixes: deux <code>.col-2</code> et deux <code>.col-4</code></h2>
+        <div class="row">
             <div class="col-4 border">
                 <h2><code>.col-4</code></h2>
                 <p class="text-justify loremipsum"></p>
@@ -49,7 +66,31 @@
                 <p class="loremipsum"></p>
             </div>
         </div>
-        <h1 class="text-center">2 colonnes identiques: <code>.col-sm</code></h1>
+        <h3>Code html
+            <div id="bce5" onclick="CopyToClipboard('ex2')" class="btn btn-primary" >Cliquer pour copier le code</div>
+        </h3>
+        <pre class="border p-2" id="ex2">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-4 border&quot;&gt;
+        &lt;h2&gt;&lt;code&gt;.col-4&lt;/code&gt;&lt;/h2&gt;
+        &lt;p class=&quot;text-justify loremipsum&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-2 border border-left-0&quot;&gt;
+        &lt;h2&gt;&lt;code&gt;.col-2&lt;/code&gt;&lt;/h2&gt;
+        &lt;p class=&quot;loremipsum&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-4 border border-left-0&quot;&gt;
+        &lt;h2&gt;&lt;code&gt;.col-4&lt;/code&gt;&lt;/h2&gt;
+        &lt;p class=&quot;loremipsum&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-2 border border-left-0&quot;&gt;
+        &lt;h2&gt;&lt;code&gt;.col-2&lt;/code&gt;&lt;/h2&gt;
+        &lt;p class=&quot;loremipsum&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+
+        <h2 class="text-start">C. 2 colonnes identiques: <code>.col-sm</code></h2>
         <p class="lead">Avec l'utilisation de <code>2 .col-sm</code>, les colonnes prendront la moitié de l'écran.</p>
         <p class="lead">Sauf si la résolution est inférieure à <code>sm</code> dans ce cas, les colonnes seront sur deux lignes.</p>
         <div class="row ">
@@ -62,8 +103,11 @@
                 <p class="text-justify loremipsum"> </p>
             </div>
         </div>
+        <pre class="border p-2 CopyToClipboard" id="ex3">
 
-        <h1><code>.col</code> et <code>.col-3</code></h1>
+        </pre>
+
+        <h2>D. un <code>.col</code> et un <code>.col-3</code></h2>
         <div class="row">
             <div class="col text-justify border">
                 Première colonne <code>.col</code>.
@@ -73,7 +117,7 @@
             </div>
         </div>
 
-        <h1><code>.col-9</code> et <code>.col-3</code></h1>
+        <h2>E. un <code>.col-9</code> et un <code>.col-3</code></h2>
         <p class="lead">Identique à <code>.col</code> et <code>.col-3</code></p>
         <div class="row">
             <div class="col-9 text-justify  border">
