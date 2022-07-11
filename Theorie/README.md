@@ -489,10 +489,12 @@ Pour pallier à ce problème, Bootstrap propose de conditionner nos colonnes en 
 Si cette résolution n’est pas atteinte alors au lieu de mettre les colonnes les une à côté des autres, ils les mettra les une au-dessus des autres.
 
 Les classes à utiliser seront : 
+- .col-*  où * est un nombre compris entre 1 et 12 (< 576 pixels) prendra automatiquement toute la largeur.
 -	.col-sm-* où * est un nombre compris entre 1 et 12 (sm>= 576 pixels)
 -	.col-md-* où * est un nombre compris entre 1 et 12 (md >= 768 pixels)
 -	.col-lg-* où * est un nombre compris entre 1 et 12 (lg >= 992 pixels)
 -	.col-xl-* où * est un nombre compris entre 1 et 12 (xl >= 1200 pixels)
+- .col-xxl-* où * est un nombre compris entre 1 et 12 (xl >= 1400px pixels)
 
 Par exemple si on a deux colonnes ayant chacune comme classe un .col-sm-6
 ```html
