@@ -433,11 +433,101 @@ On utilise toujours un div conteneur ayant la classe .row.
 
 Les divs enfants seront les colonnes et auront une ou plusieurs classes.
 
+###	1. Classes pour un nombre fixe de colonnes
+
+- Les classes .col-* où * est  un nombre de 1 à 12. Quand on veut absolument un nombre défini de colonnes quel que soit la résolution. Dans ce cas, vous aurez toujours le nombre de colonnes désirés.
+  Exemple où le nombre de colonnes est fixe par ligne (un .col-4et .col-8 = 4 colonnes + 8 colonnes = 12 colonnes) :
+```html
+<div class="row">
+	<div class="col-4">
+ 	Première colonne avec un .col-4
+  </div>
+  <div class="col-8">
+  Deuxième colonne avec un .col-8
+  </div>
+</div>
+```
+Ensuite, les combinaisons sont comme vous le voulez : Par exemple 3 .col-4 et vous aurez 3 colonnes. En effet, 3 x 4 colonnes = 12colonnes , 2 .col-6 = 2 x 6 colonnes =12 colonnes,1 .col-2 et 1 .col-4+ et 1 .col-6 = 12 etc.
+
+- La classe .colpeut tout simplement être utilisée si vos colonnes ont exactement la même taille. Donc on pourrait avoir deux colonnes avec .col au lieu de .col-6 Ce qui veut dire que nous aurons deux colonnes quel que soit la résolution.
+Exemple :
+```html
+<div class="row">
+  <div class="col">
+ 	Première colonne avec un .col
+  </div>
+  <div class="col">
+    Deuxième colonne avec un .col
+  </div>
+  </div>
+  Est identique à 
+  <div class="row">
+    <div class="col-6">
+    Première colonne avec un .col-6
+  </div>
+  <div class="col-6">
+    Deuxième colonne avec un .col-6
+  </div>
+  </div>
+  On peut un peu complexifier en faisait un .col avec un .col-3. Ici notre .col sera équivalent à un .col-9
+  <div class="row">
+    <div class="col">
+    Ceci est un texte assez répétitif. Ceci est un texte assez répétitif.
+  </div>
+  <div class="col-3">
+    Ceci est un texte assez répétitif. Ceci est un texte assez répétitif
+  </div>
+</div>
+```
+### 2. Classes pour un nombre de colonnes variables en fonction de la résolution
+Nous venons de voir les classes pour un nombre fixe de colonnes. C’est top quand on veut absolument avoir ce nombre de colonnes.
+
+Mais sachez que plus la résolution est petite et plus vos colonnes seront étroites. En effet, la lecture dans des colonnes si étroites n’est pas aisé.
+
+Pour pallier à ce problème, Bootstrap propose de conditionner nos colonnes en fonction de la résolution.
+
+Si cette résolution n’est pas atteinte alors au lieu de mettre les colonnes les une à côté des autres, ils les mettra les une au-dessus des autres.
+
+Les classes à utiliser seront : 
+-	.col-sm-* où * est un nombre compris entre 1 et 12 (sm>= 576 pixels)
+-	.col-md-* où * est un nombre compris entre 1 et 12 (md >= 768 pixels)
+-	.col-lg-* où * est un nombre compris entre 1 et 12 (lg >= 992 pixels)
+-	.col-xl-* où * est un nombre compris entre 1 et 12 (xl >= 1200 pixels)
+
+Par exemple si on a deux colonnes ayant chacune comme classe un .col-sm-6
+```html
+<div class="row">
+	<div class="col-sm-4">
+	Première colonne avec un .col-sm-4
+	</div>
+	<div class="col-sm-6">
+	Ceci est la deuxième colonne avec un .col-sm-6
+	</div>
+</div>
+```
+Ça signifie qu’il faut afficher deux colonnes si on a une résolution d’au moins (576 pixels). Dans le cas contraire, Bootstrap affichera la première colonne et la seconde ira à la ligne. Et la lecture sera aisée sur un petit écran.
+
+### 3.	Mixe entre classes à nombre de colonnes fixes et variables
+Prenons un cas concret, vous souhaitez afficher 3 colonnes si la résolution le permet (md). Dans le cas contraire, vous afficher la première colonne sur une ligne et les deux autres sur la seconde.
+Pour cela, vous aurez le html suivant
+```html
+<h1>.col et .col-3</h1>
+<div class="row text-white">
+  <div class="col-12 col-md-4 bg-success">Je suis votre prof !</div>
+  <div class="col-6 col-md-4 bg-warning">Bientôt, je ne serai plus votre prof !</div>
+  <div class="col-6 col-md-4 bg-danger">Je ne suis plus votre prof !</div>
+</div>
+```
+Expliquons-le petit à petit :
+-	.col-12 col-md-4 : la colonne fera le 1/3 de l’écran si la résolution est supérieure ou égale à md. Dans le cas contraire, la colonne prendra toute la ligne (.col-12).
+-	.col-6 col-md-4 : la seconde colonne fera le 1/3 (même raison). Dans le cas contraire, la colonne prendra la moitié de l’écran (.col-6).
+-	.col-6 col-md-4 : idem que précédemment mais sera à côté de la colonne précédente si résolution inférieure à md.
+Donc si la résolution est > = md, on aura 3 colonnes identiques (.col-md-4). Dans le cas contraire, on aura une colonne qui prendra toute une ligne (.col-12)>. Et sur une autre ligne, nous aurons deux colonnes identiques (.col-6) qui prendront toute la ligne.
 
 
 
 
-## XI. Les classes d'affichages
+## XII. Les classes d'affichages
 Sur Bootstrap: https://getbootstrap.com/docs/5.2/utilities/display
 Reprenons le synopsis de la page de Bootstrap traduite avec Google Translate bien entendu ;-)
 > Basculez rapidement et de manière réactive la valeur d'affichage des composants et plus encore avec nos utilitaires d'affichage. Inclut la prise en charge de certaines des valeurs les plus courantes, ainsi que des extras pour contrôler l'affichage lors de l'impression.

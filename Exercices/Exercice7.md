@@ -21,10 +21,7 @@ Ajoutez le titre 1 suivant: La Grille de Bootstrap
 
 ## Partie 6 - Affichage en fonction de la taille de l'écran
 - Ajoutez un titre 2: Affichage en fonction de la taille de l'écran.
-- Soit le paragraphe 1:"Je suis un winner car l'avenir appartient à celui qui se lève tôt.".
-- Soit le paragraphe 2:"Je m'affiche sur un écran de taille de lg."
-- Soit le paragraphe 3:"Je m'affiche sur un écran de taille de xl."
-- Soit le paragraphe 4:"Je m'affiche sur un écran de taille de sm."
+- Affichez deux colonnes prenant la moitié de l'écran chacune si la taille de l'écran est lg. Sinon deux lignes seront créées et la taille sera pour l'une col-md-2 et l'autre col-md-3
 
 ## Partie 7 - Affichage pour l'impression
 - Ajoutez un titre 2: Affichage en fonction de la taille de l'écran.

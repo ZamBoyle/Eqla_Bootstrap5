@@ -55,103 +55,13 @@
 
 <body>
     <div class="container">
-
-        <div class="bg-gradient mt-2     px" height="50">
-            <div class="bg-info">Hello World</div>
+        <p class="lead">Affichez deux colonnes prenant la moitié de l'écran chacune si la taille de l'écran est lg. Sinon deux lignes seront créées et la taille sera pour l'une col-md-2 et l'autre col-md-3</p>
+        <h1>.col et .col-3</h1>
+        <div class="row">
+          <div class="col-12 col-md-4 col-sm bg-success">Je suis votre prof !</div>
+          <div class="col-6 col-md-4 col-sm bg-warning">Bientôt, je ne serai plus votre prof !</div>
+          <div class="col-6 col-md-4 col-sm bg-danger">Je ne suis plus votre prof !</div>
         </div>
-
-
-
-        <h1>Inline, Block et Inline-Block</h1>
-        <div class="border bg-info rounded p-3">
-            <div class="border bg-danger rounded p-3">
-                <div class="border bg-warning rounded p-3">
-                    <img class="img-fluid border rounded bg-success w-100"
-                        src="https://getbootstrap.com/docs/5.2/assets/img/bootstrap-icons.png">
-                </div>
-            </div>
-        </div>
-        <p class="bg-primary bg-gradient text-white">Je suis un stagiaire très studieux de jour comme de nuit.</p>
-        <p class="bg-dark text-light">Je suis un stagiaire très studieux de jour comme de nuit.</p>
-        <div class="bg-warning">Attention vous entrez dans une zone dangereuse !</div>
-        <p class="bs5- bg-primary text-white d-inline">Je suis un paragraphe.</p>
-        <div class="bg-danger text-white d-inline">Je suis un div collé au paragraphe grâce à une classe magique</div>.
-        <hr />
-        <p>Je suis un paragraphe.</p>
-        <div>Je suis un div collé au paragraphe grâce à une classe magique.</div>
-
-        <p class="d-inline-block p-2 bg-primary text-center text-white w-50">d-inline-block<br />Je sui très bien tu
-            sais ?</p>
-        <div class="d-inline-block p-2 bg-dark text-white w-25">Je serai un autre inline-block<br />Et moi je suis
-            encore plus beau !</div>
-
-        <p class="p-2 bg-primary text-center text-white w-50 ">Je serai inline-block<br />Je suis très bien tu sais ?
-        </p>
-        <div class="p-2 bg-dark text-white w-25">Je serai un autre inline-block<br />Et moi je suis encore plus beau !
-        </div>
-        <div class="px-2 mt-2 w-50 bg-info bg-gradient text-light">
-            <p>Bonjour !</p>
-            <p>Ce message pour te souhaiter un très bon anniversaire !</p>
-            <p>Bien à toi,</p>
-            <p class="text-end">Johnny</p>
-        </div>
-        <p class="lead">Je vais vous montrer dans les exemples suivants les différences entre inline, block et
-            inline-block.
-        </p>
-        <h2>1. Inline</h2>
-        <p>Dans un display de type inline, l'element ne pousse pas les éléments à la ligne, la hauteur et la largeur ne
-            sont pas variables. </p>
-        Dans l'exemple plus bas, nous utiliserons du css et du html.
-        <p class="display-6">CSS</p>
-        <pre class="border p-2 bg-dark text-white">
-.element {
-    background: dodgerblue;
-    color: snow;
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-    border: 1px solid gainsboro;
-}
-        </pre>
-        <p class="display-6">HTML</p>
-        <pre class="border p-2 bg-dark text-white w-auto" style="display:block">
-    &lt;div&gt;
-    Je suis un stagiaire &lt;span class=&quot;element&quot;&gt;tr&egrave;s studieux.&lt;/span&gt;. J'aime beaucoup &lt;div class=&quot;element&quot;&gt;relire mon cours&lt;/div&gt; le jour avant pour mieux le comprendre.
-    &lt;/div&gt;
-</pre>
-        <span class="display-6">Résultat</span>
-        <div class="border mt-1 p-3">
-            <div>Je suis un stagiaire <span class="element">très studieux.</span>. J'aime beaucoup <div class="element">
-                    relire mon cours</div> le jour avant pour mieux le comprendre.</div>
-        </div>
-
-        <p>Modifions la classe element et ajoutons: display: inline.</p>
-        <pre class="border p-2 bg-dark text-white">
-.element {
-    <span class="bg-primary bg-gradient">display: inline;</span>
-    background: dodgerblue;
-    color: snow;
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-    border: 1px solid gainsboro;
-}
-    </pre>
-
-        <span class="display-6">Résultat</span>
-        <div class="border mt-1 p-3">
-            <div>Je suis un stagiaire <span class="element">très studieux.</span>. J'aime beaucoup <div
-                    class="elementInline">relire mon cours</div> le jour avant pour mieux le comprendre.</div>
-        </div>
-
-        <div class="border mt-1 p-3">
-            <div>Je suis un stagiaire <span class="elementInlineBlock">très studieux.</span>. J'aime beaucoup <div
-                    class="elementInlineBlock">relire mon cours</div> le jour avant pour mieux le comprendre.</div>
-        </div>
-        <p class="lead">On voit donc qu'inline-block va disposer sur une même ligne nos éléments appelant notre classe.
-            On aura des blocks de hauteur/largeur variables sur une seule ligne sans qu'ils poussent les autres éléments
-            à la ligne suivante.</p>
-
     </div>
     <!-- Bootstrap Librairie JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
