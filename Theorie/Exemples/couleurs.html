@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-	<meta http-equiv="Pragma" content="no-cache" />
-	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS v5.2 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://zamboyle.github.io/css/jumbotron.css" rel="stylesheet" t>
 
     <!-- Bootstrap icônes v1.8.3 -->
@@ -28,47 +29,62 @@
     <div class="container bg-light">
         <h2>Intro</h2>
         <p class="lead">
-            Bootstrap utilise un ensemble de suffixes de couleurs bien connus. Ce sont toujours les mêmes. A nouveau pour rester cohérent.
+            Bootstrap utilise un ensemble de suffixes de couleurs bien connus. Ce sont toujours les mêmes. A nouveau
+            pour rester cohérent.
         </p>
-        <p class="lead">Les voici: <span class="font-italic"><span class="text-primary">primary</span>, <span class="text-secondary">secondary</span>, <span class="text-success">success</span>, <span class="text-danger">danger</span>, <span class="text-warning"> warning</span>, <span class="text-info">info</span>,  light, <span class="text-dark">dark</span>, <span class="text-muted">muted</span>, white</span>.</p>
+        <p class="lead">Les voici: <span class="font-italic"><span class="text-primary">primary</span>, <span
+                    class="text-secondary">secondary</span>, <span class="text-success">success</span>, <span
+                    class="text-danger">danger</span>, <span class="text-warning"> warning</span>, <span
+                    class="text-info">info</span>, light, <span class="text-dark">dark</span>, <span
+                    class="text-muted">muted</span>, white</span>.</p>
         <h3>1. Le texte</h3>
-        <p class="lead">Dans les exemples suivants, nous avons appliqué un <code>.text-*</code> à des balises <code>p</code>.</p>
-        <p class="text-primary">.text-primary, ce texte est bleu.</p>
-        <p class="text-secondary">.text-secondary, ce texte est gris.</p>
-        <p class="text-success">.text-success, ce texte est vert.</p>
-        <p class="text-danger">.text-danger, ce texte est rouge.</p>
-        <p class="text-warning">.text-warning, ce texte est orange.</p>
-        <p class="text-info">.text-info, ce texte est bleu cyan.</p>
-        <p class="text-light bg-dark">.text-light, ce texte est très clair. On a jouté un fond noir .bg-dark pour le voir.</p>
-        <p class="text-dark">.text-dark, ce texte est gris noir.</p>
-        <p class="text-muted">.text-muted, ce texte est gris clair.</p>
-        <p class="text-white bg-dark">.text-white, ce texte est blanc. On a jouté un fond noir .bg-dark pour le voir.</p>
-
+        <div class="extractCode">
+            <p class="lead">Dans les exemples suivants, nous avons appliqué un <code>.text-*</code> à des balises
+                <code>p</code>.</p>
+            <p class="text-primary">.text-primary, ce texte est bleu.</p>
+            <p class="text-secondary">.text-secondary, ce texte est gris.</p>
+            <p class="text-success">.text-success, ce texte est vert.</p>
+            <p class="text-danger">.text-danger, ce texte est rouge.</p>
+            <p class="text-warning">.text-warning, ce texte est orange.</p>
+            <p class="text-info">.text-info, ce texte est bleu cyan.</p>
+            <p class="text-light bg-dark">.text-light, ce texte est très clair. On a jouté un fond noir .bg-dark pour le
+                voir.</p>
+            <p class="text-dark">.text-dark, ce texte est gris noir.</p>
+            <p class="text-muted">.text-muted, ce texte est gris clair.</p>
+            <p class="text-white bg-dark">.text-white, ce texte est blanc. On a jouté un fond noir .bg-dark pour le
+                voir.</p>
+        </div>
         <h3>2. L'arrière-plan/background</h3>
-        <p class="lead">Dans les exemples suivants, nous avons appliqué un <code>.bg-*</code> à des <code>div</code>.</p>
-        <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
-        <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
-        <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
-        <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
-        <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
-        <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
-        <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
-        <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
-        <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
-
-        <h3>3. L'arrière-plan/background dégradé</h3>
-        <p class="lead">Dans les exemples suivants, nous avons appliqué un <code>.bg-*</code> et des <code>.bg-gradient</code> à des <code>div</code>.</p>
-        <p class="lead">
-            Donc, comme pour les précédentes classes de Bootstrap, on peut chaîner des noms de classe dans l'attribut <code>class</code> de la balise HTML en cours.
+        <p class="lead">Dans les exemples suivants, nous avons appliqué un <code>.bg-*</code> à des <code>div</code>.
         </p>
-        <div class="p-3 mb-2 bg-primary bg-gradient text-white">.bg-primary .bg-gradient</div>
-        <div class="p-3 mb-2 bg-secondary bg-gradient text-white">.bg-secondary .bg-gradient</div>
-        <div class="p-3 mb-2 bg-success bg-gradient text-white">.bg-success .bg-gradient</div>
-        <div class="p-3 mb-2 bg-danger bg-gradient text-white">.bg-danger .bg-gradient</div>
-        <div class="p-3 mb-2 bg-warning bg-gradient text-dark">.bg-warning .bg-gradient</div>
-        <div class="p-3 mb-2 bg-info bg-gradient text-white">.bg-info .bg-gradient</div>
-        <div class="p-3 mb-2 bg-light bg-gradient text-dark">.bg-light .bg-gradient</div>
-        <div class="p-3 mb-2 bg-dark bg-gradient text-white">.bg-dark .bg-gradient</div>
+        <div class="extractCode">
+            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+            <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+            <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+            <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+            <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+            <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+        </div>
+        <h3>3. L'arrière-plan/background dégradé</h3>
+        <p class="lead">Dans les exemples suivants, nous avons appliqué un <code>.bg-*</code> et des
+            <code>.bg-gradient</code> à des <code>div</code>.</p>
+        <p class="lead">
+            Donc, comme pour les précédentes classes de Bootstrap, on peut chaîner des noms de classe dans l'attribut
+            <code>class</code> de la balise HTML en cours.
+        </p>
+        <div class="extractCode">
+            <div class="p-3 mb-2 bg-primary bg-gradient text-white">.bg-primary .bg-gradient</div>
+            <div class="p-3 mb-2 bg-secondary bg-gradient text-white">.bg-secondary .bg-gradient</div>
+            <div class="p-3 mb-2 bg-success bg-gradient text-white">.bg-success .bg-gradient</div>
+            <div class="p-3 mb-2 bg-danger bg-gradient text-white">.bg-danger .bg-gradient</div>
+            <div class="p-3 mb-2 bg-warning bg-gradient text-dark">.bg-warning .bg-gradient</div>
+            <div class="p-3 mb-2 bg-info bg-gradient text-white">.bg-info .bg-gradient</div>
+            <div class="p-3 mb-2 bg-light bg-gradient text-dark">.bg-light .bg-gradient</div>
+            <div class="p-3 mb-2 bg-dark bg-gradient text-white">.bg-dark .bg-gradient</div>
+        </div>
     </div>
 
 
@@ -77,6 +93,11 @@
 
 
     <!-- Bootstrap Librairie JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script></body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+<script src="js/he.js"></script>
+<script src="js/bootstrapCourse.js"></script>
 
 </html>
