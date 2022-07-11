@@ -412,12 +412,30 @@ En voici le résumé car vous me l'avez souvent demandé.;-)
 ## X. Les couleurs & Couleurs d'Arrière Plan.
 
 Ce chapitre est une synthèse des deux pages Bootstrap 5:
-- [Colors](https://getbootstrap.com/docs/5.0/utilities/colors/)
-- [Background](https://getbootstrap.com/docs/5.0/utilities/background/)
+- [Colors](https://getbootstrap.com/docs/5.2/utilities/colors/)
+- [Background](https://getbootstrap.com/docs/5.2/utilities/background/)
 
 Comme GitHub ne va pas interprêter nos couleurs, j'ai fait une page web qui vous montrera visuellement les couleurs que Bootstrap gère.  
 
 Pour avoir un visuel de cette partie, allez à la page [suivante](http://zamboyle.github.io/htmlpreview?https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Theorie/Exemples/couleurs.html).
+
+## XI. La Grille Bootstrap
+
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/layout/grid/
+
+Bootstrap propose un système de grille très pratique et responsive. Elle permet d’agencer des contenus sous formes de colonnes. 
+
+Cette grille est composée d’une ligne de 12 colonnes. On pourrait penser que c’est un tableau. Si on veut mais alors d’une seule ligne. Ce système de grille permet d’ajouter des éléments sous formes de colonnes.
+
+Et comme vous le savez maintenant, utilisez Bootstrap, c’est utiliser ses classes. 
+
+On utilise toujours un div conteneur ayant la classe .row. 
+
+Les divs enfants seront les colonnes et auront une ou plusieurs classes.
+
+
+
+
 
 ## XI. Les classes d'affichages
 Sur Bootstrap: https://getbootstrap.com/docs/5.2/utilities/display
