@@ -39,12 +39,11 @@ function replaceCopyToClipboard(){
     copyToClipboard = "<h3>Code html<div onclick=\"CopyToClipboard('##id')\" class=\"btn btn-primary\" >Cliquer pour copier le code</div></h3>";
     id=1;
     document.querySelectorAll(".copyToClipboard").forEach(function(x){
-        copyToClipboard = "<br/><h3>Code html <div onclick=\"CopyToClipboard('codeExemple"+id+"')\" class=\"btn btn-primary\" >Cliquer pour copier le code</div></h3>";
-        x.outerHTML = x.outerHTML+ copyToClipboard + "<pre id='codeExemple"+id+ "' class='border p-2'>"+he.encode(x.outerHTML.replace(" copyToClipboard", "").replace("copyToClipboard", ""));
+        copyToClipboard = "<br/><div class='border p-2'><h3>Code html <div onclick=\"CopyToClipboard('codeExemple"+id+"')\" class=\"btn btn-primary\" >Cliquer pour copier le code</div></h3>";
+        x.outerHTML = x.outerHTML+ copyToClipboard + "<pre id='codeExemple"+id+ "' class='border p-2 m-2'>\t"+he.encode(x.outerHTML.replace(" copyToClipboard", "").replace("copyToClipboard", ""))+"</div><br/>";
         id++;
     });
 }
-
 
 function replaceInnertHTML(target, innerHTML) {
     document.querySelectorAll(target).forEach(function(x) {
