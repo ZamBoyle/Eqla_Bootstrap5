@@ -423,6 +423,8 @@ Pour avoir un visuel de cette partie, allez à la page [suivante](http://zamboyl
 
 Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/layout/grid/
 
+Visualisation des exemples de la théorie: [ici](http://zamboyle.github.io/htmlpreview?https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Theorie/Exemples/grid2.html)
+
 Bootstrap propose un système de grille très pratique et responsive. Elle permet d’agencer des contenus sous formes de colonnes. 
 
 Cette grille est composée d’une ligne de 12 colonnes. On pourrait penser que c’est un tableau. Si on veut mais alors d’une seule ligne. Ce système de grille permet d’ajouter des éléments sous formes de colonnes.
