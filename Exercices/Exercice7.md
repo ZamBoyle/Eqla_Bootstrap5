@@ -1,6 +1,12 @@
 # Exercice n°7 - La grille Bootstrap
 L'exercice portera l'utilisation de la [grille de Bootstrap](/Theorie/README.md#xi-la-grille-bootstrap).
 
+Textes pour les colonnes:
+- Je suis la première colonne.
+- Je suis la deuxième colonne.
+- Je suis la troisième colonne.
+- Je suis la quatrième colonne.
+
 ## Partie 1 - Création du fichier Exercice7.html
 Créez un fichier nommé Exercice7.html dans le répertoire EqlaExercices\Bootstrap.  
 
@@ -21,8 +27,14 @@ Ajoutez le titre 1 suivant: La Grille de Bootstrap
 
 ## Partie 6 - Taille des colonnes fonction de la taille de l'écran
 - Ajoutez un titre 2: Taille des colonnes fonction de la taille de l'écran.
-- Affichez deux colonnes prenant la moitié de l'écran chacune si la taille de l'écran est lg. Sinon deux lignes seront créées et la taille sera pour l'une col-md-2 et l'autre col-md-3
+- Affichez deux colonnes prenant la moitié de l'écran chacune si la taille de l'écran est lg. Sinon deux lignes seront créées et la taille sera pour l'une <code>.col-md-2</code> et l'autre <code>.col-md-3</code>.
 
-## Partie 7 - Envoi sur GitHub
+## Partie 7 - Colonnes et couleur d'arrière plan
+- Ajoutez un titre 2: Colonnes et couleur d'arrière plan
+- Ajoutez une colonne de taille fixe .col-4 de la ligne ayant une couleur de fond success et la couleur du texte en blanc. Le texte sera à gauche.
+- Ajoutez une colonne de taille fixe prenant le 1/3 de la ligne ayant une couleur de fond warning et la couleur du texte en blanc. Le texte sera centré.
+- Ajoutez une colonne prenant le reste de l'espace disponible ayant une couleur de fond danger. Le texte sera à droite.
+
+## Partie 8 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
 Appelez-moi pour qu'on vérifie ensemble.
