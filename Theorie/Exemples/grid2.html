@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr-BE">
+
+<head>
+    <title>Démo théorie - Grid</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS v5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Bootstrap icônes v1.8.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Démo Grille - Théorie</h1>
+        <h2>1. Classes pour un nombre fixe de colonnes</h2>
+        <div class="row border extractCode" id="ex1">
+            <div class="col-4 bg-danger">
+                Première colonne avec un .col-4
+            </div>
+            <div class="col-8 bg-primary">
+                Deuxième colonne avec un .col-8
+            </div>
+        </div><br />
+
+        <div class="row border extractCode" id="ex2">
+            <div class="col bg-primary">
+                Première colonne avec un .col
+            </div>
+            <div class="col bg-success">
+                Deuxième colonne avec un .col
+            </div>
+        </div><br />
+        Est identique à
+        <div class="row border extractCode" id="ex3">
+            <div class="col-6 bg-primary">
+                Première colonne avec un .col-6
+            </div>
+            <div class="col-6 bg-warning">
+                Deuxième colonne avec un .col-6
+            </div>
+        </div><br />
+        On peut un peu complexifier en faisait un .col avec un .col-3. Ici notre .col sera équivalent à un .col-9
+        <div class="row border extractCode" id="ex4">
+            <div class="col bg-success">
+                Ceci est un texte assez répétitif. Ceci est un texte assez répétitif.
+            </div>
+            <div class="col-3 bg-danger">
+                Ceci est un texte assez répétitif. Ceci est un texte assez répétitif
+            </div>
+        </div>
+
+        <h2>2. Classes pour un nombre de colonnes variables en fonction de la résolution
+        </h2>
+
+        <div class="row border extractCode" id="ex5">
+            <div class="col-sm-4 bg-primary">
+                Première colonne avec un .col-sm-4
+            </div>
+            <div class="col-sm-6 bg-success">
+                Ceci est la deuxième colonne avec un .col-sm-6
+            </div>
+        </div><br />
+
+        <h2>3. Mixe entre classes à nombre de colonnes fixes et variables
+        </h2>
+
+        <div class="row text-white border extractCode" id="ex6">
+            <div class="col-12 col-md-4 bg-success">Je suis votre prof !</div>
+            <div class="col-6 col-md-4 bg-warning">Bientôt, je ne serai plus votre prof !</div>
+            <div class="col-6 col-md-4 bg-danger">Je ne suis plus votre prof !</div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Bootstrap Librairie JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="js/he.js"></script>
+    <script src="js/bootstrapCourse.js"></script>
+</body>
+
+</html>
