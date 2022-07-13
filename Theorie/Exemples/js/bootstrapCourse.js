@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
 function extractCode(){
     id=1;
     document.querySelectorAll(".extractCode").forEach(function(x){
-        h3 = "<br/><div class='border p-2'><h3>Code html <div onclick=\"CopyToClipboard('codeExemple"+id+"')\" class=\"btn btn-primary\" >Cliquer pour copier le code</div></h3>";
-        x.outerHTML = x.outerHTML+ h3 + "<pre id='codeExemple"+id+ "' class='border p-2 m-2'>\t"+he.encode(x.outerHTML.replace(" extractCode", "").replace("extractCode", "").replace("class=\"\"","").replace("<div >","<div>"))+"</div><br/>";
+        btnCopy = "<br/><div class='border p-2'><div id='divTxtCopy"+id+"' onclick=\"CopyToClipboard('codeExemple"+id+"')\" class=\"btn btn-primary\">Copier code <i class='bi bi-clipboard'></i></div>\n";
+        x.outerHTML = x.outerHTML+ "<pre id='codeExemple"+id+ "' class='border p-2 m-2'>"+btnCopy+"\t"+he.encode(x.outerHTML.replace(" extractCode", "").replace("extractCode", "").replace("class=\"\"","").replace("<div >","<div>"))+"</div><br/>";
         id++;
     });
 }
