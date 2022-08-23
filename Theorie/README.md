@@ -650,3 +650,5 @@ Exemples : m-sm-7, mx-lg-5, etc.
 ### 2. Les paddings
 Même principe que pour les marges. 
 Donc on pourra avoir deux formes : .p{côtés}-{taille} et p{côtés}-{media}-{taille}.
+
+Des exemples peuvent être vus à cette [page](http://zamboyle.github.io/htmlpreview?https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Theorie/Exemples/spacing.html)
