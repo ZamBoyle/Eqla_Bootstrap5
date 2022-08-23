@@ -626,4 +626,27 @@ Exemple:
 <div class="d-none d-print-block">S'affichera uniquement lors de l'impression et sera caché à l'écran.</div>
 <div class="d-none d-lg-block d-print-block">Caché jusqu'à un écran large mais sera toujours affiché lors de l'impression.</div>
 ```
+## XIII. Les espacements
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/utilities/spacing/
 
+Dans Bootstrap, nous avons des classes qui permettent d’ajouter des paddings ou des marges
+
+### 1. Les marges
+Ces classes ont deux formats :
+#### a. Soit une classe du type .m{côtés}-{taille}.
+<!-- La taille varie de 0 à 5 (0 = 0rem, 1=0,25 rem,  2 = 0,5 rem, 3=1rem, 4 = 1,5 rem, 5 =  3 rem)
+0,25 rem = 0,25 * la variable SASS $spacer qui est définie par défaut à 1rem).-->
+« côtés » peut prendre les valeurs suivantes : rien, t (top), b(bottom), l (lef), r (right), x (gauche et droite), y (haut et bas)
+m-* : ajoutera une marge aux 4 côtés.
+mt-* : ajoutera une marge en haut.
+mb-* : ajoutera une marge en bas.
+ml-* : ajoutera une marge à gauche.
+mr-* : ajoutera une marge à droite.
+mx-* : ajoutera une marge à gauche et à droite.
+my-* : ajoutera une marge en haut et en bas.
+#### b. Soit une classe du type .m{côtés}-{media}-{taille}
+« media » peut prendre une des valeurs suivantes : sm, md, lg, xl, xxl. C’est donc conditionné en fonction de la taille de l’écran du périphérique. 
+Exemples : m-sm-7, mx-lg-5, etc.
+### 2. Les paddings
+Même principe que pour les marges. 
+Donc on pourra avoir deux formes : .p{côtés}-{taille} et p{côtés}-{media}-{taille}.

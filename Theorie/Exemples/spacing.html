@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS v5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://zamboyle.github.io/css/jumbotron.css" rel="stylesheet" t>
+
+    <!-- Bootstrap icônes v1.8.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <title>Les spacings</title>
+</head>
+
+<body>
+    <!-- Votre code HTML à mettre en-dessous -->
+    <div class="container-fluid jumbotron text-center mb-0">
+        <h1>Les espacements/spacing</h1>
+        <p class="lead">Les padding et margin dans Bootstrap</p>
+    </div>
+    <div class="container bg-light">
+        <h2>Intro</h2>
+        <p class="lead">
+            Un padding c'est une marge intérieure définie pour un élément donné: un div, un p, un body,
+            etc.
+        </p>
+        <p class="lead">
+            Un marging c'est une marge extérieure par rapport au parent d'un élément donné.
+        </p>
+        <h2>1. Les paddings</h2>
+        <h3>A. Sur tous les côtés.</h3>
+        <p class="lead">Avec un padding p-3, la marge intérieure se fait simultanément à gauche, à droite, en haut et en
+            bas.</p>
+        <div class="border border-primary p-3 loremipsum"></div>
+        
+        <h3>B. A gauche.</h3>
+        <p class="lead">Avec un padding ps-5, on ne définit qu'une marge intérieure gauche.</p>
+        <div class="border border-primary ps-5 loremipsum"></div>
+
+        <h3>C. A droite.</h3>
+        <p class="lead">Avec un padding pe-5, on ne définit qu'une marge intérieure droite.</p>
+        <div class="border border-primary pe-5 loremipsum"></div>
+
+        <h3>D. En haut.</h3>
+        <p class="lead">Avec un padding pt-5, on ne définit qu'une marge intérieure à partir du haut.</p>
+        <div class="border border-primary pt-5 loremipsum"></div>
+
+        <h3>E. En bas.</h3>
+        <p class="lead">Avec un padding pb-5, on ne définit qu'une marge intérieure à partir du bas.</p>
+        <div class="border border-primary pb-5 loremipsum"></div>
+
+        <h3>F. A gauche et droite.</h3>
+        <p class="lead">Avec un padding px-5, on ne définit qu'une marge intérieure à partir du bas.</p>
+        <div class="border border-primary px-5 loremipsum"></div>
+
+        <h3>G. En haut et en bas.</h3>
+        <p class="lead">Avec un padding py-5, on ne définit qu'une marge intérieure à partir du bas.</p>
+        <div class="border border-primary py-5 loremipsum"></div>
+
+        <h2>2. Les margins</h2>
+        <p class="lead">Pour représenter cela, nous utiliserons deux divs: un parent et un enfant (imbriqué/inclus au parent)</p>
+        <p class="lead">Le div enfant aura un padding sur tous les côtés appliqué: p-2.</p>
+        <h3>A. Aucune marge</h3>
+        <div class="border border-primary">
+            <div class="border border-danger loremipsum p-2"></div>
+        </div>
+
+        <h3>B. Sur tous les côtés</h3>
+        <p class="lead">Avec un margin m-3, la marge extérieure se fait simultanément à gauche, à droite, en haut et en
+            bas.</p>
+        <div class="border border-primary bg-primary">
+            <div class="border border-danger bg-white m-3 loremipsum p-2"></div>
+        </div>
+
+        <h3>C. Sur la gauche</h3>
+        <p class="lead">Avec un margin ms-5, on ne définit qu'une marge extérieure gauche.</p>
+        <div class="border border-primary bg-primary">
+            <div class="border border-danger bg-white ms-5 loremipsum p-2"></div>
+        </div>
+
+        <h3>D. Sur la droite</h3>
+        <p class="lead">Avec un margin me-5, on ne définit qu'une marge extérieure droite.</p>
+        <div class="bg-primary">
+            <div class="border border-danger bg-white me-5 loremipsum p-2"></div>
+        </div>
+
+        <h3>E. En haut</h3>
+        <p class="lead">Avec un margin mt-5, on ne définit qu'une marge extérieure en haut.</p>
+        <div class="border border-primary bg-primary">
+            <div class="border border-danger bg-white mt-5 loremipsum p-2"></div>
+        </div>
+
+        <h3>F. En bas</h3>
+        <p class="lead">Avec un margin mb-5, on ne définit qu'une marge extérieure en bas.</p>
+        <div class="border border-primary bg-primary">
+            <div class="border border-danger bg-white mb-5 loremipsum p-2"></div>
+        </div>
+
+        <h3>G. A gauche et droite</h3>
+        <p class="lead">Avec un margin mx-5, on ne définit qu'une marge extérieure à gauchet et à droite.</p>
+        <div class="border border-primary bg-primary">
+            <div class="border border-danger bg-white mx-5 loremipsum p-2"></div>
+        </div>
+
+        <h3>H. En haut et en bas</h3>
+        <p class="lead">Avec un margin my-5, on ne définit qu'une marge extérieure en haut et en bas.</p>
+        <div class="border border-primary bg-primary">
+            <div class="border border-danger bg-white my-5 loremipsum p-2"></div>
+        </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </div>
+
+
+
+
+
+
+    <!-- Bootstrap Librairie JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+<script src="js/he.js"></script>
+<script src="js/bootstrapCourse.js"></script>
+
+</html>
