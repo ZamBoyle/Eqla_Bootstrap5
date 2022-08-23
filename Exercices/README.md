@@ -18,3 +18,4 @@ Chaque exercice sera nommé par exemple Exercice1.html, Exercice2.html, etc.
 - [Exercice n°6](Exercice6.md) - Les couleurs / Arrières plans.
 - [Exercice n°7](Exercice7.md) - La Grille de Bootstrap.
 - [Exercice n°8](Exercice8.md) - Les affichages/displays.
+- [Exercice n°9](Exercice9.md) - Les espacements/spacings.
