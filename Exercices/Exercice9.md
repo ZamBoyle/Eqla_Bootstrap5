@@ -1,6 +1,10 @@
 # Exercice n°9 - Les espacements / spacings
 L'exercice portera l'utilisation des classes d'[espacements](/Theorie/README.md#xiii-les-espacements.).
 
+Pour que cela soit plus facile à comprendre pour certains, j'ai ajouté aux exemples un border aux différents div utilisés. De cette manrière, vous constaterez les différentes marges appliquées.
+
+Donc n'utilisez pas toujours des bordures à vos div, elles sont uniquement utilisées ici dans un but pédagogique. ;-)
+
 ## Partie 1 - Création du fichier Exercice9.html
 Créez un fichier nommé Exercice9.html dans le répertoire EqlaExercices\Bootstrap.  
 
