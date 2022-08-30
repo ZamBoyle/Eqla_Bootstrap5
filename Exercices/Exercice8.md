@@ -16,7 +16,7 @@ Ajoutez le titre 1 suivant: Les affichages / displays
 - Soit le code html suivant:
 ```html
 <p class="bg-primary d-inline">Je suis un paragraphe.</p>
-<div class="bg-danger text-white d-inline">Je suis un div collé au paragraphe grâce à une classe magique.</div>
+<div class="bg-danger text-white">Je suis un div collé au paragraphe grâce à une classe magique.</div>
 ```
 - Testez ce code dans votre page html.
 - Arrangez-vous pour que rien ne retourne à la ligne en utilisant la classe appropriée aux bons endroits.
