@@ -15,7 +15,7 @@ Ajoutez le titre 1 suivant: Les affichages / displays
 - Ajoutez un titre 2: Affichage inline (d-inline)
 - Soit le code html suivant:
 ```html
-<p class="bg-primary d-inline">Je suis un paragraphe.</p>
+<p class="bg-primary">Je suis un paragraphe.</p>
 <div class="bg-danger text-white">Je suis un div collé au paragraphe grâce à une classe magique.</div>
 ```
 - Testez ce code dans votre page html.
