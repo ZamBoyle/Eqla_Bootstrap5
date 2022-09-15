@@ -652,3 +652,53 @@ Même principe que pour les marges.
 Donc on pourra avoir deux formes : .p{côtés}-{taille} et p{côtés}-{media}-{taille}.
 
 Des exemples peuvent être vus à cette [page](http://zamboyle.github.io/htmlpreview?https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Theorie/Exemples/spacing.html)
+
+## XIV Les formulaires
+Pour le Hackathon, nous allons en profiter pour voir les class Bootstrap en rapport avec les formulaires.
+
+Nous allons reprendre un formulaire que nous avons fait lors d'un exercice préparatoire au Hackathon.
+
+```html
+<form action="http://zamboyle.synology.me" method="get">
+    <input id="repo" name="repo" type="hidden" value="ZamBoyle/Eqla_Hackathon">
+    <input id="program" name="program" type="hidden" value="Demo.java">
+    Fonction:<input id="function" name="function" type="text"><br/>
+    Paramètre p1:<input id="p1" name="p1" type="text"><br/>
+    Paramètre p2:<input id="p2" name="p2" type="text"><br/>
+    <input type="submit" value="Envoyer">
+</form>
+```
+Notre formulaire sera légèrement plus joli grâce à Bootstrap: champ texte et bouton plus grands.
+
+Mais Bootstrap peut faire nettement mieux :-)  
+
+Je vais Bootstraper ce formulaire et vous l'expliquer.
+
+```html
+<form action="http://zamboyle.synology.me" method="get">
+    <input id="repo" name="repo" type="hidden" value="ZamBoyle/Eqla_Hackathon">
+    <input id="program" name="program" type="hidden" value="Demo.java">
+    
+    <label for="function" class="form-label">Fonction</label>
+    <input id="function" class="form-control" name="function" type="text">
+    
+    <label for="ep1" class="form-label">Paramètre p1</label>
+    <input id="p1" name="p1" class="form-control" type="text">
+
+    <label for="p2" class="form-label">Paramètre p2</label>
+    <input id="p2" name="p2" class="form-control" type="text"><br/>
+    <input type="submit" class="btn btn-primary" value="Envoyer">
+</form>
+```
+
+Lorsque vous lancez ce formulaire avec le Framework Bootstrap, directement vous constatez que celui-ci est beaucoup plus esthétique.
+
+Le champ text a les bords arrondis, la zone est plus grande et celle-ci devient bleue si la zone est activée.
+
+### 1. form-label
+Cette classe est utilisée avec la balise html label
+
+
+
+
+
