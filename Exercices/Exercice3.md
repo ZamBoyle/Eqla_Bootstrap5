@@ -53,7 +53,7 @@ Ici je vous propose d'ajouter au paragraphe la balise **span** qui encadre les m
 ## Partie 8 - Alignements fonction de la résolution
 Mettez en titre 2: Partie 8 - Alignements fonction de la résolution
 
-Ici on va voir via cet exercice qu'il est possible de position son texte en fonction de la résolution de l'écran. Attention, n'oubliez que si vous appliquez de base un énorme zoom/loupe, le css va considérer que vous avez un écran de faible résolution.
+Ici on va voir via cet exercice qu'il est possible de positionner son texte en fonction de la résolution de l'écran. Attention, n'oubliez que si vous appliquez de base un énorme zoom/loupe, le css va considérer que vous avez un écran de faible résolution.
 
 - Positionnez le texte suivant à droite quand la résolution est d'au moins sm et plus: "Je suis un texte à droite car la résolution est sm.
 - Positionnez le texte suivant au centre quand la résolution est d'au moins xl et plus: "Je suis un texte centré car la résolution est xl.
