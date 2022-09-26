@@ -678,15 +678,24 @@ Je vais Bootstraper ce formulaire et vous l'expliquer.
 <form action="http://zamboyle.synology.me" method="get">
     <input id="repo" name="repo" type="hidden" value="ZamBoyle/Eqla_Hackathon">
     <input id="program" name="program" type="hidden" value="Demo.java">
-    
-    <label for="function" class="form-label">Fonction</label>
-    <input id="function" class="form-control" name="function" type="text">
-    
-    <label for="ep1" class="form-label">Paramètre p1</label>
-    <input id="p1" name="p1" class="form-control" type="text">
+        <label for="function" class="form-label">Fonction</label>
+        <select id="function" name="function" class="form-select mb-3" required>
+            <option selected value="">Cliquez pour sélectionner une fonction</option>
+            <option value="helloworld">helloworld ()</option>
+            <option value="hi">hi (p1)</option>                    
+            <option value="hola" disabled>hola (p1)</option>
+            <option value="add">add (int p1, int p2)</option>
+            <option value="tablemultiplication">tablemultiplication (int table, int max)</option>
+            <option value="help">help ()</option>
+        </select>
 
-    <label for="p2" class="form-label">Paramètre p2</label>
-    <input id="p2" name="p2" class="form-control" type="text"><br/>
+        <label for="p1" class="form-label">Paramètre p1</label>
+        <input id="p1" name="p1" class="form-control" type="text">
+
+        <div class="form-floating my-3">
+            <input id="p2" name="p2" class="form-control" type="text" placeholder="Paramètre p2">
+            <label for="p2" class="form-label">Paramètre p2</label>                    
+        </div>
     <input type="submit" class="btn btn-primary" value="Envoyer">
 </form>
 ```
@@ -695,8 +704,34 @@ Lorsque vous lancez ce formulaire avec le Framework Bootstrap, directement vous 
 
 Le champ text a les bords arrondis, la zone est plus grande et celle-ci devient bleue si la zone est activée.
 
-### 1. form-label
-Cette classe est utilisée avec la balise html label
+### 1. classe form-label
+La classe form-label est utilisée avec la balise html label avec l’attribut for= "#ControleADecrire". La valeur #ControleADecrire est l'id du contrôle sur lequel on veut mettre le label.
+
+### 2. classe form-control
+Les champs de type texte, mot de passe doivent avoir cette classe.
+
+### 3. form-select
+Elle s'utilise sur la balise html select
+
+### 4. required
+Comme nous l'avons déjà vu, l'attribut required indique que le champ est obligatoire. Le formulaire ne saura pas être transmis si le champ n'a pas de valeur.
+
+### 5. disabled
+On voit que l'attribut disabled peut être utilisé sur un des choix d'un select. Le texte apparaîtra mais ne sera pas sélectionnable. Il sera aussi légèrement grisé.
+
+### 6. classes btn et btn-primary
+La classe btn transformera le bouton submit en un joli bouton Bootstrap.
+Enfin, la classe btn-primary utilisera la couleur primary pour le bouton (revoir le chapitre sur les couleurs).
+
+### 7. espacements après/avant
+Pour éviter de coller les champs on peut ajouter des marges:
+- à gauche (ms-valeur): exemple ms-3
+- à droite (me-valeur): exemple me-2
+- en haut (mt-valeur): exemple mt-1
+- en bas (mb-valeur): exemple mb-2
+- en haut et en bas (my-valeur): exemple my-3
+- à gauche et à droite (mx-valeur): exemple mx-2
+ 
 
 
 
