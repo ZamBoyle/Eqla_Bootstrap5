@@ -719,9 +719,11 @@ Comme nous l'avons déjà vu, l'attribut required indique que le champ est oblig
 ### 5. disabled
 On voit que l'attribut disabled peut être utilisé sur un des choix d'un select. Le texte apparaîtra mais ne sera pas sélectionnable. Il sera aussi légèrement grisé.
 
-### 6. classes btn et btn-primary
-La classe btn transformera le bouton submit en un joli bouton Bootstrap.
-Enfin, la classe btn-primary utilisera la couleur primary pour le bouton (revoir le chapitre sur les couleurs).
+
+### 6. form-floating
+C'est une forme de présentation du champ qui est intéressante: le label est dans le champ et quand on commence à écrire dans le champ, le label reste dans le champ et devient tout petit une fois que le champ aura le focus.
+
+Pour cela, on va créer un div avec la classe form-floating. On va ensuite mettre le champ avec un placeholder. Et pour finir un ajoutera un label. L'ordre est important: div, input et enfin label.
 
 ### 7. espacements après/avant
 Pour éviter de coller les champs on peut ajouter des marges:
@@ -737,3 +739,6 @@ Pour éviter de coller les champs on peut ajouter des marges:
 
 
 
+### 6. classes btn et btn-primary
+La classe btn transformera le bouton submit en un joli bouton Bootstrap.
+Enfin, la classe btn-primary utilisera la couleur primary pour le bouton (revoir le chapitre sur les couleurs).
