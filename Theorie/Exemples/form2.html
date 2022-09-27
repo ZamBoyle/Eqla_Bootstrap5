@@ -20,6 +20,8 @@
     </nav>
     <!-- Page content-->
     <div class="container bg-light p-4">
+        <h1 class="text-center">Formulaires & grille Bootstrap</h1>
+        <h2>Exemple 1</h2>
         <form action="http://zamboyle.synology.me" method="get">
             <input id="repo" name="repo" type="hidden" value="ZamBoyle/Eqla_Hackathon">
             <input id="program" name="program" type="hidden" value="Demo.java">
@@ -52,6 +54,47 @@
                 </div>
             </div>
         </form>
+        <h2>Exemple 2</h2>
+        <form>
+            <div class="row">
+                <div class="col-2">
+                    <label for="functionbis" class="form-label">Fonction</label>
+                </div>
+                <div class="col-auto">
+                    <select id="functionbis" name="functionbis" class="form-select mb-3" required>
+                        <option selected value="">Cliquez pour sélectionner une fonction</option>
+                        <option value="helloworld">helloworld ()</option>
+                        <option value="hi">hi (p1)</option>
+                        <option value="hola" disabled>hola (p1)</option>
+                        <option value="add">add (int p1, int p2)</option>
+                        <option value="tablemultiplication">tablemultiplication (int table, int max)</option>
+                        <option value="help">help ()</option>
+                    </select>
+                </sdiv>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <label for="p1bis" class="form-label">Paramètre p1</label>
+                </div>
+                <div class="col-10">
+                    <input id="p1bis" name="p1bis" class="form-control col" type="text" placeholder="Paramètre p1">
+                </div>
+                <div class="col-2">
+                    <label class="form-label" for="p2bis">Paramètre p2</label>
+                </div>
+                <div class="col-10 mt-2">
+                    <input id="p2bis" name="p2bis" class="form-control col" type="text" aria-label="Paramètre p2"
+                        placeholder="Paramètre p2">
+                </div>
+                <div class="col-12">
+                    <input type="submit" class="btn btn-primary mt-2" value="Envoyer">
+                </div>
+            </div>
+    </div>
+
+    </form>
+
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
