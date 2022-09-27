@@ -704,6 +704,8 @@ Lorsque vous lancez ce formulaire avec le Framework Bootstrap, directement vous 
 
 Le champ text a les bords arrondis, la zone est plus grande et celle-ci devient bleue si la zone est activée.
 
+Résultat visible à cette [adresse]([Exemples/form1.html](http://zamboyle.github.io/htmlpreview?)).
+
 ### 1. classe form-label
 La classe form-label est utilisée avec la balise html label avec l’attribut for= "#ControleADecrire". La valeur #ControleADecrire est l'id du contrôle sur lequel on veut mettre le label.
 
@@ -725,7 +727,7 @@ C'est une forme de présentation du champ qui est intéressante: le label est da
 
 Pour cela, on va créer un div avec la classe form-floating. On va ensuite mettre le champ avec un placeholder. Et pour finir un ajoutera un label. L'ordre est important: div, input et enfin label.
 
-### 7. espacements après/avant
+### 7. Marges
 Pour éviter de coller les champs on peut ajouter des marges:
 - à gauche (ms-valeur): exemple ms-3
 - à droite (me-valeur): exemple me-2
@@ -733,12 +735,44 @@ Pour éviter de coller les champs on peut ajouter des marges:
 - en bas (mb-valeur): exemple mb-2
 - en haut et en bas (my-valeur): exemple my-3
 - à gauche et à droite (mx-valeur): exemple mx-2
+- partout: m-3
  
-
-
-
-
-
-### 6. classes btn et btn-primary
+### 8. Classes btn et btn-primary
 La classe btn transformera le bouton submit en un joli bouton Bootstrap.
 Enfin, la classe btn-primary utilisera la couleur primary pour le bouton (revoir le chapitre sur les couleurs).
+
+### 9. Layout avec le système de grille
+
+Partons de l'exemple suivant:
+```html
+<form action="http://zamboyle.synology.me" method="get">
+    <input id="repo" name="repo" type="hidden" value="ZamBoyle/Eqla_Hackathon">
+    <input id="program" name="program" type="hidden" value="Demo.java">
+    <div class="row">
+        <div class="col-12">
+            <label for="function" class="form-label">Fonction</label>
+            <select id="function" name="function" class="form-select mb-3" required>
+                <option selected value="">Cliquez pour sélectionner une fonction</option>
+                <option value="helloworld">helloworld ()</option>
+                <option value="hi">hi (p1)</option>
+                <option value="hola" disabled>hola (p1)</option>
+                <option value="add">add (int p1, int p2)</option>
+                <option value="tablemultiplication">tablemultiplication (int table, int max)</option>
+                <option value="help">help ()</option>
+            </select>
+        </div>
+        <div class="col-6">
+            <input id="p1" name="p1" class="form-control col" type="text" aria-label="Paramètre p1"
+                placeholder="Paramètre p1">
+        </div>
+        <div class="col-6">
+            <input id="p2" name="p2" class="form-control col" type="text" aria-label="Paramètre p2"
+                placeholder="Paramètre p2">
+        </div>
+
+        <div class="col-12">
+            <input type="submit" class="btn btn-primary mt-2" value="Envoyer">
+        </div>
+    </div>
+</form>
+```
