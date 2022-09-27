@@ -704,7 +704,7 @@ Lorsque vous lancez ce formulaire avec le Framework Bootstrap, directement vous 
 
 Le champ text a les bords arrondis, la zone est plus grande et celle-ci devient bleue si la zone est activée.
 
-Résultat visible à cette [adresse]([Exemples/form1.html](http://zamboyle.github.io/htmlpreview?)).
+Résultat visible à cette [adresse](http://zamboyle.github.io/htmlpreview?https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Theorie/Exemples/form1.html).
 
 ### 1. classe form-label
 La classe form-label est utilisée avec la balise html label avec l’attribut for= "#ControleADecrire". La valeur #ControleADecrire est l'id du contrôle sur lequel on veut mettre le label.
@@ -749,7 +749,7 @@ Partons de l'exemple suivant:
     <input id="repo" name="repo" type="hidden" value="ZamBoyle/Eqla_Hackathon">
     <input id="program" name="program" type="hidden" value="Demo.java">
     <div class="row">
-        <div class="col-12">
+        <div class="col-6">
             <label for="function" class="form-label">Fonction</label>
             <select id="function" name="function" class="form-select mb-3" required>
                 <option selected value="">Cliquez pour sélectionner une fonction</option>
@@ -761,7 +761,9 @@ Partons de l'exemple suivant:
                 <option value="help">help ()</option>
             </select>
         </div>
-        <div class="col-6">
+    </div>
+    <div class="row">
+        <div class="col-6 mb-3">
             <input id="p1" name="p1" class="form-control col" type="text" aria-label="Paramètre p1"
                 placeholder="Paramètre p1">
         </div>
@@ -776,3 +778,4 @@ Partons de l'exemple suivant:
     </div>
 </form>
 ```
+Résultat visible à cette [adresse](http://zamboyle.github.io/htmlpreview?https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Theorie/Exemples/form2.html).
