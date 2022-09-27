@@ -55,13 +55,15 @@
             </div>
         </form>
         <h2>Exemple 2</h2>
-        <form>
+        <form action="http://zamboyle.synology.me" method="get">
+            <input id="repo" name="repo" type="hidden" value="ZamBoyle/Eqla_Hackathon">
+            <input id="program" name="program" type="hidden" value="Demo.java">
             <div class="row">
                 <div class="col-2">
                     <label for="functionbis" class="form-label">Fonction</label>
                 </div>
                 <div class="col-auto">
-                    <select id="functionbis" name="functionbis" class="form-select mb-3" required>
+                    <select id="functionbis" name="function" class="form-select mb-3" required>
                         <option selected value="">Cliquez pour sélectionner une fonction</option>
                         <option value="helloworld">helloworld ()</option>
                         <option value="hi">hi (p1)</option>
@@ -70,29 +72,28 @@
                         <option value="tablemultiplication">tablemultiplication (int table, int max)</option>
                         <option value="help">help ()</option>
                     </select>
-                </sdiv>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="p1bis" class="form-label">Paramètre p1</label>
+                    </div>
+                    <div class="col-10">
+                        <input id="p1bis" name="p1" class="form-control col" type="text" placeholder="Paramètre p1">
+                    </div>
+                    <div class="col-2">
+                        <label class="form-label" for="p2bis">Paramètre p2</label>
+                    </div>
+                    <div class="col-10 mt-2">
+                        <input id="p2bis" name="p2" class="form-control col" type="text" aria-label="Paramètre p2"
+                            placeholder="Paramètre p2">
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" class="btn btn-primary mt-2" value="Envoyer">
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <label for="p1bis" class="form-label">Paramètre p1</label>
-                </div>
-                <div class="col-10">
-                    <input id="p1bis" name="p1bis" class="form-control col" type="text" placeholder="Paramètre p1">
-                </div>
-                <div class="col-2">
-                    <label class="form-label" for="p2bis">Paramètre p2</label>
-                </div>
-                <div class="col-10 mt-2">
-                    <input id="p2bis" name="p2bis" class="form-control col" type="text" aria-label="Paramètre p2"
-                        placeholder="Paramètre p2">
-                </div>
-                <div class="col-12">
-                    <input type="submit" class="btn btn-primary mt-2" value="Envoyer">
-                </div>
-            </div>
-    </div>
 
-    </form>
+        </form>
 
 
     </div>
