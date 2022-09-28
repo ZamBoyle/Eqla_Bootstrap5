@@ -21,7 +21,9 @@
     <!-- Page content-->
     <div class="container bg-light p-4">
         <h1 class="text-center">Formulaires & grille Bootstrap</h1>
-        <h2>Exemple 1</h2>
+        <h2 class="mt-4">Exemple 1</h2>
+        <p class="lead">Cet exemple montre des label et input à colonnes fixes: <code>.col-3</code> pour les label et <code>.col-9</code> pour les input.</p>
+        <div class="border rounded p-2 border-secondary">
         <form action="http://zamboyle.synology.me" method="get">
             <input id="repo" name="repo" type="hidden" value="ZamBoyle/Eqla_Hackathon">
             <input id="program" name="program" type="hidden" value="Demo.java">
@@ -54,16 +56,21 @@
                 </div>
             </div>
         </form>
-        <h2>Exemple 2</h2>
+        </div>
+        <h2 class="mt-4">Exemple 2</h2>
+        <p class="lead">Cet exemple, montre que les label vont changer de position en fonction de la taille de l'écran. </p>
+        <p class="lead">J'ai utilisé les classes <code>.col-sm-3</code> pour les label et <code>.col-sm-9</code> pour les input.</p>
+        <p class="lead"> Essayez de jouer sur la taille de l'écran pour que vous constatiez comment se comportent labels et inputs.</p>
+        <div class="border rounded p-2 border-secondary">
         <form action="http://zamboyle.synology.me" method="get">
-            <input id="repo" name="repo" type="hidden" value="ZamBoyle/Eqla_Hackathon">
+            <input id="repo" name="repo" type="hidden" value="ZamBoyle/Eqla_Hackathon" >
             <input id="program" name="program" type="hidden" value="Demo.java">
-            <div class="row">
-                <div class="col-2">
-                    <label for="functionbis" class="form-label">Fonction</label>
+            <div class="row mb-3">
+                <div class="col-sm-3">
+                    <label for="functionbis" class="col-form-label">Fonction</label>
                 </div>
-                <div class="col-auto">
-                    <select id="functionbis" name="function" class="form-select mb-3" required>
+                <div class="col-sm-9">
+                    <select id="functionbis" name="function" class="form-select" required>
                         <option selected value="">Cliquez pour sélectionner une fonction</option>
                         <option value="helloworld">helloworld ()</option>
                         <option value="hi">hi (p1)</option>
@@ -73,29 +80,31 @@
                         <option value="help">help ()</option>
                     </select>
                 </div>
-                <div class="row">
-                    <div class="col-2">
-                        <label for="p1bis" class="form-label">Paramètre p1</label>
-                    </div>
-                    <div class="col-10">
-                        <input id="p1bis" name="p1" class="form-control col" type="text" placeholder="Paramètre p1">
-                    </div>
-                    <div class="col-2">
-                        <label class="form-label" for="p2bis">Paramètre p2</label>
-                    </div>
-                    <div class="col-10 mt-2">
-                        <input id="p2bis" name="p2" class="form-control col" type="text" aria-label="Paramètre p2"
-                            placeholder="Paramètre p2">
-                    </div>
-                    <div class="col-12">
-                        <input type="submit" class="btn btn-primary mt-2" value="Envoyer">
-                    </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-3">
+                    <label for="p1bis" class="col-form-label">Paramètre p1</label>
+                </div>
+                <div class="col-sm-9">
+                    <input id="p1bis" name="p1" class="form-control" type="text" placeholder="Paramètre p1">
                 </div>
             </div>
-
+            <div class="row mb-3">
+                <div class="col-sm-3">
+                    <label class="form-label" for="p2bis">Paramètre p2</label>
+                </div>
+                <div class="col-sm-9">
+                    <input id="p2bis" name="p2" class="form-control" type="text" aria-label="Paramètre p2"
+                        placeholder="Paramètre p2">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <input type="submit" class="btn btn-primary mt-2" value="Envoyer">
+                </div>
+            </div>
         </form>
-
-
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

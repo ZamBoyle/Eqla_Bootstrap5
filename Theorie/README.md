@@ -745,7 +745,10 @@ Enfin, la classe btn-primary utilisera la couleur primary pour le bouton (revoir
 
 ### 9. Layout avec le système de grille
 Pour présenter autrement notre formulaire, nous pouvons aussi utiliser la [grille Bootstrap](#xi-la-grille-bootstrap) que nous avons vue précédemment.
-On crée un div avec la classe .row et ensuite on avec des div ayant 
+
+On crée un div avec la classe .row et ensuite on avec des div ayant une des classes sur les colonnes: col, col-auto, col-2, etc.
+
+N'oubliez pas que la grille Bootstrap est composée de 12 colonnes par ligne. Si vous dépassez les 12 colonnes, une nouvelle ligne se crée.
 
 Exemple 1:
 ```html
@@ -783,16 +786,17 @@ Exemple 1:
 </form>
 ```
 Exemple 2:
+
 ```html
 <form action="http://zamboyle.synology.me" method="get">
     <input id="repo" name="repo" type="hidden" value="ZamBoyle/Eqla_Hackathon">
     <input id="program" name="program" type="hidden" value="Demo.java">
-    <div class="row">
-        <div class="col-2">
-            <label for="functionbis" class="form-label">Fonction</label>
+    <div class="row mb-3">
+        <div class="col-sm-3">
+            <label for="functionbis" class="col-form-label">Fonction</label>
         </div>
-        <div class="col-auto">
-            <select id="functionbis" name="function" class="form-select mb-3" required>
+        <div class="col-sm-9">
+            <select id="functionbis" name="function" class="form-select" required>
                 <option selected value="">Cliquez pour sélectionner une fonction</option>
                 <option value="helloworld">helloworld ()</option>
                 <option value="hi">hi (p1)</option>
@@ -802,27 +806,29 @@ Exemple 2:
                 <option value="help">help ()</option>
             </select>
         </div>
-        <div class="row">
-            <div class="col-2">
-                <label for="p1bis" class="form-label">Paramètre p1</label>
-            </div>
-            <div class="col-10">
-                <input id="p1bis" name="p1" class="form-control col" type="text" placeholder="Paramètre p1">
-            </div>
-            <div class="col-2">
-                <label class="form-label" for="p2bis">Paramètre p2</label>
-            </div>
-            <div class="col-10 mt-2">
-                <input id="p2bis" name="p2" class="form-control col" type="text" aria-label="Paramètre p2"
-                    placeholder="Paramètre p2">
-            </div>
-            <div class="col-12">
-                <input type="submit" class="btn btn-primary mt-2" value="Envoyer">
-            </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-sm-3">
+            <label for="p1bis" class="col-form-label">Paramètre p1</label>
+        </div>
+        <div class="col-sm-9">
+            <input id="p1bis" name="p1" class="form-control" type="text" placeholder="Paramètre p1">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-sm-3">
+            <label class="form-label" for="p2bis">Paramètre p2</label>
+        </div>
+        <div class="col-sm-9">
+            <input id="p2bis" name="p2" class="form-control" type="text" aria-label="Paramètre p2"
+                placeholder="Paramètre p2">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-12">
+            <input type="submit" class="btn btn-primary mt-2" value="Envoyer">
         </div>
     </div>
 </form>
 ```
-
-
 Résultat visible à cette [adresse](http://zamboyle.github.io/htmlpreview?https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Theorie/Exemples/form2.html).
