@@ -779,7 +779,7 @@ Exemple 1:
                 placeholder="Paramètre p2">
         </div>
 
-        <div class="col-12">
+        <div class="col-12 text-end">
             <input type="submit" class="btn btn-primary mt-2" value="Envoyer">
         </div>
     </div>
@@ -825,7 +825,7 @@ Exemple 2:
         </div>
     </div>
     <div class="row mb-3">
-        <div class="col-12">
+        <div class="col-12 text-end">
             <input type="submit" class="btn btn-primary mt-2" value="Envoyer">
         </div>
     </div>
