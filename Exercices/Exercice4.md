@@ -2,7 +2,7 @@
 L'exercice portera sur [l'affichage des images](/Theorie/README.md#vii-les-images "Affichage des images") dans Bootstrap.
 
 ## Partie 1 - Création du fichier Exercice4.html
-Créez un fichier nommé Exercice3.html dans le répertoire EqlaExercices\Bootstrap.  
+Créez un fichier nommé Exercice4.html dans le répertoire EqlaExercices\Bootstrap.  
 
 Copiez le contenu du fichier [template2.html](/Exercices/Templates/template2.html?raw=1) dans le fichier Exercice4.html
 
