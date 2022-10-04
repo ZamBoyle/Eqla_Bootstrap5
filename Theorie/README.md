@@ -731,13 +731,13 @@ Pour cela, on va créer un div avec la classe form-floating. On va ensuite mettr
 
 ### 7. Marges
 Pour éviter de coller les champs on peut ajouter des marges:
-- à gauche (ms-valeur): exemple ms-3
-- à droite (me-valeur): exemple me-2
-- en haut (mt-valeur): exemple mt-1
-- en bas (mb-valeur): exemple mb-2
-- en haut et en bas (my-valeur): exemple my-3
-- à gauche et à droite (mx-valeur): exemple mx-2
-- partout: m-3
+- à gauche (ms-valeur): exemple ms-3  
+- à droite (me-valeur): exemple me-2  
+- en haut (mt-valeur): exemple mt-1  
+- en bas (mb-valeur): exemple mb-2  
+- en haut et en bas (my-valeur): exemple my-3  
+- à gauche et à droite (mx-valeur): exemple mx-2  
+- partout: m-3  
  
 ### 8. Classes btn et btn-primary
 La classe btn transformera le bouton submit en un joli bouton Bootstrap.
