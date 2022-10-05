@@ -1,5 +1,5 @@
 # Exercice n°7 - La grille Bootstrap
-L'exercice portera l'utilisation de la [grille de Bootstrap](/Theorie/README.md#xi-la-grille-bootstrap).
+L'exercice portera sur l'utilisation de la [grille de Bootstrap](/Theorie/README.md#xi-la-grille-bootstrap).
 
 Textes pour les colonnes:
 - Je suis la première colonne.
