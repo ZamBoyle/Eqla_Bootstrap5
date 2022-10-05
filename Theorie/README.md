@@ -473,7 +473,7 @@ Exemple :
     Deuxième colonne avec un .col-6
   </div>
   </div>
-  On peut un peu complexifier en faisait un .col avec un .col-3. Ici notre .col sera équivalent à un .col-9
+  On peut un peu complexifier en faisant un .col avec un .col-3. Ici notre .col sera équivalent à un .col-9
   <div class="row">
     <div class="col">
     Ceci est un texte assez répétitif. Ceci est un texte assez répétitif.
