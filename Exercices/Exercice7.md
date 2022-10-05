@@ -26,7 +26,7 @@ Ajoutez le titre 1 suivant: La Grille de Bootstrap
 - Affichez trois colonnes à taille fixe ne prenant pas toute la largeur.
 
 ## Partie 6 - Taille des colonnes fonction de la taille de l'écran
-- Ajoutez un titre 2: Taille des colonnes fonction de la taille de l'écran.
+- Ajoutez un titre 2: Taille des colonnes en fonction de la taille de l'écran.
 - Affichez deux colonnes prenant la moitié de l'écran chacune si la taille de l'écran est lg. Sinon deux lignes seront créées et la taille sera pour l'une <code>.col-md-2</code> et l'autre <code>.col-md-3</code>.
 
 ## Partie 7 - Colonnes et couleur d'arrière plan
