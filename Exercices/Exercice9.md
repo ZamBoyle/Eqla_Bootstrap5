@@ -40,12 +40,12 @@ Ajoutez le titre 1 suivant: Les espacements / spacings
 - Ajoutez-y un padding à gauche et à droite de 4.
 
 ## Partie 7 - Padding haut
-- Ajoutez un titre 2: Padding gauche et droite
+- Ajoutez un titre 2: Padding haut
 - Soit le code html précédent de la partie 4.
 - Ajoutez-y un padding en haut de 5.
 
 ## Partie 8 - Padding bas
-- Ajoutez un titre 2: Padding gauche et droite
+- Ajoutez un titre 2: Padding bas
 - Soit le code html précédent de la partie 4.
 - Ajoutez-y un padding en bas de 5.
 

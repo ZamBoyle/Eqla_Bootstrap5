@@ -636,12 +636,12 @@ Ces classes ont deux formats :
 #### a. Soit une classe du type .m{côtés}-{taille}.
 <!-- La taille varie de 0 à 5 (0 = 0rem, 1=0,25 rem,  2 = 0,5 rem, 3=1rem, 4 = 1,5 rem, 5 =  3 rem)
 0,25 rem = 0,25 * la variable SASS $spacer qui est définie par défaut à 1rem).-->
-« côtés » peut prendre les valeurs suivantes : rien, t (top), b(bottom), l (lef), r (right), x (gauche et droite), y (haut et bas)
+« côtés » peut prendre les valeurs suivantes : rien, t (top), b(bottom), s (start), e (end), x (gauche et droite), y (haut et bas)
 m-* : ajoutera une marge aux 4 côtés.
 mt-* : ajoutera une marge en haut.
 mb-* : ajoutera une marge en bas.
-ml-* : ajoutera une marge à gauche.
-mr-* : ajoutera une marge à droite.
+ms-* : ajoutera une marge à gauche.
+me-* : ajoutera une marge à droite.
 mx-* : ajoutera une marge à gauche et à droite.
 my-* : ajoutera une marge en haut et en bas.
 #### b. Soit une classe du type .m{côtés}-{media}-{taille}

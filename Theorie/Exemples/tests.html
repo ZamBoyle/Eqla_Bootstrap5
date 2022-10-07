@@ -15,6 +15,31 @@
 
 <body>
     <div class="container">
+
+      <ol>
+        <li>first item</li>
+        <li>
+          second item
+          <!-- Look, the closing </li> tag is not placed here! -->
+          <ol>
+            <li>second item first subitem</li>
+            <li>second item second subitem</li>
+            <li>second item third subitem</li>
+          </ol>
+          <!-- Here is the closing </li> tag -->
+        </li>
+        <li>third item</li>
+      </ol>
+
+
+
+      <p class="bg-primary d-inline">Je suis un paragraphe.</p>
+      <div class="bg-danger text-white d-inline">Je suis un div collé au paragraphe grâce à une classe magique.</div>
+<br/>
+      <p class="p-2 bg-primary text-center text-white w-50 d-inline-block">Je serai inline-block<br/>Je suis très bien tu sais ?</p>
+<div class="p-2 bg-dark text-white w-25 d-inline-block">Je serai un autre inline-block<br/>Et moi je suis encore plus beau !</div>
+
+
       <div class="border bg-info rounded p-3">
         <div class="border bg-danger rounded p-3">
             <div class="border bg-warning rounded p-3">
