@@ -48,7 +48,7 @@ Les avantages d’utiliser Bootstrap sont les suivants :
 - Gain de temps en développement.
 - Cohérence dans le design de votre site.
 - Pensé Mobile First : Android, IOS, Windows 10 mobile.
-- Compatible à la majorité des navigateurs : tous les navigateurs. Sauf IE pour Bootstrap 5.
+- Compatible à la majorité des navigateurs : tous les navigateurs. Sauf IE pour Bootstrap 5.x
 - Responsive.
 - Open Source.
 ### 4. Bootstrap 4.x et Bootstrap 5
@@ -59,13 +59,13 @@ La version 4.x dépend de la librairie JavaScript jQuery qui doit impérativemen
 
 Mais le passage à Bootstrap 5 ne devrait pas être trop difficile normalement. De plus Bootstrap 5 va se libérer de sa dépendance à jQuery et fera du pur JavaScript (appelé parfois Vanilla JS).
 
-En mai 2022, la version 5.2 est la dernière version de Bootstrap. Et comme dit précédemment, elle se libère de sa dépendance avec jQuery. Cependant, il ne vous est pas interdit d'utiliser jQuery.
+En octobre 2023, la version 5.3 est la dernière version de Bootstrap. Et comme dit précédemment, elle se libère de sa dépendance avec jQuery. Cependant, il ne vous est pas interdit d'utiliser jQuery.
 
 Si vous devez continuer de supporter Internet Explorer alors vous devrez vous tourner vers Bootstrap 4. Car Internet Explorer n'est plus supporté depuis la version 5. Sachez que maintenant, Microsoft Edge (basé sur Chromium) est le nouveau navigateur de Microsoft. Et c'est une bénédiction pour les développeurs. :-) 
 
 ### 5. Comment Utiliser Bootstrap ?
 
-Bootstrap est un Framework qui est composé d’un ensemble de fichiers. Pour utiliser Bootstrap, il nous faut donc utiliser des fichiers que vous pourrez trouver à cette adresse : https://getbootstrap.com/docs/5.2/getting-started/download/
+Bootstrap est un Framework qui est composé d’un ensemble de fichiers. Pour utiliser Bootstrap, il nous faut donc utiliser des fichiers que vous pourrez trouver à cette adresse : https://getbootstrap.com/docs/5.3/getting-started/download/#cdn-via-jsdelivr
 
 Il y a deux manières d’utiliser ces fichiers :
 
@@ -76,30 +76,30 @@ Il y a deux manières d’utiliser ces fichiers :
     - 1 fichier JavaScript : c’est un bundle (un paquet) qui contient Popper et Bootstrap. (C'est celui que je prends personnellement)
 - Soit vous utilisez des adresses qui pointent sur ce qu’on appelle des CDN(Content Delivery Network). L’avantage des CDN c’est qu’ils sont super rapides mais si vous voulez les utiliser, vous devez ajouter l’attribut integrity pour vérifier que c’est le code javascript que vous voulez et qu’il n’a pas été remplacé par un hacker. Les navigateurs modernes vérifieront grâce à la valeur mise pour l’attribut integrity qu’il s’agit bien du fichier que vous voulez.
     
-Cependant, avec Bootstrap 4.x et versions antérieures, il est impératif d’ajouter la librairie JavaScript jQuery. Elle doit être chargée avant les fichiers JavaScript Popperet Bootstrap. C’est-à-dire que dans votre page HTML vous mettrez la balise \<javascript> de jQuery avant celles de Popper et de Bootstrap. Le cas échéant, Bootstrap ne fonctionnera pas. 
+Cependant, avec Bootstrap 4.x et versions antérieures, il est impératif d’ajouter la librairie JavaScript jQuery. Elle doit être chargée avant les fichiers JavaScript Popperet Bootstrap. C’est-à-dire que dans votre page HTML vous mettrez la balise \<javascript\> de jQuery avant celles de Popper et de Bootstrap. Le cas échéant, Bootstrap ne fonctionnera pas. 
 
 C’est pourquoi Bootstrap 5 n’utilise plus jQuery. Le JavaScript moderne permet de s’en affranchir.
 
-Vous aurez des exemples d’intégration à la page suivante : https://getbootstrap.com/docs/5.2/getting-started/introduction/
+Vous aurez des exemples d’intégration à la page suivante : https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
 Pour vous simplifier la tâche, j’ai créé dans le répertoire [Exercices/Templates](/Exercices/Templates/) deux fichiers html modèles pour commencer vos exercices. Ils se nomment [template1.html](/Exercices/Templates/template1.html) et [template2.html](/Exercices/Templates/template2.html). Ils comprennent les ressources nécessaires qui pointent sur des CDN. Maintenant, libre à vous de l’utiliser ou non. Mais ça vous fera gagner du temps.
 
-Dans ces fichiers, j’ai fait pointer vers la dernière version 5.2 de Bootstrap. De plus, j’ai ajouté un fichier CSS supplémentaire (Icônes Bootstrap) que nous discuterons plus tard mais comme ça nous avons notre page web modèle Bootstrap déjà prête pour cela.
+Dans ces fichiers, j’ai fait pointer vers la dernière version 5.3 de Bootstrap. De plus, j’ai ajouté un fichier CSS supplémentaire (Icônes Bootstrap) que nous discuterons plus tard mais comme ça nous avons notre page web modèle Bootstrap déjà prête pour cela.
 
 La différence entre [template1.html](/Exercices/Templates/template1.html) et [template2.html](/Exercices/Templates/template2.html).html, c'est que [template2.html](/Exercices/Templates/template2.html) comprend le \<div class="container"> juste après la balise \<body>.
 
 ## IV. Intégration des Fichiers Bootstrap
-Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/getting-started/introduction/
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
 Nous allons le faire depuis l'[exercice n°1](/Exercices/Exercice1.md "Exercice sur l'intégration des fichiers Bootstrap: css et js").
 
 ## V. Fonctionnement de Bootstrap
 
-Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/getting-started/introduction/
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.3/getting-started/introduction/
 Bootstrap fonctionne principalement avec l’utilisation de [classes css](https://developer.mozilla.org/fr/docs/Web/CSS/Class_selectors "Sélecteurs de classe sur Mozilla"). Il faut savoir que le fichier CSS de Bootstrap quand il n’est pas minifié (ramené sur une ligne pour qu’il prenne moins de place) fait 10400 lignes… Il n’est pas nécessaire de connaître par cœur toutes les classes. Personnellement j’utilise le site principal et Google.
 
 ### La classe .container
-La première classe que l’on va utiliser est la classe [.container](https://getbootstrap.com/docs/5.2/layout/containers/ "Les classes containers sur Bootstrap") que l’on applique à un div. Elle permettra d’adapter la largeur du div en fonction de la résolution de l’écran du périphérique utilisé. Elle effectue aussi un léger padding gauche et droit.
+La première classe que l’on va utiliser est la classe [.container](https://getbootstrap.com/docs/5.3/layout/containers/ "Les classes containers sur Bootstrap") que l’on applique à un div. Elle permettra d’adapter la largeur du div en fonction de la résolution de l’écran du périphérique utilisé. Elle effectue aussi un léger padding gauche et droit.
 
 J'utilise la notation .container (point container) que c'est une classe définie dans le fichier css de Bootstrap. Mais son utilisation avec l'attribut class d'une balise se fera sans ce point.
 
@@ -224,7 +224,7 @@ Passons à la pratique avec l'[exercice n°2](/Exercices/Exercice2.md "Exercice 
     
 ## VI. Manipulation du texte
 
-Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/utilities/text/
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.3/utilities/text/
 ### 1. Alignement du texte
 
 - La classe .text-start (en bs4 .text-left)
@@ -317,7 +317,7 @@ Passons à la pratique avec l'[exercice n°3](/Exercices/Exercice3.md "Exercice 
 
 
 ## VII. Les images
-Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/content/images/
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.3/content/images/
 Nous allons voir que Bootstrap permet de facilement rendre une image responsive, en faire une jolie vignette, aligner celle-ci.
 
 Évidemment toutes ces classes peuvent être combinées entre elles.
@@ -354,7 +354,7 @@ Il suffit d'utiliser la classe .rounded
 ```
 
 ## VIII. L'Accessibilité
-Sur le site Bootstrap : https://getbootstrap.com/docs/5.0/getting-started/accessibility/
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.3/getting-started/accessibility/
 Bootstrap fournit différentes classes permettant à des messages d'être lues seulement pour les utilisateurs de lecteurs d'écran.
 
 Bootstrap fournit aussi des classes permettant de réduire certaines de ses animations: transition, ouverture, d'une fenêtre modale, etc.
@@ -394,7 +394,7 @@ Voici comment faire (en anglais):
 En effet, en termes d'accessibilité, il vaut mieux éviter les animations.
 
 ## IX. Les breakpoints
-Sur Bootstrap: https://getbootstrap.com/docs/5.2/layout/breakpoints/
+Sur Bootstrap: https://getbootstrap.com/docs/5.3/layout/breakpoints/
 
 Comme nous l'avons déjà vu il existe différents breakpoints (points d'arrêt) que nous avons déjà utilisés et vu dans le fichier css de Bootstrap.
 
@@ -412,8 +412,8 @@ En voici le résumé car vous me l'avez souvent demandé.;-)
 ## X. Les couleurs & Couleurs d'Arrière Plan.
 
 Ce chapitre est une synthèse des deux pages Bootstrap 5:
-- [Colors](https://getbootstrap.com/docs/5.2/utilities/colors/)
-- [Background](https://getbootstrap.com/docs/5.2/utilities/background/)
+- [Colors](https://getbootstrap.com/docs/5.3/utilities/colors/)
+- [Background](https://getbootstrap.com/docs/5.3/utilities/background/)
 
 Comme GitHub ne va pas interprêter nos couleurs, j'ai fait une page web qui vous montrera visuellement les couleurs que Bootstrap gère.  
 
@@ -421,7 +421,7 @@ Pour avoir un visuel de cette partie, allez à la page [suivante](http://zamboyl
 
 ## XI. La Grille Bootstrap
 
-Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/layout/grid/
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.3/layout/grid/
 
 Et voici des exemples: [ici](http://zamboyle.github.io/htmlpreview?https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Theorie/Exemples/grid.html)
 
@@ -534,7 +534,7 @@ Donc si la résolution est > = md, on aura 3 colonnes identiques (.col-md-4). Da
 
 
 ## XII. Les classes d'affichages
-Sur Bootstrap: https://getbootstrap.com/docs/5.2/utilities/display
+Sur Bootstrap: https://getbootstrap.com/docs/5.3/utilities/display
 Reprenons le synopsis de la page de Bootstrap traduite avec Google Translate bien entendu ;-)
 > Basculez rapidement et de manière réactive la valeur d'affichage des composants et plus encore avec nos utilitaires d'affichage. Inclut la prise en charge de certaines des valeurs les plus courantes, ainsi que des extras pour contrôler l'affichage lors de l'impression.
 
@@ -627,7 +627,7 @@ Exemple:
 <div class="d-none d-lg-block d-print-block">Caché jusqu'à un écran large mais sera toujours affiché lors de l'impression.</div>
 ```
 ## XIII. Les espacements
-Sur le site Bootstrap : https://getbootstrap.com/docs/5.2/utilities/spacing/
+Sur le site Bootstrap : https://getbootstrap.com/docs/5.3/utilities/spacing/
 
 Dans Bootstrap, nous avons des classes qui permettent d’ajouter des paddings ou des marges
 
@@ -654,7 +654,7 @@ Donc on pourra avoir deux formes : .p{côtés}-{taille} et p{côtés}-{media}-{
 Des exemples peuvent être vus à cette [page](http://zamboyle.github.io/htmlpreview?https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Theorie/Exemples/spacing.html)
 
 ## XIV Les formulaires
-Sur le site Bootstrap: [Les formulaires](https://getbootstrap.com/docs/5.2/forms/overview/)
+Sur le site Bootstrap: [Les formulaires](https://getbootstrap.com/docs/5.3/forms/overview/)
 
 Pour le Hackathon, nous allons en profiter pour voir les class Bootstrap en rapport avec les formulaires.
 
