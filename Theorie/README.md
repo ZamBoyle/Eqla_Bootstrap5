@@ -190,7 +190,7 @@ Regardons rapidement ce CSS pour la classe .container On voit que tout changera 
 - Cas n°2 : résolution supérieure ou égale à 576 pixels et inférieure à 768 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 540 pixels.
 - Cas n°3 : résolution supérieure ou égale à 768 pixels et inférieure à 992 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 720 pixels.
 - Cas n°4 : résolution supérieure ou égale à 992 pixels et inférieure à 1200 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 960 pixels.
-- Cas n°5 : résolution supérieure ou égale à 1200 pixels et inférieure à 1140 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 1140 pixels.
+- Cas n°5 : résolution supérieure ou égale à 1200 pixels et inférieure à 1140 pixels, l’élément s’affichera au centre de l’écran et sa largeur sera de 1320 pixels.
 - Cas n°6 (nouveau Bootstrap 5) : résolution supérieure ou égale à 1400 pixels et inférieure à 1320 pixels, l'élément s'affichera au centre de l'écran et sa largeur sera de 1320 pixels.
 
 ### La classe .container-fluid
