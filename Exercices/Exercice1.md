@@ -23,7 +23,7 @@ Pour rappel, utilisez la balise [\<link>](https://developer.mozilla.org/fr/docs/
 ## Partie 5 - Ajout du fichier js de Bootstrap
 
 Juste avant la fermeture de la balise [\<body>](https://developer.mozilla.org/fr/docs/Web/HTML/Element/body "Element body sur Mozilla"), ajoutez le fichier suivant:
-- [bootstrap.bundle.min.js]([Files/bootstrap.bundle.min.js?raw=1](https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Files/bootstrap.bundle.min.js)) (Il faut donc le télécharger et le mettre dans le répertoire de vos exercices)
+- [bootstrap.bundle.min.js](https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Files/bootstrap.bundle.min.js) (Il faut donc le télécharger et le mettre dans le répertoire de vos exercices)
 
 Pour rappel, utilisez la balise [\<script>](https://developer.mozilla.org/fr/docs/Web/HTML/Element/script#exemples "Element script sur Mozilla") avec les bons attributs.
 
