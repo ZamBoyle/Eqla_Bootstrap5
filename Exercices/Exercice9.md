@@ -8,7 +8,7 @@ Donc n'utilisez pas toujours des bordures à vos div, elles sont uniquement util
 ## Partie 1 - Création du fichier Exercice9.html
 Créez un fichier nommé Exercice9.html dans le répertoire EqlaExercices\Bootstrap.  
 
-Copiez le contenu du fichier [template2.html](/Exercices/Templates/template2.html?raw=1) dans le fichier Exercice9.html
+Copiez le contenu du fichier [template2.html](https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Templates/template2.html) dans le fichier Exercice9.html
 ## Partie 2 - Ajout d'un titre de page
 Mettez comme titre: Exercice9
 

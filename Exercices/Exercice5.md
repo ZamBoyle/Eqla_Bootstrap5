@@ -4,7 +4,7 @@ L'exercice portera l'utilisation des classes d'[accessibilité](/Theorie/README.
 ## Partie 1 - Création du fichier Exercice5.html
 Créez un fichier nommé Exercice5.html dans le répertoire EqlaExercices\Bootstrap.  
 
-Copiez le contenu du fichier [template2.html](/Exercices/Templates/template2.html?raw=1) dans le fichier Exercice5.html
+Copiez le contenu du fichier [template2.html](https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Templates/template2.html) dans le fichier Exercice5.html
 ## Partie 2 - Ajout d'un titre de page
 Mettez comme titre: Exercice5
 

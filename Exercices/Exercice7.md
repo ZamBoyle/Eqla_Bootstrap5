@@ -10,7 +10,7 @@ Textes pour les colonnes:
 ## Partie 1 - Création du fichier Exercice7.html
 Créez un fichier nommé Exercice7.html dans le répertoire EqlaExercices\Bootstrap.  
 
-Copiez le contenu du fichier [template2.html](/Exercices/Templates/template2.html?raw=1) dans le fichier Exercice7.html
+Copiez le contenu du fichier [template2.html](https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Templates/template2.html) dans le fichier Exercice7.html
 ## Partie 2 - Ajout d'un titre de page
 Mettez comme titre: Exercice7
 
