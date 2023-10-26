@@ -16,14 +16,14 @@ N'oubliez pas que pour Bootstrap il faut absolument de l'html5. Pour cela, vous 
 ## Partie 4 - Ajout du fichier css de Bootstrap
 
 Dans la balise [\<head>](https://developer.mozilla.org/fr/docs/Web/HTML/Element/head "Element head sur Mozilla"), ajoutez le fichier suivant:
-- [bootstrap.min.css](Files/bootstrap.min.css?raw=1) (Il faut donc le télécharger et le mettre dans le répertoire de vos exercices)
+- [bootstrap.min.css](https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Files/bootstrap.min.css) (Il faut donc le télécharger et le mettre dans le répertoire de vos exercices)
 
 Pour rappel, utilisez la balise [\<link>](https://developer.mozilla.org/fr/docs/Web/HTML/Element/link "Element link sur Mozilla") avec les bons attributs.
 
 ## Partie 5 - Ajout du fichier js de Bootstrap
 
 Juste avant la fermeture de la balise [\<body>](https://developer.mozilla.org/fr/docs/Web/HTML/Element/body "Element body sur Mozilla"), ajoutez le fichier suivant:
-- [bootstrap.bundle.min.js](Files/bootstrap.bundle.min.js?raw=1) (Il faut donc le télécharger et le mettre dans le répertoire de vos exercices)
+- [bootstrap.bundle.min.js]([Files/bootstrap.bundle.min.js?raw=1](https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Files/bootstrap.bundle.min.js)) (Il faut donc le télécharger et le mettre dans le répertoire de vos exercices)
 
 Pour rappel, utilisez la balise [\<script>](https://developer.mozilla.org/fr/docs/Web/HTML/Element/script#exemples "Element script sur Mozilla") avec les bons attributs.
 
