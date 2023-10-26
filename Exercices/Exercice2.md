@@ -4,7 +4,7 @@ L'exercice portera l'utilisation de la classe [.container](/Theorie/README.md#la
 ## Partie 1 - Création du fichier Exercice2.html
 Créez un fichier nommé Exercice2.html dans le répertoire EqlaExercices\Bootstrap.  
 
-Copiez le contenu du fichier [template1.html](/Exercices/Templates/template1.html?raw=1) dans le fichier Exercice2.html
+Copiez le contenu du fichier [template1.html](https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Templates/template1.html) dans le fichier Exercice2.html
 ## Partie 2 - Ajout d'un titre
 Mettez comme titre: Exercice2
 
