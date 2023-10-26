@@ -4,9 +4,9 @@ L'exercice portera la [manipulation du texte](/Theorie/README.md#vi-manipulation
 ## Partie 1 - Création du fichier Exercice3.html
 Créez un fichier nommé Exercice3.html dans le répertoire EqlaExercices\Bootstrap.  
 
-Copiez le contenu du fichier [template2.html](/Exercices/Templates/template2.html?raw=1) dans le fichier Exercice3.html
+Copiez le contenu du fichier [template2.html](https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Templates/template2.html) dans le fichier Exercice3.html
 
-J'insiste bien sur le fait d'utiliser le [template2.html](/Exercices/Templates/template2.html?raw=1) et non template1.html.
+J'insiste bien sur le fait d'utiliser le [template2.html](https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Templates/template2.html) et non template1.html.
 ## Partie 2 - Ajout d'un titre
 Mettez comme titre h1: Exercice3
 
