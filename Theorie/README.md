@@ -1,4 +1,68 @@
 # Bootstrap 5
+
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Bootstrap 5](#bootstrap-5)
+  - [I. A propos](#i-a-propos)
+  - [II. Prérequis](#ii-prérequis)
+  - [III. Présentation de Bootstrap](#iii-présentation-de-bootstrap)
+    - [1. Brainstorming : Qu’est-ce que Bootstrap pour vous ?](#1-brainstorming--quest-ce-que-bootstrap-pour-vous-)
+    - [2. Brève présentation de Bootstrap](#2-brève-présentation-de-bootstrap)
+    - [3. Pourquoi utiliser Bootstrap ?](#3-pourquoi-utiliser-bootstrap-)
+    - [4. Bootstrap 4.x et Bootstrap 5](#4-bootstrap-4x-et-bootstrap-5)
+    - [5. Comment Utiliser Bootstrap ?](#5-comment-utiliser-bootstrap-)
+  - [IV. Intégration des Fichiers Bootstrap](#iv-intégration-des-fichiers-bootstrap)
+  - [V. Fonctionnement de Bootstrap](#v-fonctionnement-de-bootstrap)
+    - [La classe .container](#la-classe-container)
+    - [La classe .container-fluid](#la-classe-container-fluid)
+  - [VI. Manipulation du texte](#vi-manipulation-du-texte)
+    - [1. Alignement du texte](#1-alignement-du-texte)
+    - [2. Alignement du texte fonction de l’écran](#2-alignement-du-texte-fonction-de-lécran)
+    - [3. Les classes de mise en forme](#3-les-classes-de-mise-en-forme)
+    - [4. Transformation du texte](#4-transformation-du-texte)
+  - [VII. Les images](#vii-les-images)
+    - [1. Responsive](#1-responsive)
+    - [2. Thumbnail](#2-thumbnail)
+    - [3. Alignement](#3-alignement)
+    - [4. Images aux bords arrondis](#4-images-aux-bords-arrondis)
+  - [VIII. L'Accessibilité](#viii-laccessibilité)
+    - [1. Lecteur d'écran](#1-lecteur-décran)
+    - [2. Animation réduite](#2-animation-réduite)
+  - [IX. Les breakpoints](#ix-les-breakpoints)
+  - [X. Les couleurs & Couleurs d'Arrière Plan.](#x-les-couleurs--couleurs-darrière-plan)
+  - [XI. La Grille Bootstrap](#xi-la-grille-bootstrap)
+    - [1. Classes pour un nombre fixe de colonnes](#1-classes-pour-un-nombre-fixe-de-colonnes)
+    - [2. Classes pour un nombre de colonnes variables en fonction de la résolution](#2-classes-pour-un-nombre-de-colonnes-variables-en-fonction-de-la-résolution)
+    - [3.	Mixe entre classes à nombre de colonnes fixes et variables](#3-mixe-entre-classes-à-nombre-de-colonnes-fixes-et-variables)
+  - [XII. Les classes d'affichages](#xii-les-classes-daffichages)
+    - [1. Notation](#1-notation)
+    - [2. Cacher/Montrer des éléments en fonction de l'écran](#2-cachermontrer-des-éléments-en-fonction-de-lécran)
+      - [2.1 Cacher des éléments](#21-cacher-des-éléments)
+      - [2.1 Montrer des éléments](#21-montrer-des-éléments)
+    - [3. Affichage lors de l'impression](#3-affichage-lors-de-limpression)
+  - [XIII. Les espacements](#xiii-les-espacements)
+    - [1. Les marges](#1-les-marges)
+      - [a. Soit une classe du type .m{côtés}-{taille}.](#a-soit-une-classe-du-type-mcôtés-taille)
+      - [b. Soit une classe du type .m{côtés}-{media}-](#b-soit-une-classe-du-type-mcôtés-media-)
+    - [2. Les paddings](#2-les-paddings)
+  - [XIV Les formulaires](#xiv-les-formulaires)
+    - [1. classe form-label](#1-classe-form-label)
+    - [2. classe form-control](#2-classe-form-control)
+    - [3. form-select](#3-form-select)
+    - [4. required](#4-required)
+    - [5. disabled](#5-disabled)
+    - [6. form-floating](#6-form-floating)
+    - [7. Marges](#7-marges)
+    - [8. Classes btn et btn-primary](#8-classes-btn-et-btn-primary)
+    - [9. Layout avec le système de grille](#9-layout-avec-le-système-de-grille)
+
+<!-- /code_chunk_output -->
+
+
+
 ## I. A propos
 
 Ce document contient les notes de cours sur Bootstrap. Il est difficile de voir tout Bootstrap. En effet, généralement Bootstrap consiste dans l'application d'une multitude de classes. On consulte la documentation concernant l'aspect que l'on veut avoir des informations. C'est pourquoi, ici je verrai Bootstrap dans les grandes lignes. Mais pas dans les détails car nous n'avons pas le temps.
@@ -329,7 +393,7 @@ Bootstrap permet de rapidement permettre à une image d’être responsive. Ajou
 ```
 Ici on a ajouté l’attribut width="10000px". L’image ne fera bien sûr jamais 10000 pixels. Bootstrap veille au grain. 😊 
 ### 2. Thumbnail
-La classe .img-thumbnail ajoute à l’image un bord blanc arrondi.
+La classe .img-thumbnail ajoute à l’image un bord blanc arrondi. Si vous utilisez cette classe, vous n'avez pas besoin d'utilisez la classe .img-fluid. En effet, .img-thumbnail rend l'image responsive.
 ```html
 <img src="https://zamboyle.github.io/Cours/2022/Bootstrap/Exercices/Images/Paris.jpg" class="img-thumbnail" alt="Image de paris" />
 ```
