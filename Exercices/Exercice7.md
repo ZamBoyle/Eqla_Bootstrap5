@@ -19,7 +19,7 @@ Ajoutez le titre 1 suivant: La Grille de Bootstrap
 
 ## Partie 4 - 4 colonnes
 - Ajoutez un titre 2: 4 colonnes de tailles fixes
-- Affichez quatre colonnes colonnes à taille fixe prenant toute la largeur.
+- Affichez quatre colonnes à taille fixe prenant toute la largeur.
 
 ## Partie 5 - 3 colonnes à taille fixe
 - Ajoutez un titre 2: 3 colonnes à taille fixe
