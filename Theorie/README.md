@@ -58,6 +58,8 @@
       - [b. navbar-light](#b-navbar-light)
       - [c. bg-light](#c-bg-light)
     - [6. navbar-brand](#6-navbar-brand)
+      - [a. Exemple sans logo:](#a-exemple-sans-logo)
+      - [b. Exemple avec logo:](#b-exemple-avec-logo)
     - [Exemple complet](#exemple-complet)
     - [4. navbar-light ou navbar-dark](#4-navbar-light-ou-navbar-dark)
   - [XIV Les formulaires](#xiv-les-formulaires)
@@ -802,14 +804,21 @@ La classe `navbar-light` permet de rendre la navbar claire. En effet, la navbar 
 La classe `bg-light` permet de rendre le fond de la navbar clair. En effet, le fond de la navbar est par défaut foncé.
 
 ### 6. navbar-brand
-La classe `navbar-brand` permet de mettre un logo ou un texte dans la navbar. C'est généralement le nom du site. 
+La classe `navbar-brand` permet de mettre un logo ou un texte dans la navbar. C'est généralement le nom du site ou le logo du site.
 
+On applique cette classe à une balise `<a>` et comme lien, on met le lien vers la page d'accueil du site.
+
+#### a. Exemple sans logo:
 ```html
 <a class="navbar-brand" href="#">Navbar</a>
 ```
 
-
-
+#### b. Exemple avec logo:
+```html
+<a class="navbar-brand" href="#">
+    <img src="https://zamboyle.github.io/assets/img/Logo_Eqla.png" alt="logo d'Eqla" width="30" height="24">
+</a>
+```
 
 
 
