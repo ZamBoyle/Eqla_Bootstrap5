@@ -19,3 +19,6 @@ Chaque exercice sera nommé par exemple Exercice1.html, Exercice2.html, etc.
 - [Exercice n°7](Exercice7.md) - La Grille de Bootstrap.
 - [Exercice n°8](Exercice8.md) - Les affichages/displays.
 - [Exercice n°9](Exercice9.md) - Les espacements/spacings.
+- [Exercice n°10](Exercice10.md) - Les barres de navigation / navbar.
+- [Exercice n°11](Exercice11.md) - Everything ! (Révisions)
+- [Exercice n°12](Exercice12.md) - Les formulaires.

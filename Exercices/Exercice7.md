@@ -64,13 +64,9 @@ Voici 12 images pour la galerie qui devrait être responsives (il y a une classe
     - 4 images par ligne sur les écrans de résolutions md (moyenne).
     - 6 images par ligne sur les écrans de résolutions lg (large).
 - À l'intérieur de chaque <div> de colonne, insérez une image. Vous pouvez utiliser les images fournies ci-dessus et utiliser une classe vue en classe pour rendre les images responsives.
+- N'oubliez pas d'ajouter une alternative à chaque image.
 - Testez votre Page.
 - Appelez-moi pour qu'on vérifie ensemble.
-- Ajoutez sur le div row la classe: g-2
-- Testez votre Page.
-- Que fais la classe g-2 ?
-- Appelez-moi pour qu'on vérifie ensemble.
-- Essayez à la place de g-2: g-0, g-3, g-4, g-5.
 - Vous pouvez voir le résultat de l'exercice: [Galerie de Cupcakes](https://zamboyle.github.io/htmlpreview/?https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Exercice7.html).
 
 ## Partie 9 - Envoi sur GitHub

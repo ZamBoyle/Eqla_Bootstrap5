@@ -55,15 +55,28 @@
     - [2. navbar dans un container ou container-fluid](#2-navbar-dans-un-container-ou-container-fluid)
     - [3. Structure](#3-structure)
     - [4. container-fluid](#4-container-fluid)
-    - [5. nav](#5-nav)
+    - [5. navbar](#5-navbar)
       - [a. navbar-expand-lg](#a-navbar-expand-lg)
       - [b. navbar-light](#b-navbar-light)
       - [c. bg-light](#c-bg-light)
     - [6. navbar-brand](#6-navbar-brand)
       - [a. Exemple sans logo:](#a-exemple-sans-logo)
       - [b. Exemple avec logo:](#b-exemple-avec-logo)
+    - [7. navbar-toggler](#7-navbar-toggler)
+      - [a. data-bs-toggle="collapse"](#a-data-bs-togglecollapse)
+      - [b. data-bs-target="#navbarNav"](#b-data-bs-targetnavbarnav)
+      - [c. aria-controls="navbarNav"](#c-aria-controlsnavbarnav)
+      - [d. aria-expanded="false"](#d-aria-expandedfalse)
+      - [e. aria-label="Toggle navigation"](#e-aria-labeltoggle-navigation)
+      - [f. navbar-toggler-icon](#f-navbar-toggler-icon)
+    - [8. collapse navbar-collapse](#8-collapse-navbar-collapse)
+      - [a. id="navbarNav"](#a-idnavbarnav)
+    - [9. navbar-nav](#9-navbar-nav)
+    - [10. nav-item](#10-nav-item)
+    - [11. nav-link](#11-nav-link)
+      - [a. active](#a-active)
+      - [b. aria-current="page"](#b-aria-currentpage)
     - [Exemple complet](#exemple-complet)
-    - [4. navbar-light ou navbar-dark](#4-navbar-light-ou-navbar-dark)
   - [XIV Les formulaires](#xiv-les-formulaires)
     - [1. classe form-label](#1-classe-form-label)
     - [2. classe form-control](#2-classe-form-control)
@@ -653,8 +666,28 @@ Exemple:
 Dans cet exemple, on a 5 colonnes par ligne pour une résolution supérieure ou égale à lg. Dans le cas contraire, on aura 2 colonnes par ligne.
 
 ### 5. Gutters / les gouttières
-Les gouttières sont les espaces entre les colonnes. Par défaut, Bootstrap met un espace de 1.5rem (24px) entre les colonnes. Cet espace est géré par la classe .gutter-* où * est un nombre compris entre 0 et 5.
+Les gouttières sont les espaces entre les colonnes. Par défaut, Bootstrap met un espace de 1.5rem (24px) entre les colonnes.
+Ces espaces sont gérés par les classes:
+- .g-\* où * est un nombre compris entre 0 et 5. Cette gouttière sera appliquée à toutes les résolutions verticalement et horizontalement.
+- .gx-\* où * est un nombre compris entre 0 et 5. Cette gouttière sera appliquée à toutes les résolutions horizontalement.
+- .gy-\* où * est un nombre compris entre 0 et 5. Cette gouttière sera appliquée à toutes les résolutions verticalement.
+- .g\*-\*-\* où le premier * est soit rien, soit x, soit y. Le second * est la résolution (sm, md, lg, xl, xxl). Le troisième * est un nombre compris entre 0 et 5. Cette gouttière sera appliquée à la résolution choisie.
 
+**Exemples**: 
+- g-lg-2: gouttière de 0.5rem (8px) pour la résolution lg.
+- gx-lg-2: gouttière de 0.5rem (8px) pour la résolution lg horizontalement.
+- gy-lg-2: gouttière de 0.5rem (8px) pour la résolution lg verticalement.
+- g-2: gouttière de 0.5rem (8px) pour toutes les résolutions.
+
+Reprenez votre exerice précédent.
+- Ajoutez la classe .g-2 à votre div .row. Vous verrez que les colonnes seront plus espacées verticalement et horizontalement.
+- Ajoutez sur le div row la classe: g-2
+- Testez votre Page.
+- Que fais la classe g-2 ?
+- Appelez-moi pour qu'on vérifie ensemble.
+- Essayez à la place de g-2: g-0, g-3, g-4, g-5.
+
+Je trouve sympathique aussi l'effet de g-0 dans notre galerie. ;-)
 
 ## XII. Les classes d'affichages
 Sur Bootstrap: https://getbootstrap.com/docs/5.3/utilities/display
@@ -790,7 +823,7 @@ En résumé, bien que la navbar puisse inclure d'autres éléments comme des log
 ### 2. navbar dans un container ou container-fluid
 
 Une navbar peut être placée dans un container ou un container-fluid. Cela dépend de l'effet que vous voulez obtenir. Si vous optez pour un container, la navbar sera centrée. Si vous optez pour un container-fluid, la navbar sera étendue sur toute la largeur de l'écran.
-
+<!--
 J'entends déjà des questions dans vos têtes:
 - _On a toujours utilisé un container pour centrer notre page. Pourquoi ne pas utiliser un container pour centrer notre navbar ?_
   > En effet, nous avons toujours utilisé un container pour centrer notre page. Mais la navbar est un élément à part. Elle est généralement placée en haut de la page. Donc, il est logique de l'étendre sur toute la largeur de l'écran. C'est pour cela que nous utiliserons un container-fluid pour la navbar. Mais ce n'est pas une obligation. Vous pouvez utiliser un div avec la classe container pour la navbar et le contenu. C'est à vous de voir. 
@@ -801,13 +834,12 @@ J'entends déjà des questions dans vos têtes:
   Je préfère utiliser un container-fluid pour la navbar et un container pour le contenu.
 - _On peut avoir un div avec la classe container-fluid pour la navbar et un div avec une classe container-fluid pour le contenu ?_
   > Oui mais alors on ne fera qu'un seul container-fluid pour la navbar et le contenu.
-
+-->
 
 ### 3. Structure
 Comme vous le savez en html, on peut avoir des balises qui en contiennent d'autres comme les poupées russes. C'est le cas de la balise `<nav>` qui peut contenir d'autres balises comme `<div>`, `<ul>`, `<li>`, etc.
 
-L'exemple de la documentation de Bootstrap met un div avec une classe container-fluid dans un nav. Je vais le mettre avant le nav. C'est juste pour que ça soit plus facile de comprendre la structure.
-
+L'exemple de la documentation de Bootstrap met un div avec une classe container-fluid dans un nav. Je vais le mettre avant le nav. C'est juste pour que ça soit plus facile de comprendre la structure. Et vous ne verrez pas de différence.
 Comme dit précédemment, nous pourrions avoir un div avec une classe container. Mais alors nous serions limités dans la longueur de notre menu. C'est pourquoi, on utilise la classe container-fluid.
 
 Je vais maintenant dans les points suivants vous expliquer la structure d'une navbar. Après, nous aurons un exemple complet.
@@ -816,18 +848,15 @@ Je vais maintenant dans les points suivants vous expliquer la structure d'une na
 
 Le div aura la classe `.container-fluid`. Ce div contiendra la balise `nav`. Cela permettra d'étendre la navbar sur toute la largeur de l'écran. 
 
-### 5. nav
-
-La balise `nav` contient les éléments de la navbar. C'est elle qui va permettre de mettre en forme notre navbar. 
-
 ```html
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- Contenu de la navbar que nous allons voir -->
-    </nav>
+    <!-- Ici viendra votre navbar -->
 </div>
 ```
 
+### 5. navbar
+
+La balise `navbar` contiendra le contenu de la navbar. C'est-à-dire le logo, les options de navigation, etc.
 
 ```html
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -854,7 +883,6 @@ On applique cette classe à une balise `<a>` et comme lien, on met le lien vers 
 ```html
 <a class="navbar-brand" href="#">Navbar</a>
 ```
-
 #### b. Exemple avec logo:
 ```html
 <a class="navbar-brand" href="#">
@@ -862,14 +890,84 @@ On applique cette classe à une balise `<a>` et comme lien, on met le lien vers 
 </a>
 ```
 
+### 7. navbar-toggler
+La classe `navbar-toggler` permet de mettre un bouton hamburger. Ce bouton hamburger permettra d'afficher les options de navigation lorsque la résolution est inférieure à celle définit dans la classe `navbar-expand-*` où * est la résolution.
 
+```html
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+```
+
+#### a. data-bs-toggle="collapse"
+La classe `data-bs-toggle="collapse"` permet de dire que le bouton hamburger permettra d'afficher les options de navigation lorsque la résolution est inférieure à celle définit dans la classe `navbar-expand-*` où * est la résolution.
+
+#### b. data-bs-target="#navbarNav"
+La classe `data-bs-target="#navbarNav"` permet de dire que le bouton hamburger permettra d'afficher les options de navigation de la navbar qui a l'id `navbarNav`.
+
+#### c. aria-controls="navbarNav"
+La classe `aria-controls="navbarNav"` permet de dire que le bouton hamburger permettra d'afficher les options de navigation de la navbar qui a l'id `navbarNav`.
+
+#### d. aria-expanded="false"
+L'attribut `aria-expanded` indique l'état d'expansion d'un élément à des technologies d'assistance comme les lecteurs d'écran. Cet attribut aide les utilisateurs de ces technologies à comprendre si le contenu associé à un élément déclencheur est déplié et visible (aria-expanded="true") ou replié et non visible (aria-expanded="false").
+
+#### e. aria-label="Toggle navigation"
+L'attribut `aria-label` fournit une étiquette accessible pour les éléments qui ne contiennent pas de texte visible. Il est utilisé pour décrire brièvement l'action effectuée par l'élément. Dans notre cas, il permet de dire que le bouton hamburger permet d'afficher les options de navigation.
+
+#### f. navbar-toggler-icon
+La classe `navbar-toggler-icon` permet d'afficher le bouton en forme d'hamburger: 3 lignes horizontales.
+
+
+### 8. collapse navbar-collapse
+Les classes `collapse navbar-collapse` permet de dire que les options de navigation seront cachées lorsque la résolution est inférieure à celle définit dans la classe `navbar-expand-*` où * est la résolution.
+
+```html
+<div class="collapse navbar-collapse" id="navbarNav">
+    <!-- Ici viendra vos options de navigation -->
+</div>
+```
+
+#### a. id="navbarNav"
+L'attribut `id` permet de dire que les options de navigation seront cachées lorsque la résolution est inférieure à celle définit dans la classe `navbar-expand-*` où * est la résolution.
+
+### 9. navbar-nav
+La classe `navbar-nav` appliquée sur la balise <ul> permet de mettre les options de navigation dans une liste.
+C'est ici que vous mettrez vos options de navigation. Vous pouvez mettre des liens vers d'autres pages ou des ancres.
+
+```html
+<ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Fonctionalité</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Prix</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+    </li>
+</ul>
+```
+
+### 10. nav-item
+La classe `nav-item` permet de mettre chaque option de navigation dans un élément de liste. C'est-à-dire dans un `<li>`.
+
+### 11. nav-link
+La classe `nav-link` permet de mettre chaque option de navigation dans un lien. C'est-à-dire dans un `<a>`. C'est ici que vous mettrez vos liens vers d'autres pages ou des ancres.
+
+#### a. active
+La classe `active` permet de dire que l'option de navigation est active. C'est-à-dire que l'option de navigation correspond à la page sur laquelle vous êtes.
+
+#### b. aria-current="page"
+L'attribut `aria-current` permet de dire que l'option de navigation est active. C'est-à-dire que l'option de navigation correspond à la page sur laquelle vous êtes.
 
 ### Exemple complet
+Voici une page [Démo navbar](http://zamboyle.github.io/htmlpreview?https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Theorie/Exemples/navbar.html) qui vous montrera quelques exemples de navbar.
 
-
-
-Je vais présenter le code qui va suivre que vous pourrez consulter à cette page: [Démo navbar](http://zamboyle.github.io/htmlpreview?https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Theorie/Exemples/navbar.html)
-
+**Exemple de navbar:**
 ```html
 <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -890,17 +988,13 @@ Je vais présenter le code qui va suivre que vous pourrez consulter à cette pag
                     <a class="nav-link" href="#">Prix</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
 ```
-
-### 4. navbar-light ou navbar-dark
-
-
 
 ## XIV Les formulaires
 Sur le site Bootstrap: [Les formulaires](https://getbootstrap.com/docs/5.3/forms/overview/)
