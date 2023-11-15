@@ -66,7 +66,12 @@ Voici 12 images pour la galerie qui devrait être responsives (il y a une classe
 - À l'intérieur de chaque <div> de colonne, insérez une image. Vous pouvez utiliser les images fournies ci-dessus et utiliser une classe vue en classe pour rendre les images responsives.
 - Testez votre Page.
 - Appelez-moi pour qu'on vérifie ensemble.
+- Ajoutez sur le div row la classe: g-2
+- Testez votre Page.
+- Que fais la classe g-2 ?
+- Appelez-moi pour qu'on vérifie ensemble.
+- Essayez à la place de g-2: g-0, g-3, g-4, g-5.
+- Vous pouvez voir le résultat de l'exercice [ici](https://zamboyle.github.io/Eqla_Bootstrap5/Exercices/Exercice7.html)
 
 ## Partie 9 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
-Appelez-moi pour qu'on vérifie ensemble.

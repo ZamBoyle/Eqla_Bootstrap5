@@ -651,6 +651,9 @@ Exemple:
 ```
 Dans cet exemple, on a 5 colonnes par ligne pour une résolution supérieure ou égale à lg. Dans le cas contraire, on aura 2 colonnes par ligne.
 
+### 5. Gutters / les gouttières
+Les gouttières sont les espaces entre les colonnes. Par défaut, Bootstrap met un espace de 1.5rem (24px) entre les colonnes. Cet espace est géré par la classe .gutter-* où * est un nombre compris entre 0 et 5.
+
 
 ## XII. Les classes d'affichages
 Sur Bootstrap: https://getbootstrap.com/docs/5.3/utilities/display
