@@ -37,6 +37,7 @@
     - [1. Classes pour un nombre fixe de colonnes](#1-classes-pour-un-nombre-fixe-de-colonnes)
     - [2. Classes pour un nombre de colonnes variables en fonction de la résolution](#2-classes-pour-un-nombre-de-colonnes-variables-en-fonction-de-la-résolution)
     - [3.	Mixe entre classes à nombre de colonnes fixes et variables](#3-mixe-entre-classes-à-nombre-de-colonnes-fixes-et-variables)
+    - [4. Définir le nombre de colonnes sur la row](#4-définir-le-nombre-de-colonnes-sur-la-row)
   - [XII. Les classes d'affichages](#xii-les-classes-daffichages)
     - [1. Notation](#1-notation)
     - [2. Cacher/Montrer des éléments en fonction de l'écran](#2-cachermontrer-des-éléments-en-fonction-de-lécran)
@@ -608,7 +609,47 @@ Expliquons-le petit à petit :
 -	.col-6 col-md-4 : idem que précédemment mais sera à côté de la colonne précédente si résolution inférieure à md.
 Donc si la résolution est > = md, on aura 3 colonnes identiques (.col-md-4). Dans le cas contraire, on aura une colonne qui prendra toute une ligne (.col-12)>. Et sur une autre ligne, nous aurons deux colonnes identiques (.col-6) qui prendront toute la ligne.
 
+### 4. Définir le nombre de colonnes sur la row
+Il est possible de définir le nombre de colonnes sur une ligne. Pour cela, il faut utiliser la classe .row-cols-* où * est un nombre compris entre 1 et 12.
 
+On peut aussi jouer sur la résolution avec les classes .row-cols-sm-*, .row-cols-md-*, .row-cols-lg-*, .row-cols-xl-*, .row-cols-xxl-*.
+
+Exemple:
+```html
+<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+    <div class="col">
+        <div class="border border-primary p-3">🚀 Fusée rapide</div>
+    </div>
+    <div class="col">
+        <div class="border border-primary p-3">🍕 Pizza délicieuse</div>
+    </div>
+    <div class="col">
+        <div class="border border-primary p-3">🐱 Chat curieux</div>
+    </div>
+    <div class="col">
+        <div class="border border-primary p-3">🎸 Guitare rock</div>
+    </div>
+    <div class="col">
+        <div class="border border-primary p-3">☕ Café chaud</div>
+    </div>
+    <div class="col">
+        <div class="border border-primary p-3">🌍 Globe terrestre</div>
+    </div>
+    <div class="col">
+        <div class="border border-primary p-3">🎨 Palette artistique</div>
+    </div>
+    <div class="col">
+        <div class="border border-primary p-3">🎮 Manette de jeu</div>
+    </div>
+    <div class="col">
+        <div class="border border-primary p-3">🌵 Cactus solitaire</div>
+    </div>
+    <div class="col">
+        <div class="border border-primary p-3">📘 Livre passionnant</div>
+    </div>
+</div>
+```
+Dans cet exemple, on a 5 colonnes par ligne pour une résolution supérieure ou égale à lg. Dans le cas contraire, on aura 2 colonnes par ligne.
 
 
 ## XII. Les classes d'affichages
@@ -756,9 +797,6 @@ J'entends déjà des questions dans vos têtes:
   Je préfère utiliser un container-fluid pour la navbar et un container pour le contenu.
 - _On peut avoir un div avec la classe container-fluid pour la navbar et un div avec une classe container-fluid pour le contenu ?_
   > Oui mais alors on ne fera qu'un seul container-fluid pour la navbar et le contenu.
-
-
-
 
 
 ### 3. Structure
