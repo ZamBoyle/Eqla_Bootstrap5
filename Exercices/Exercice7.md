@@ -71,7 +71,7 @@ Voici 12 images pour la galerie qui devrait être responsives (il y a une classe
 - Que fais la classe g-2 ?
 - Appelez-moi pour qu'on vérifie ensemble.
 - Essayez à la place de g-2: g-0, g-3, g-4, g-5.
-- Vous pouvez voir le résultat de l'exercice [ici](https://zamboyle.github.io/Eqla_Bootstrap5/Exercices/Exercice7.html)
+- Vous pouvez voir le résultat de l'exercice: [Galerie de Cupcakes](https://zamboyle.github.io/htmlpreview/?https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Exercice7.html).
 
 ## Partie 9 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
