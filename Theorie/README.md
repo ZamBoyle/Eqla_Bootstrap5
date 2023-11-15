@@ -38,6 +38,7 @@
     - [2. Classes pour un nombre de colonnes variables en fonction de la résolution](#2-classes-pour-un-nombre-de-colonnes-variables-en-fonction-de-la-résolution)
     - [3.	Mixe entre classes à nombre de colonnes fixes et variables](#3-mixe-entre-classes-à-nombre-de-colonnes-fixes-et-variables)
     - [4. Définir le nombre de colonnes sur la row](#4-définir-le-nombre-de-colonnes-sur-la-row)
+    - [5. Gutters / les gouttières](#5-gutters--les-gouttières)
   - [XII. Les classes d'affichages](#xii-les-classes-daffichages)
     - [1. Notation](#1-notation)
     - [2. Cacher/Montrer des éléments en fonction de l'écran](#2-cachermontrer-des-éléments-en-fonction-de-lécran)
