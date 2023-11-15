@@ -44,10 +44,12 @@ Ajoutez le titre 1 suivant: Les affichages / displays
 - Soit le paragraphe 4:"Je m'affiche sur un écran de taille de sm."
 
 ## Partie 7 - Affichage pour l'impression
-- Ajoutez un titre 2: Affichage en fonction de la taille de l'écran.
+- Ajoutez un titre 2: Affichage pour l'impression.
+- Soit le paragraphe:"Je m'affiche lors de l'impression." qui sera visible uniquement lorsqu'on imprime la page ou lorsqu'on la visualise en mode aperçu avant impression.
+- 
 
 
 
-## Partie 7 - Envoi sur GitHub
+## Partie 7µ8 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
 Appelez-moi pour qu'on vérifie ensemble.
