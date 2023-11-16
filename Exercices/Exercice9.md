@@ -43,6 +43,7 @@ Ajoutez le titre 1 suivant: Les espacements / spacings
 - Ajoutez un titre 2: Padding haut
 - Soit le code html précédent de la partie 4.
 - Ajoutez-y un padding en haut de 5.
+- Ajoutez un padding en haut de 2 à votre h1.
 
 ## Partie 8 - Padding bas
 - Ajoutez un titre 2: Padding bas
