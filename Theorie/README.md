@@ -860,35 +860,49 @@ Comme vous le savez en html, on peut avoir des balises qui en contiennent d'autr
 Partons d'un exemple complet:
 ```html
 <body>
-  <nav class="navbar navbar-expand-md bg-primary mb-2" data-bs-theme="dark">
-    <a class="visually-hidden-focusable" href="#content">Aller au contenu</a>
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Fonctionalités</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Prix</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-md bg-primary mb-2" data-bs-theme="dark">
+      <a class="visually-hidden-focusable" href="#content">Aller au contenu</a>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fonctionalités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Prix</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+
   <main id="content">
     <div class="container">
       <h1>Présentation des navbar</h1>
       <p>Une navbar est une barre de navigation qui permet de naviguer sur un site web.</p>
     </div>
   </main>
+
+  <hr>  
+  
+  <footer>
+    <div class="container">
+      <p>© 2023-2024 Eqla</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 ```
 
