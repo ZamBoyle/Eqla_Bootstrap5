@@ -39,6 +39,9 @@
     - [3.	Mixe entre classes à nombre de colonnes fixes et variables](#3-mixe-entre-classes-à-nombre-de-colonnes-fixes-et-variables)
     - [4. Définir le nombre de colonnes sur la row](#4-définir-le-nombre-de-colonnes-sur-la-row)
     - [5. Gutters / les gouttières](#5-gutters--les-gouttières)
+      - [1. Classes de Gouttières Universelles](#1-classes-de-gouttières-universelles)
+      - [2. Classes de Gouttières Horizontales et Verticales](#2-classes-de-gouttières-horizontales-et-verticales)
+      - [3. Classes de Gouttières par Points de Rupture** :](#3-classes-de-gouttières-par-points-de-rupture-)
   - [XII. Les classes d'affichages](#xii-les-classes-daffichages)
     - [1. Notation](#1-notation)
     - [2. Cacher/Montrer des éléments en fonction de l'écran](#2-cachermontrer-des-éléments-en-fonction-de-lécran)
@@ -52,31 +55,29 @@
     - [2. Les paddings](#2-les-paddings)
   - [XIV. Les navbars](#xiv-les-navbars)
     - [1. Introduction](#1-introduction)
-    - [2. navbar dans un container ou container-fluid](#2-navbar-dans-un-container-ou-container-fluid)
-    - [3. Structure](#3-structure)
-    - [4. container-fluid](#4-container-fluid)
-    - [5. navbar](#5-navbar)
+    - [2. Structure](#2-structure)
+    - [3. navbar, lien d'évitement et container-fluid](#3-navbar-lien-dévitement-et-container-fluid)
       - [a. navbar-expand-lg](#a-navbar-expand-lg)
       - [b. navbar-light](#b-navbar-light)
       - [c. bg-light](#c-bg-light)
-    - [6. navbar-brand](#6-navbar-brand)
+    - [4. navbar-brand](#4-navbar-brand)
       - [a. Exemple sans logo:](#a-exemple-sans-logo)
       - [b. Exemple avec logo:](#b-exemple-avec-logo)
-    - [7. navbar-toggler](#7-navbar-toggler)
+    - [5. navbar-toggler](#5-navbar-toggler)
       - [a. data-bs-toggle="collapse"](#a-data-bs-togglecollapse)
       - [b. data-bs-target="#navbarNav"](#b-data-bs-targetnavbarnav)
       - [c. aria-controls="navbarNav"](#c-aria-controlsnavbarnav)
       - [d. aria-expanded="false"](#d-aria-expandedfalse)
       - [e. aria-label="Toggle navigation"](#e-aria-labeltoggle-navigation)
       - [f. navbar-toggler-icon](#f-navbar-toggler-icon)
-    - [8. collapse navbar-collapse](#8-collapse-navbar-collapse)
+    - [6. collapse navbar-collapse](#6-collapse-navbar-collapse)
       - [a. id="navbarNav"](#a-idnavbarnav)
-    - [9. navbar-nav](#9-navbar-nav)
-    - [10. nav-item](#10-nav-item)
-    - [11. nav-link](#11-nav-link)
+    - [7. navbar-nav](#7-navbar-nav)
+    - [8. nav-item](#8-nav-item)
+    - [9. nav-link](#9-nav-link)
       - [a. active](#a-active)
       - [b. aria-current="page"](#b-aria-currentpage)
-    - [Exemple complet](#exemple-complet)
+    - [10. Exemple complet](#10-exemple-complet)
   - [XIV Les formulaires](#xiv-les-formulaires)
     - [1. classe form-label](#1-classe-form-label)
     - [2. classe form-control](#2-classe-form-control)
@@ -666,12 +667,29 @@ Exemple:
 Dans cet exemple, on a 5 colonnes par ligne pour une résolution supérieure ou égale à lg. Dans le cas contraire, on aura 2 colonnes par ligne.
 
 ### 5. Gutters / les gouttières
+<!--
 Les gouttières sont les espaces entre les colonnes. Par défaut, Bootstrap met un espace de 1.5rem (24px) entre les colonnes.
 Ces espaces sont gérés par les classes:
-- .g-\* où * est un nombre compris entre 0 et 5. Cette gouttière sera appliquée à toutes les résolutions verticalement et horizontalement.
-- .gx-\* où * est un nombre compris entre 0 et 5. Cette gouttière sera appliquée à toutes les résolutions horizontalement.
-- .gy-\* où * est un nombre compris entre 0 et 5. Cette gouttière sera appliquée à toutes les résolutions verticalement.
-- .g\*-\*-\* où le premier * est soit rien, soit x, soit y. Le second * est la résolution (sm, md, lg, xl, xxl). Le troisième * est un nombre compris entre 0 et 5. Cette gouttière sera appliquée à la résolution choisie.
+- .g-{value} où value est un nombre compris entre 0 et 5. Cette gouttière sera appliquée à toutes les résolutions verticalement et horizontalement.
+- .gx-{value} où value est un nombre compris entre 0 et 5. Cette gouttière sera appliquée à toutes les résolutions horizontalement.
+- .gy-{value} où value est un nombre compris entre 0 et 5. Cette gouttière sera appliquée à toutes les résolutions verticalement.
+- .g{direction}-{breakpoint}-{value} où direction est soit rien, soit x, soit y. breakpoint est la résolution (sm, md, lg, xl, xxl). Où value est un nombre compris entre 0 et 5. Cette gouttière sera appliquée à la résolution choisie.
+-->
+
+Dans Bootstrap, les gouttières désignent les espacements entre les colonnes. Par défaut, l'espacement est de 1.5rem (24px).
+
+#### 1. Classes de Gouttières Universelles
+**.g-{value}** : Ajoute une gouttière uniforme (verticale et horizontale) pour toutes les résolutions. La valeur "{value}" peut être de 0 à 5.
+
+#### 2. Classes de Gouttières Horizontales et Verticales
+   - **.gx-{value}** : Spécifie une gouttière horizontale pour toutes les résolutions. La valeur "{value}" varie de 0 à 5.
+   - **.gy-{value}** : Spécifie une gouttière verticale pour toutes les résolutions. La valeur "{value}" varie de 0 à 5.
+
+#### 3. Classes de Gouttières par Points de Rupture** :
+.g{direction}-{breakpoint}-{value}** : Permet de définir des gouttières spécifiques selon le point de rupture (breakpoint).:
+- "{direction}" peut être omis (pour les gouttières générales), "x" (pour les gouttières horizontales), ou "y" (pour les gouttières verticales).
+- "{breakpoint}" correspond à la résolution cible (sm, md, lg, xl, xxl).
+- "{value}" est un nombre entre 0 et 5 et définit la taille de la gouttière pour la résolution spécifiée.
 
 **Exemples**: 
 - g-lg-2: gouttière de 0.5rem (8px) pour la résolution lg.
@@ -685,7 +703,7 @@ Reprenez votre exerice précédent.
 - Testez votre Page.
 - Que fais la classe g-2 ?
 - Appelez-moi pour qu'on vérifie ensemble.
-- Essayez à la place de g-2: g-0, g-3, g-4, g-5.
+- Essayez à la place de g-2: g-0, g-1, g-3, g-4, g-5.
 
 Je trouve sympathique aussi l'effet de g-0 dans notre galerie. ;-)
 
@@ -819,11 +837,11 @@ Une `navbar` (barre de navigation) dans Bootstrap est typiquement utilisée pour
 Elle est généralement placée en haut de la page web. Elle est responsive et s'adapte à la taille de l'écran. En effet, sur un smartphone, elle sera réduite et les options de navigation seront cachées dans un menu hamburger.
 
 En résumé, bien que la navbar puisse inclure d'autres éléments comme des logos ou des formulaires de recherche, sa fonction principale est de servir de menu de navigation et est responsive.
-
+<!--
 ### 2. navbar dans un container ou container-fluid
 
 Une navbar peut être placée dans un container ou un container-fluid. Cela dépend de l'effet que vous voulez obtenir. Si vous optez pour un container, la navbar sera centrée. Si vous optez pour un container-fluid, la navbar sera étendue sur toute la largeur de l'écran.
-<!--
+
 J'entends déjà des questions dans vos têtes:
 - _On a toujours utilisé un container pour centrer notre page. Pourquoi ne pas utiliser un container pour centrer notre navbar ?_
   > En effet, nous avons toujours utilisé un container pour centrer notre page. Mais la navbar est un élément à part. Elle est généralement placée en haut de la page. Donc, il est logique de l'étendre sur toute la largeur de l'écran. C'est pour cela que nous utiliserons un container-fluid pour la navbar. Mais ce n'est pas une obligation. Vous pouvez utiliser un div avec la classe container pour la navbar et le contenu. C'est à vous de voir. 
@@ -836,33 +854,64 @@ J'entends déjà des questions dans vos têtes:
   > Oui mais alors on ne fera qu'un seul container-fluid pour la navbar et le contenu.
 -->
 
-### 3. Structure
+### 2. Structure
 Comme vous le savez en html, on peut avoir des balises qui en contiennent d'autres comme les poupées russes. C'est le cas de la balise `<nav>` qui peut contenir d'autres balises comme `<div>`, `<ul>`, `<li>`, etc.
 
-L'exemple de la documentation de Bootstrap met un div avec une classe container-fluid dans un nav. Je vais le mettre avant le nav. C'est juste pour que ça soit plus facile de comprendre la structure. Et vous ne verrez pas de différence.
-Comme dit précédemment, nous pourrions avoir un div avec une classe container. Mais alors nous serions limités dans la longueur de notre menu. C'est pourquoi, on utilise la classe container-fluid.
+Partons d'un exemple complet:
+```html
+<body>
+  <nav class="navbar navbar-expand-md bg-primary mb-2" data-bs-theme="dark">
+    <a class="visually-hidden-focusable" href="#content">Aller au contenu</a>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fonctionalités</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prix</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main id="content">
+    <div class="container">
+      <h1>Présentation des navbar</h1>
+      <p>Une navbar est une barre de navigation qui permet de naviguer sur un site web.</p>
+    </div>
+  </main>
+</body>
+```
+
+Pour rappele le `href="#"` signifie que le lien pointe vers la page courante. C'est-à-dire que si je suis sur la page index.html, le lien pointera vers index.html. Si je suis sur la page contact.html, le lien pointera vers contact.html. C'est dans un souci de simplicité que j'ai mis ce lien. Mais vous pouvez mettre un lien vers une autre page.
 
 Je vais maintenant dans les points suivants vous expliquer la structure d'une navbar. Après, nous aurons un exemple complet.
 
-### 4. container-fluid
-
-Le div aura la classe `.container-fluid`. Ce div contiendra la balise `nav`. Cela permettra d'étendre la navbar sur toute la largeur de l'écran. 
-
-```html
-<div class="container-fluid">
-    <!-- Ici viendra votre navbar -->
-</div>
-```
-
-### 5. navbar
+### 3. navbar, lien d'évitement et container-fluid
 
 La balise `navbar` contiendra le contenu de la navbar. C'est-à-dire le logo, les options de navigation, etc.
 
+.container-fluid permettra d'étendre la navbar sur toute la largeur de l'écran. On pourrait se dire qu'on aurait pu mettre container-fluid avant la balise nav.
+
 ```html
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Contenu de la navbar que nous allons voir -->
+  <a class="visually-hidden-focusable" href="#content">Aller au contenu</a>
+  <div class="container-fluid">
+      <!-- Contenu de la navbar que nous allons voir -->
+  </div>
 </nav>
 ```
+De plus, dans le code j'ai ajouté un lien caché avec la classe `visually-hidden-focusable`. Ce lien permettra d'éviter de lire la navbar à chaque fois que l'on navigue sur le site. En effet, les lecteurs d'écran lisent la navbar à chaque fois que l'on navigue sur le site. Ce lien permettra d'éviter cela. On aurait pu le mettre en dehors de la navbar (juste après la balise body) mais je trouve que c'est plus logique de le mettre dans la navbar.
+
 On constate que notre balise contient plusieurs classes. Nous allons voir à quoi elles servent.
 
 #### a. navbar-expand-lg
@@ -874,7 +923,7 @@ La classe `navbar-light` permet de rendre la navbar claire. En effet, la navbar 
 #### c. bg-light
 La classe `bg-light` permet de rendre le fond de la navbar clair. En effet, le fond de la navbar est par défaut foncé.
 
-### 6. navbar-brand
+### 4. navbar-brand
 La classe `navbar-brand` permet de mettre un logo ou un texte dans la navbar. C'est généralement le nom du site ou le logo du site.
 
 On applique cette classe à une balise `<a>` et comme lien, on met le lien vers la page d'accueil du site.
@@ -890,7 +939,7 @@ On applique cette classe à une balise `<a>` et comme lien, on met le lien vers 
 </a>
 ```
 
-### 7. navbar-toggler
+### 5. navbar-toggler
 La classe `navbar-toggler` permet de mettre un bouton hamburger. Ce bouton hamburger permettra d'afficher les options de navigation lorsque la résolution est inférieure à celle définit dans la classe `navbar-expand-*` où * est la résolution.
 
 ```html
@@ -919,7 +968,7 @@ L'attribut `aria-label` fournit une étiquette accessible pour les éléments qu
 La classe `navbar-toggler-icon` permet d'afficher le bouton en forme d'hamburger: 3 lignes horizontales.
 
 
-### 8. collapse navbar-collapse
+### 6. collapse navbar-collapse
 Les classes `collapse navbar-collapse` permet de dire que les options de navigation seront cachées lorsque la résolution est inférieure à celle définit dans la classe `navbar-expand-*` où * est la résolution.
 
 ```html
@@ -931,7 +980,7 @@ Les classes `collapse navbar-collapse` permet de dire que les options de navigat
 #### a. id="navbarNav"
 L'attribut `id` permet de dire que les options de navigation seront cachées lorsque la résolution est inférieure à celle définit dans la classe `navbar-expand-*` où * est la résolution.
 
-### 9. navbar-nav
+### 7. navbar-nav
 La classe `navbar-nav` appliquée sur la balise <ul> permet de mettre les options de navigation dans une liste.
 C'est ici que vous mettrez vos options de navigation. Vous pouvez mettre des liens vers d'autres pages ou des ancres.
 
@@ -952,10 +1001,10 @@ C'est ici que vous mettrez vos options de navigation. Vous pouvez mettre des lie
 </ul>
 ```
 
-### 10. nav-item
+### 8. nav-item
 La classe `nav-item` permet de mettre chaque option de navigation dans un élément de liste. C'est-à-dire dans un `<li>`.
 
-### 11. nav-link
+### 9. nav-link
 La classe `nav-link` permet de mettre chaque option de navigation dans un lien. C'est-à-dire dans un `<a>`. C'est ici que vous mettrez vos liens vers d'autres pages ou des ancres.
 
 #### a. active
@@ -964,37 +1013,8 @@ La classe `active` permet de dire que l'option de navigation est active. C'est-�
 #### b. aria-current="page"
 L'attribut `aria-current` permet de dire que l'option de navigation est active. C'est-à-dire que l'option de navigation correspond à la page sur laquelle vous êtes.
 
-### Exemple complet
+### 10. Exemple complet
 Voici une page [Démo navbar](http://zamboyle.github.io/htmlpreview?https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Theorie/Exemples/navbar.html) qui vous montrera quelques exemples de navbar.
-
-**Exemple de navbar:**
-```html
-<div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Fonctionalité</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Prix</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
-```
 
 ## XIV Les formulaires
 Sur le site Bootstrap: [Les formulaires](https://getbootstrap.com/docs/5.3/forms/overview/)

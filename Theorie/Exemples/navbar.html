@@ -18,7 +18,7 @@
 </head>
 
 <body class="border">
-    <div class="container mt-3">
+    <div class="container mt-3" id="content">
         <h1 class="text-center">Bootstrap - navbar</h1>
         <h2>Introduction</h2>
         <p>Je vais vous présenter des exemples de navbar différents que vous
@@ -39,13 +39,10 @@
                         &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;Accueil&#x3C;/a&#x3E;
                     &#x3C;/li&#x3E;
                     &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
-                        &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;Fonctionalit&#xE9;&#x3C;/a&#x3E;
+                        &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;Fonctionalit&#xE9;s&#x3C;/a&#x3E;
                     &#x3C;/li&#x3E;
                     &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
                         &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;Prix&#x3C;/a&#x3E;
-                    &#x3C;/li&#x3E;
-                    &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
-                        &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22; tabindex=&#x22;-1&#x22;&#x3E;Contact&#x3C;/a&#x3E;
                     &#x3C;/li&#x3E;
                 &#x3C;/ul&#x3E;
             &#x3C;/div&#x3E;
@@ -72,13 +69,10 @@
                         <a class="nav-link" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Fonctionalité</a>
+                        <a class="nav-link" href="#">Fonctionalités</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Prix</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -113,13 +107,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Fonctionalité</a>
+                        <a class="nav-link" href="#">Fonctionalités</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Prix</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -151,21 +142,70 @@
                         <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Fonctionalité</a>
+                        <a class="nav-link" href="#">Fonctionalités</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Prix</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
     <div class="container">
-        <h2>4. </h2>
+        <h2>4. Ajout d'un lien d'évitement et couleur</h2>
+        <p>J'ai ajouté un lien d'évitement dans le menu ainsi qu'un fond bleu (bg-primary) couplé à un attribut bootstrap: <code>data-bs-theme="dark"</code></p>
     </div>
+    <nav class="navbar navbar-expand-md bg-primary mb-2" data-bs-theme="dark">
+        <a class="visually-hidden-focusable" href="#content">Aller au contenu</a>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav4"
+            aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav4">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fonctionalités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Prix</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+<pre class="border p-3 border-primary">
+&#x3C;nav class=&#x22;navbar navbar-expand-md bg-primary mb-2&#x22; data-bs-theme=&#x22;dark&#x22;&#x3E;
+    &#x3C;a class=&#x22;visually-hidden-focusable&#x22; href=&#x22;#content&#x22;&#x3E;Aller au contenu&#x3C;/a&#x3E;
+    &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
+        &#x3C;a class=&#x22;navbar-brand&#x22; href=&#x22;#&#x22;&#x3E;Navbar&#x3C;/a&#x3E;
+        &#x3C;button class=&#x22;navbar-toggler&#x22; type=&#x22;button&#x22; data-bs-toggle=&#x22;collapse&#x22; data-bs-target=&#x22;#navbarNav4&#x22;
+        aria-controls=&#x22;navbarNav4&#x22; aria-expanded=&#x22;false&#x22; aria-label=&#x22;Toggle navigation&#x22;&#x3E;
+            &#x3C;span class=&#x22;navbar-toggler-icon&#x22;&#x3E;&#x3C;/span&#x3E;
+        &#x3C;/button&#x3E;
+        &#x3C;div class=&#x22;collapse navbar-collapse&#x22; id=&#x22;navbarNav4&#x22;&#x3E;
+            &#x3C;ul class=&#x22;navbar-nav&#x22;&#x3E;
+                &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+                    &#x3C;a class=&#x22;nav-link active&#x22; aria-current=&#x22;page&#x22; href=&#x22;#&#x22;&#x3E;Accueil&#x3C;/a&#x3E;
+                &#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+                    &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;Fonctionalit&#xE9;s&#x3C;/a&#x3E;
+                &#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+                    &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;Prix&#x3C;/a&#x3E;
+                &#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;
+</pre>
+</div>
+
     <!-- Bootstrap Librairie JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

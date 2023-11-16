@@ -24,6 +24,12 @@ Il faudra que le menu burger apparaisse que pour les tailles inférieures à md.
 - Créez les pages Accueil, Présentation et Contact.
 - Ajoutez-y un titre 1 avec le nom de la page.
 - Ajoutez-y un texte de votre choix.
+- Pour la page contact, faites un formulaire avec les champs suivants:
+  - Nom
+  - Prénom
+  - Email
+  - Message
+  - Bouton Envoyer
 
 # Partie 9 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
