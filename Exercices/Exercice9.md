@@ -83,13 +83,13 @@ Ajoutez le titre 1 suivant: Les espacements / spacings
 ## Partie 13 - Margin sur la gauche et sur la droite
 - Ajoutez un titre 2: Margin sur la gauche et sur la droite
 - Soit le code html précédent de la partie 11.
-- Ajoutez-y un margin droite de 2 par rapport au div parent.
+- Ajoutez-y un margin gauche et droite de 2 par rapport au div parent.
 
 ## Partie 14 - Margin sur le haut
 - Ajoutez un titre 2: Margin sur le haut
 - Soit le code html précédent de la partie 11.
 - Ajoutez-y un margin haut de 5 par rapport au div parent.
-- Ajoutez un margin haut de 2 à votre h1.
+- Ajoutez un margin haut de 2 à votre h1. (On constate que ça ne change rien)
 
 ## Partie 15 - Margin sur le bas
 - Ajoutez un titre 2: Margin sur le bas
