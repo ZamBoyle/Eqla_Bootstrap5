@@ -910,7 +910,7 @@ La balise `navbar` contiendra le contenu de la navbar. C'est-à-dire le logo, le
   </div>
 </nav>
 ```
-De plus, dans le code j'ai ajouté un lien caché avec la classe `visually-hidden-focusable`. Ce lien permettra d'éviter de lire la navbar à chaque fois que l'on navigue sur le site. En effet, les lecteurs d'écran lisent la navbar à chaque fois que l'on navigue sur le site. Ce lien permettra d'éviter cela. On aurait pu le mettre en dehors de la navbar (juste après la balise body) mais je trouve que c'est plus logique de le mettre dans la navbar.
+De plus, dans le code j'ai ajouté un lien caché avec la classe `visually-hidden-focusable`. Ce lien permettra d'éviter de lire la navbar à chaque fois que l'on navigue sur le site. En effet, les lecteurs d'écran lisent la navbar à chaque fois que l'on navigue sur le site. Ce lien permettra d'éviter cela. On aurait pu le mettre en dehors de la navbar (juste après la balise body) mais je trouve que c'est plus logique de le mettre dans la navbar. Ce lien apparaîtra uniquement lorsque l'on naviguera avec le clavier et qu'il aura le focus.
 
 On constate que notre balise contient plusieurs classes. Nous allons voir à quoi elles servent.
 
