@@ -1,5 +1,5 @@
 # Exercice n°10 - Les barres de navigation / Navbar
-L'exercice portera l'utilisation des classes des [couleurs](/Theorie/README.md#x-les-couleurs--couleurs-darrière-plan"): texte et arrière plan.
+L'exercice portera l'utilisation des classes des [navbar](/Theorie/README.md#xiv-les-navbars").
 
 ## Partie 1 - Création du fichier Exercice10.html
 Créez un fichier nommé Exercice10.html dans le répertoire EqlaExercices\Bootstrap.  
@@ -30,6 +30,12 @@ Il faudra que le menu burger apparaisse que pour les tailles inférieures à md.
   - Email
   - Message
   - Bouton Envoyer
+
+## Partie 6 - Documentation Bootstrap
+- Rendez-vous sur le site de Bootstrap dans la partie [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/).
+- Regardez les différents exemples.
+- Essayez ceux de votre choix.
+- Essayez de comprendre le code html et css.
 
 # Partie 9 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
