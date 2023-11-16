@@ -913,7 +913,7 @@ Je vais maintenant dans les points suivants vous expliquer la structure d'une na
 
 ### 3. navbar, lien d'évitement et container-fluid
 
-La balise `navbar` contiendra le contenu de la navbar. C'est-à-dire le logo, les options de navigation, etc.
+La balisenava ayant classe `navbar` contiendra le contenu de la navbar. C'est-à-dire le logo, les options de navigation, etc.
 
 .container-fluid permettra d'étendre la navbar sur toute la largeur de l'écran. On pourrait se dire qu'on aurait pu mettre container-fluid avant la balise nav.
 
@@ -984,7 +984,7 @@ La classe `navbar-toggler-icon` permet d'afficher le bouton en forme d'hamburger
 
 
 ### 6. collapse navbar-collapse
-Les classes `collapse navbar-collapse` permet de dire que les options de navigation seront cachées lorsque la résolution est inférieure à celle définit dans la classe `navbar-expand-*` où * est la résolution.
+Les classes `collapse navbar-collapse` permettent de dire que les options de navigation seront cachées lorsque la résolution est inférieure à celle définit dans la classe `navbar-expand-*` où * est la résolution.
 
 ```html
 <div class="collapse navbar-collapse" id="navbarNav">
