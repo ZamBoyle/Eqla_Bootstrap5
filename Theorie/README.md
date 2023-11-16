@@ -77,6 +77,7 @@
     - [9. nav-link](#9-nav-link)
       - [a. active](#a-active)
       - [b. aria-current="page"](#b-aria-currentpage)
+      - [c. nav-underline](#c-nav-underline)
     - [10. Exemple complet](#10-exemple-complet)
   - [XIV Les formulaires](#xiv-les-formulaires)
     - [1. classe form-label](#1-classe-form-label)
@@ -894,7 +895,7 @@ Partons d'un exemple complet:
   </main>
 
   <hr>  
-  
+
   <footer>
     <div class="container">
       <p>© 2023-2024 Eqla</p>
@@ -1026,6 +1027,27 @@ La classe `active` permet de dire que l'option de navigation est active. C'est-�
 
 #### b. aria-current="page"
 L'attribut `aria-current` permet de dire que l'option de navigation est active. C'est-à-dire que l'option de navigation correspond à la page sur laquelle vous êtes.
+
+#### c. nav-underline
+La classe `nav-underline` permet d'ajouter un soulignement sous l'option de navigation. C'est-à-dire sous le lien de la page active.
+
+On l'ajoute à la balise `<ul>`.
+```html
+<ul class="navbar-nav nav-underline">
+  <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" href="#">Fonctionalité</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" href="#">Prix</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+  </li>
+</ul>
+```
 
 ### 10. Exemple complet
 Voici une page [Démo navbar](http://zamboyle.github.io/htmlpreview?https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Theorie/Exemples/navbar.html) qui vous montrera quelques exemples de navbar.

@@ -86,12 +86,15 @@
             taille moyenne
             (<code>.navbar-expand-md</code>): sa résolution doit être au minimum de 768px.<br>
             Dans le cas
-            <pre class="border border-primary p-3">&#x3C;nav class=&#x22;navbar navbar-expand-md navbar-light bg-light&#x22;&#x3E;</pre>
+        <pre
+            class="border border-primary p-3">&#x3C;nav class=&#x22;navbar navbar-expand-md navbar-light bg-light&#x22;&#x3E;</pre>
         </p>
         <p>
             De plus, j'ai ajouté la classe <code>.active</code> sur le lien "Accueil" pour montrer que le lien actif
-            sera mis en évidence et j'ai aussi ajouté l'attribut <code>aria-current=&#x22;page&#x22;</code> pour les lecteurs d'écran. 
-            <pre class="border p-3 border-primary">&#x3C;a class=&#x22;nav-link active&#x22; aria-current=&#x22;page&#x22; href=&#x22;#&#x22;&#x3E;Accueil&#x3C;/a&#x3E;</pre>
+            sera mis en évidence et j'ai aussi ajouté l'attribut <code>aria-current=&#x22;page&#x22;</code> pour les
+            lecteurs d'écran.
+        <pre
+            class="border p-3 border-primary">&#x3C;a class=&#x22;nav-link active&#x22; aria-current=&#x22;page&#x22; href=&#x22;#&#x22;&#x3E;Accueil&#x3C;/a&#x3E;</pre>
         </p>
     </div>
     <div class="container-fluid">
@@ -153,33 +156,34 @@
     </div>
     <div class="container">
         <h2>4. Ajout d'un lien d'évitement et couleur</h2>
-        <p>J'ai ajouté un lien d'évitement dans le menu ainsi qu'un fond bleu (bg-primary) couplé à un attribut bootstrap: <code>data-bs-theme="dark"</code></p>
+        <p>J'ai ajouté un lien d'évitement dans le menu ainsi qu'un fond bleu (bg-primary) couplé à un attribut
+            bootstrap: <code>data-bs-theme="dark"</code></p>
     </div>
     <nav class="navbar navbar-expand-md bg-primary mb-2" data-bs-theme="dark">
         <a class="visually-hidden-focusable" href="#content">Aller au contenu</a>
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav4"
-            aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav4">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Fonctionalités</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Prix</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav4"
+                aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav4">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fonctionalités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prix</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-      <div class="container">
-<pre class="border p-3 border-primary">
+    </nav>
+    <div class="container">
+        <pre class="border p-3 border-primary">
 &#x3C;nav class=&#x22;navbar navbar-expand-md bg-primary mb-2&#x22; data-bs-theme=&#x22;dark&#x22;&#x3E;
     &#x3C;a class=&#x22;visually-hidden-focusable&#x22; href=&#x22;#content&#x22;&#x3E;Aller au contenu&#x3C;/a&#x3E;
     &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
@@ -204,7 +208,58 @@
     &#x3C;/div&#x3E;
 &#x3C;/nav&#x3E;
 </pre>
-</div>
+        <h2>5. nav-underline</h2>
+        <p>La classe `nav-underline` permet d'ajouter un soulignement sous l'option de navigation. C'est-à-dire sous le lien de la page active.</p>
+        <p>On l'ajoute à la balise <code>&#x3C;ul&#x3E;</code>.</p>
+        <pre class="border p-3 border-primary">
+&#x3C;nav class=&#x22;navbar navbar-expand-md navbar-light bg-light mb-2&#x22;&#x3E;
+    &#x3C;a class=&#x22;visually-hidden-focusable&#x22; href=&#x22;#content&#x22;&#x3E;Aller au contenu&#x3C;/a&#x3E;
+    &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
+        &#x3C;a class=&#x22;navbar-brand&#x22; href=&#x22;#&#x22;&#x3E;Navbar&#x3C;/a&#x3E;
+        &#x3C;button class=&#x22;navbar-toggler&#x22; type=&#x22;button&#x22; data-bs-toggle=&#x22;collapse&#x22; data-bs-target=&#x22;#navbarNav5&#x22;
+            aria-controls=&#x22;navbarNav5&#x22; aria-expanded=&#x22;false&#x22; aria-label=&#x22;Toggle navigation&#x22;&#x3E;
+            &#x3C;span class=&#x22;navbar-toggler-icon&#x22;&#x3E;&#x3C;/span&#x3E;
+        &#x3C;/button&#x3E;
+        &#x3C;div class=&#x22;collapse navbar-collapse&#x22; id=&#x22;navbarNav5&#x22;&#x3E;
+            &#x3C;ul class=&#x22;navbar-nav nav-underline&#x22;&#x3E;
+                &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+                    &#x3C;a class=&#x22;nav-link active&#x22; aria-current=&#x22;page&#x22; href=&#x22;#&#x22;&#x3E;Accueil&#x3C;/a&#x3E;
+                &#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+                    &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;Fonctionalit&#xE9;s&#x3C;/a&#x3E;
+                &#x3C;/li&#x3E;
+                &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+                    &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;Prix&#x3C;/a&#x3E;
+                &#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/nav&#x3E;      
+    </pre>
+        <nav class="navbar navbar-expand-md navbar-light bg-light mb-2">
+            <a class="visually-hidden-focusable" href="#content">Aller au contenu</a>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav5"
+                    aria-controls="navbarNav5" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav5">
+                    <ul class="navbar-nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fonctionalités</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Prix</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <!-- Bootstrap Librairie JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
