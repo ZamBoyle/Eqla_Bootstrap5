@@ -106,7 +106,6 @@ Ajoutez le titre 1 suivant: Les espacements / spacings
 - Ajoutez-y un margin sur les 4 côtés de 5 par rapport au div parent.
 - Ajoutez-y un padding sur les 4 côtés de 3 sur le div enfant.
 
-
 ## Partie 18 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
 Appelez-moi pour qu'on vérifie ensemble.
