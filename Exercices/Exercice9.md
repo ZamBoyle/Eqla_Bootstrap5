@@ -88,6 +88,7 @@ Ajoutez le titre 1 suivant: Les espacements / spacings
 - Ajoutez un titre 2: Margin sur le haut
 - Soit le code html précédent de la partie 11.
 - Ajoutez-y un margin haut de 5 par rapport au div parent.
+- Ajoutez un margin haut de 2 à votre h1.
 
 ## Partie 15 - Margin sur le bas
 - Ajoutez un titre 2: Margin sur le bas
@@ -104,6 +105,7 @@ Ajoutez le titre 1 suivant: Les espacements / spacings
 - Soit le code html précédent de la partie 11.
 - Ajoutez-y un margin sur les 4 côtés de 5 par rapport au div parent.
 - Ajoutez-y un padding sur les 4 côtés de 3 sur le div enfant.
+
 
 ## Partie 18 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
