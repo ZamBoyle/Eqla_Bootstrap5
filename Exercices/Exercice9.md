@@ -70,7 +70,7 @@ Ajoutez le titre 1 suivant: Les espacements / spacings
         Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
         Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
     </div>
-<div>
+</div>
 ```
 - Ajoutez-y un margin gauche de 3 par rapport au div parent.
 
@@ -105,6 +105,6 @@ Ajoutez le titre 1 suivant: Les espacements / spacings
 - Ajoutez-y un margin sur les 4 côtés de 5 par rapport au div parent.
 - Ajoutez-y un padding sur les 4 côtés de 3 sur le div enfant.
 
-## Partie 7 - Envoi sur GitHub
+## Partie 18 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
 Appelez-moi pour qu'on vérifie ensemble.
