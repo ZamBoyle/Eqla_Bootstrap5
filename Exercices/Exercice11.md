@@ -106,6 +106,25 @@ Ajoutez le titre 1 suivant: Révisions
 - Ajoutez-y un margin sur les 4 côtés de 5 par rapport au div parent.
 - Ajoutez-y un padding sur les 4 côtés de 3 sur le div enfant.
 
+## Partie 18 - Les navbar
+- Faites un menu Bootstrap.
+- Vous aurez: une page d'accueil, une page de présentation, une page de contact.
+- Vous aurez un menu burger pour les tailles inférieures à md.
+- Sur le site Boostrap dans la partie [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/), regardez les différents exemples.
+- Ajoutez un dropdown dans votre menu avec les liens suivants: 
+  - Notre Equipe
+  - Johnny
+  - Philip
+  - Sandrine
+  - Catherine
+- Le lien "Notre Equipe" pointera vers une page externe. Les liens des membres de l'équipe seront des ancres dans la page "Notre Equipe".
+- cad Pour Johnny ==> equipe.html#johnny
+- cad Pour Philip ==> equipe.html#philip
+- cad Pour Sandrine ==> equipe.html#sandrine
+- cad Pour Catherine ==> equipe.html#catherine
+-  
+
+
 ## Partie 7 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
 Appelez-moi pour qu'on vérifie ensemble.
