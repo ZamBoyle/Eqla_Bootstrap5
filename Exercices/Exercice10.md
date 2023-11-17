@@ -30,7 +30,7 @@ Il faudra que le menu burger apparaisse que pour les tailles inférieures à md.
   - Email
   - Message
   - Bouton Envoyer
-
+- Faites en sorte d'envoyer votre formulaire à l'adresse suivante: http://zamboyle.synology.me:2727/forms/demos/showvars.php
 ## Partie 6 - Documentation Bootstrap
 - Rendez-vous sur le site de Bootstrap dans la partie [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/).
 - Regardez les différents exemples.

@@ -9,11 +9,11 @@
   - [I. A propos](#i-a-propos)
   - [II. Prérequis](#ii-prérequis)
   - [III. Présentation de Bootstrap](#iii-présentation-de-bootstrap)
-    - [1. Brainstorming : Qu’est-ce que Bootstrap pour vous ?](#1-brainstorming--quest-ce-que-bootstrap-pour-vous-)
+    - [1. Brainstorming : Qu’est-ce que Bootstrap pour vous ?](#1-brainstorming-quest-ce-que-bootstrap-pour-vous)
     - [2. Brève présentation de Bootstrap](#2-brève-présentation-de-bootstrap)
-    - [3. Pourquoi utiliser Bootstrap ?](#3-pourquoi-utiliser-bootstrap-)
+    - [3. Pourquoi utiliser Bootstrap ?](#3-pourquoi-utiliser-bootstrap)
     - [4. Bootstrap 4.x et Bootstrap 5](#4-bootstrap-4x-et-bootstrap-5)
-    - [5. Comment Utiliser Bootstrap ?](#5-comment-utiliser-bootstrap-)
+    - [5. Comment Utiliser Bootstrap ?](#5-comment-utiliser-bootstrap)
   - [IV. Intégration des Fichiers Bootstrap](#iv-intégration-des-fichiers-bootstrap)
   - [V. Fonctionnement de Bootstrap](#v-fonctionnement-de-bootstrap)
     - [La classe .container](#la-classe-container)
@@ -32,16 +32,16 @@
     - [1. Lecteur d'écran](#1-lecteur-décran)
     - [2. Animation réduite](#2-animation-réduite)
   - [IX. Les breakpoints](#ix-les-breakpoints)
-  - [X. Les couleurs & Couleurs d'Arrière Plan.](#x-les-couleurs--couleurs-darrière-plan)
+  - [X. Les couleurs \& Couleurs d'Arrière Plan.](#x-les-couleurs--couleurs-darrière-plan)
   - [XI. La Grille Bootstrap](#xi-la-grille-bootstrap)
     - [1. Classes pour un nombre fixe de colonnes](#1-classes-pour-un-nombre-fixe-de-colonnes)
     - [2. Classes pour un nombre de colonnes variables en fonction de la résolution](#2-classes-pour-un-nombre-de-colonnes-variables-en-fonction-de-la-résolution)
-    - [3.	Mixe entre classes à nombre de colonnes fixes et variables](#3-mixe-entre-classes-à-nombre-de-colonnes-fixes-et-variables)
+    - [3.	Mixe entre classes à nombre de colonnes fixes et variables](#3mixe-entre-classes-à-nombre-de-colonnes-fixes-et-variables)
     - [4. Définir le nombre de colonnes sur la row](#4-définir-le-nombre-de-colonnes-sur-la-row)
     - [5. Gutters / les gouttières](#5-gutters--les-gouttières)
       - [1. Classes de Gouttières Universelles](#1-classes-de-gouttières-universelles)
       - [2. Classes de Gouttières Horizontales et Verticales](#2-classes-de-gouttières-horizontales-et-verticales)
-      - [3. Classes de Gouttières par Points de Rupture** :](#3-classes-de-gouttières-par-points-de-rupture-)
+      - [3. Classes de Gouttières par Points de Rupture\*\* :](#3-classes-de-gouttières-par-points-de-rupture-)
   - [XII. Les classes d'affichages](#xii-les-classes-daffichages)
     - [1. Notation](#1-notation)
     - [2. Cacher/Montrer des éléments en fonction de l'écran](#2-cachermontrer-des-éléments-en-fonction-de-lécran)
@@ -51,7 +51,7 @@
   - [XIII. Les espacements](#xiii-les-espacements)
     - [1. Les marges](#1-les-marges)
       - [a. Soit une classe du type .m{côtés}-{taille}.](#a-soit-une-classe-du-type-mcôtés-taille)
-      - [b. Soit une classe du type .m{côtés}-{media}-](#b-soit-une-classe-du-type-mcôtés-media-)
+      - [b. Soit une classe du type .m{côtés}-{media}-{taille}](#b-soit-une-classe-du-type-mcôtés-media-taille)
     - [2. Les paddings](#2-les-paddings)
   - [XIV. Les navbars](#xiv-les-navbars)
     - [1. Introduction](#1-introduction)
@@ -900,6 +900,7 @@ Partons d'un exemple complet:
     <div class="container">
       <p>© 2023-2024 Eqla</p>
     </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
