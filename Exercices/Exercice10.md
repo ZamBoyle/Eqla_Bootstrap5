@@ -37,6 +37,16 @@ Il faudra que le menu burger apparaisse que pour les tailles inférieures à md.
 - Essayez ceux de votre choix.
 - Essayez de comprendre le code html et css.
 
+## Partie 6 - Ajout de la classe active sur la page courante
+- Ajoutez la classe active sur la page courante.
+- Vous ajouterez la classe active sur le lien de la barre de navigation.
+- Vérifiez que la classe active est bien appliquée sur la page courante.
+
+## Partie 7 - Ajout de la classe nav-underline
+- Ajoutez la classe nav-underline sur la barre de navigation, sur la balise ul.
+- Vérifiez que la classe nav-underline est bien appliquée sur la barre de navigation.
+- Vérifiez que la classe nav-underline est bien appliquée sur la page courante et qu'elle est bien soulignée.
+
 # Partie 9 - Envoi sur GitHub
 Si cela vous semble bon, dans un terminal envoyez vos modifications sur GitHub.
 Appelez-moi pour qu'on vérifie ensemble.
