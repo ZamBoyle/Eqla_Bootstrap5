@@ -1,73 +1,215 @@
 <!doctype html>
 <html lang="fr-be">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ma page Bootstrap 5</title>
-        <!-- Bootstrap CSS v5.3 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <!-- Bootstrap icônes v1.11.1 -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <!-- Font Awesome 6.4.2 -->
-        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
-            rel="stylesheet">
-            <link href="../assets/styles/site.css" rel="stylesheet">
-    </head>
 
-    <body>
-        <header>
-            <!-- Barre de navigation Bootstrap 5 -->
-            <nav class="navbar navbar-expand-md navbar-light bg-light mx-lg-0" style="background-color: pink !important;">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="../assets/img/misc/Logo_cupcake_crafters2.png" alt="Logo" width="24"
-                            class="d-inline-block align-text-top">
-                        Cupcakes Crafters</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Accueil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Produits</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Histoire</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacts.html">Contacts</a>
-                            </li>
-                        </ul>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page Bootstrap 5</title>
+    <!-- Bootstrap CSS v5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap icônes v1.11.1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Font Awesome 6.4.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+        rel="stylesheet">
+    <link href="../assets/styles/site.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Barre de navigation Bootstrap 5 -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light mx-lg-0" style="background-color: pink !important;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/img/misc/Logo_cupcake_crafters2.png" alt="Logo" width="24"
+                        class="d-inline-block align-text-top">
+                    Cupcakes Crafters</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="histoire.html">Histoire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contacts</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <main>
-            <div class="container">
-            <h1 class="text-center">Nos délicieux Cupcakes</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mb-5 pb-5">
+            <h1 class="text-center mt-2 mb-3">Nos Délicieux Cupcakes</h1>
+            <p class="lead">
+                Voici nos délicieux cupcakes.<br>
+                Nous avons une grande variété de saveurs:
+            </p>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 mb-5">
+                <!-- Répétez ce bloc pour chaque produit -->
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/banane.png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">Le Banana</h5>
+                            <p class="card-text">Cupcake tropical à la banane, garni d'un glaçage crémeux à la vanille et parsemé de fines tranches de banane fraîche et d'une pincée de cannelle.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/caramel.png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">Le Caramelos</h5>
+                            <p class="card-text">Cupcake au caramel salé, avec un cœur fondant de caramel et un glaçage au beurre salé, garni d'un filet de caramel et de cristaux de sel de mer.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/carotte.png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">La Karot</h5>
+                            <p class="card-text">Cupcake à la carotte classique, richement épicé, avec un glaçage au fromage à la crème et décoré de petites carottes en pâte d'amande.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/chocolat-menthe.png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">Le chocolat Menthe</h5>
+                            <p class="card-text"> Cupcake au chocolat noir profond avec une touche de menthe fraîche, recouvert d'un glaçage à la menthe verte et garni d'éclats de chocolat.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/chocolate.png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">Le Show Colate</h5>
+                            <p class="card-text">Cupcake au chocolat triple couche, avec un cœur de ganache au chocolat, recouvert de glaçage au chocolat et saupoudré de copeaux de chocolat noir.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/citron.png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">Le Lemon</h5>
+                            <p class="card-text">Cupcake rafraîchissant au citron, avec un glaçage au citron acidulé et une fine tranche de citron confit sur le dessus.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/fraise.png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">La Fraise Wow </h5>
+                            <p class="card-text">Cupcake léger à la fraise, garni d'un glaçage à la fraise naturelle et d'une fraise fraîche juteuse sur le dessus.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/framboise.png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">Le framboisier</h5>
+                            <p class="card-text">Cupcake à la framboise tendre, avec un glaçage rose pâle à la framboise et une framboise fraîche en garniture.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/marsien.png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">Le marsien</h5>
+                            <p class="card-text">Ce cupcake aux allures martiennes arbore un glaçage vert et des ornements argentés, comme des satellites gravitant dans un ciel extraterrestre. La base rouge rappelle le sol rougeoyant de Mars, faisant de ce dessert une fenêtre ouverte sur l’imaginaire spatial.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/pistache.png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">Le Pistache</h5>
+                            <p class="card-text">Cupcake élégant à la pistache, avec un glaçage crémeux à la pistache et saupoudré de pistaches concassées et d'une touche de feuille d'or.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/red-velvet .png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">Le Red-Velvet</h5>
+                            <p class="card-text"> Cupcake classique Red Velvet, avec un glaçage blanc contrastant au fromage à la crème et une miette de Red Velvet sur le dessus.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/sayan.png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">Le Sayan</h5>
+                            <p class="card-text">Ce cupcake Super Saiyan présente un glaçage jaune vif avec des pointes dynamiques, saupoudré de poudre dorée pour une touche de brillance énergétique.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <img src="../assets/img/products/king-charles.png" class="card-img-top" alt="Nom du Cupcake">
+                        <div class="card-body">
+                            <h5 class="card-title">Le King Charles</h5>
+                            <p class="card-text">Cupcake artistique est une représentation charmante d'un chien de race King Charles, créé avec une maîtrise exceptionnelle de la pâtisserie.<br>
+                            Les détails sont si réalistes que l'on pourrait le confondre avec un véritable petit chien, des boucles de glaçage qui imitent parfaitement la fourrure soyeuse aux yeux expressifs et aux oreilles tombantes typiques de la race.<br> La palette de couleurs marron et blanc ainsi que la position attentive du chiot évoquent une douceur et une finesse invitant presque à la caresse plutôt qu'à la dégustation. C'est une véritable œuvre d'art comestible qui célèbre l'affection que nous portons à nos compagnons à quatre pattes.</p>
+                        </div>
+                    </article>
+                </div>
+
+
+
+
 
             </div>
-        </main>
 
-        <footer class="footer-container" style="background-color: pink !important;" >
-            <p class="ms-2">© 2023 - <span class="fw-bold fst-italic">Cupcakes Crafters</span>, Inc</p>
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+        </div>
+    </main>
+
+    <footer class="footer fixed-bottom footer-container" style="background-color: pink !important;">
+        <p class="ms-2">© 2023 - <span class="fw-bold fst-italic">Cupcakes Crafters</span>, Inc</p>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

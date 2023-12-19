@@ -1,6 +1,38 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    position: relative; /* Crée un contexte d'empilement */
+    background-image: url("../img/misc/background.png");
+    background-repeat: repeat;
+    background-size: 30%;
+    min-height: 100vh; /* Assurez-vous que le body prend au moins la hauteur de la fenêtre */
+    margin: 0; /* Enlève la marge par défaut */
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.75); /* Blanc avec 80% d'opacité */
+    z-index: -1;
+  }
+  
+  .container, .container-fluid {
+    position: relative;
+    z-index: 1;
+  }
+  
+
 .image-container {
     position: relative;
     text-align: center;
+    z-index: -1000;
   }
   
   .image-container img {
@@ -16,10 +48,14 @@
     width: 100%;
     height: auto;
   }
-  
+
   .footer-container {
     display: flex;
     justify-content: left;
     align-items: center;
     height: 50px;
+  }
+
+  .navbar {
+    z-index: 1000;
   }
