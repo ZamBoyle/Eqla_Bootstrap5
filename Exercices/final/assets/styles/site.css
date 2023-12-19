@@ -1,0 +1,25 @@
+.image-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    display: block;
+  }
+  
+  .upper-text-svg {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+  }

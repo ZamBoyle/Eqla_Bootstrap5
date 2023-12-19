@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-be">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,54 +13,80 @@
   <!-- Font Awesome 6.4.2 -->
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
     rel="stylesheet">
+  <link href="assets/styles/site.css" rel="stylesheet">
 </head>
+
 <body>
+  <header>
+    <!-- Barre de navigation Bootstrap 5 -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light mx-lg-0" style="background-color: pink !important;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/misc/Logo_cupcake_crafters2.png" alt="Logo" width="24"
+              class="d-inline-block align-text-top">
+          Cupcakes Crafters</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/produits.html">Produits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Histoire</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Contenu principal -->
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-12 col-md-9 col-lg-6 mx-auto image-container">
+          <img class="img-fluid rounded" src="assets/img/misc/banner.png" alt="Cupcake">
+          <!-- <span class="upper-text">Welcome to Cupcakes Crafters !</span> -->
+          <svg class="upper-text-svg" viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg">
+            <path id="curvedPath" d="M20,100 Q250,40 480,100" stroke="transparent" fill="transparent"/>
+            <text fill="white" font-size="18">
+              <textPath xlink:href="#curvedPath" startOffset="50%" text-anchor="middle">
+                Welcome to Cupcakes Crafters !
+              </textPath>
+            </text>
+          </svg>
+          
+        </div>        
+      </div>
 
-<!-- Barre de navigation Bootstrap 5 -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto mx-lg-0">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Cupcake Crafters</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Produits</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Histoire</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacts</a>
-        </li>
-      </ul>
+
+      <h2 class="mt-2">Cupcakes Crafters</h2>
+      <p>Nous sommes <span class="fw-bold fst-italic">Cupcakes Crafters</span>, une petite entreprise familiale qui
+        fabrique des cupcakes depuis 2010. Nous
+        sommes fiers de notre travail et nous nous efforçons de fournir à nos clients des produits de qualité.</p>
+      <p>Vous découvrirez notre savoir-faire et notre passion pour les cupcakes dans chacun de nos produits.</p>
+      <p>Notre objectif est de vous offrir une expérience gustative unique et inoubliable.</p>
+      <p class="fw-bold text-center">Cupcake un jour, cupcake toujours !</p>
+
     </div>
-  </div>
-</nav>
+  </main>
 
-<!-- Contenu principal -->
-<div class="container mt-5">
-  <h1>Titre 1</h1>
-  <h2>Titre 2</h2>
-  <p>Sweet roll chocolate sugar plum croissant danish jujubes halvah gingerbread...</p>
-
-  <!-- Section d'images de cupcakes -->
-  <div class="row">
-    <div class="col">
-      <!-- Ici, vous pouvez insérer vos images de cupcakes -->
-    </div>
-  </div>
-
-</div>
-
-<!-- Bootstrap 5 JS bundle avec Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-crossorigin="anonymous"></script>
+  <footer class="footer-container" style="background-color: pink !important;">
+    <p class="ms-2">© 2023 - <span class="fw-bold fst-italic">Cupcakes Crafters</span>, Inc</p>
+  </footer>
+  <!-- Bootstrap 5 JS bundle avec Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
