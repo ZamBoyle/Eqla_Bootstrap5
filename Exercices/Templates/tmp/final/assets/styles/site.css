@@ -56,6 +56,11 @@ html, body {
     height: 50px;
   }
 
+  .footer-text, .footer-icons {
+    display: flex;
+    align-items: center; /* Centre verticalement le contenu de chaque division */
+  }
+
   .navbar {
     z-index: 1000;
   }

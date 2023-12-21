@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma page Bootstrap 5</title>
+    <title>Nous Contacter</title>
     <!-- Bootstrap CSS v5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -49,45 +49,64 @@
         </nav>
     </header>
     <main>
-        <div class="container mt-3 mx-2 mb-5 pb-5">
+        <div class="container mt-3 mb-5 pb-5">
             <div class="row">
+                <h3>Contacts</h3>
                 <div class="col-12 col-md-4">
-                    <h3>Contacts</h3>
-                    <p>Vous pouvez nous contacter par
-                        <ul>
-<li>téléphone au <a href="tel:+41234567890">+41 23 456 78 90</a>.</li>
-<li><a href="mailto:rere@po.be" class="text-decoration-none">Cupcakes Crafters</a>.</li>
-                        </ul> 
-                    </p>
-                    <p>Suivez-nous sur les réseaux sociaux:&nbsp;<i class="bi-facebook"></i>&nbsp;&nbsp;<i
-                        class="bi-twitter"></i>&nbsp;&nbsp;<i class="bi-instagram"></i></p>
+                    <address>
+                        <strong>Cupcakes Crafters</strong><br>
+                        Route de la Gruyère 12<br>
+                        1651 Villarvolard, Suisse<br>
+                        <a href="tel:+41234567890">+41 23 456 78 90</a>.<br>
+                        <a href="mailto:info@cupcakes-crafters.be" class="text-decoration-none">info@cupcakes-crafters.be</a>.
+                    </address>
                 </div>
                 <div class="col-12 col-md-4">
-                    <strong>Cupcakes Crafters</strong><br>
-                    Route de la Gruyère 12<br>
-                    1651 Villarvolard, Suisse
-                  </address>
+                    <strong>Heures d'ouverture:</strong>
+                    <ul>
+                        <li>lundi au vendredi: 8h00 - 18h00</li>
+                        <li>samedi: 8h00 - 17h00</li>
+                        <li>dimanche: fermé</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-12 col-md-4 ratio ratio-1x1 my-3 mt-md-0">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2739.06234708038!2d7.107201900000001!3d46.6452835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e63d571df3d73%3A0xb6535ea3669dce1c!2sRoute%20de%20la%20Gruy%C3%A8re%2012%2C%201651%20Villarvolard%2C%20Suisse!5e0!3m2!1sfr!2sbe!4v1702983598743!5m2!1sfr!2sbe"
-                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    class="border border-3 border-danger-subtle rounded"></iframe>
+            <div class="row mb-2 mb-md-0 mx-1 mx-md-0">
+                <div class="col-12 col-md-8 border rounded border-3 border-danger-subtle px-2 pb-2">
+                    <h3>Formulaire de contact</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Nom</label>
+                            <input type="text" class="form-control border-danger-subtle border-3" id="contactName"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control border-danger-subtle border-3" id="contactEmail"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control border-danger-subtle border-3" id="contactMessage" rows="3"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
             </div>
-
         </div>
-        </div>
-
     </main>
-
-    <footer class="footer-container" style="background-color: pink !important;">
-        <p class="ms-2">© 2023 - <span class="fw-bold fst-italic">Cupcakes Crafters</span>, Inc</p>
+    <footer class="footer fixed-bottom footer-container d-flex justify-content-between align-items-center" style="background-color: pink !important;">
+        <p class="ms-2 mt-3">© 2023 - <span class="fw-bold fst-italic">Cupcakes Crafters</span>, Inc</p>
+        <div class="me-3">
+            <i class="bi-facebook fs-4"></i>&nbsp;&nbsp;
+            <i class="bi-twitter fs-4"></i>&nbsp;&nbsp;
+            <i class="bi-instagram fs-4"></i>
+        </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>
