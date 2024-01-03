@@ -2,63 +2,114 @@
 <html lang="en">
 
 <head>
-  <title>Exercice Final Bootstrap</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercice Final Bootstrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS v5.3 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!-- Bootstrap icônes v1.11.1 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <!-- Font Awesome 6.4.2 -->
-  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
-    rel="stylesheet">
+    <!-- Bootstrap CSS v5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap icônes v1.11.1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Font Awesome 6.4.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+        rel="stylesheet">
     <style>
-  body {
-    position: relative; /* Crée un contexte d'empilement */
-    background-image: url("https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Files/IconExerciceFinal.png");
-    background-repeat: repeat;
-    background-size: 30%;
-    min-height: 100vh; /* Assurez-vous que le body prend au moins la hauteur de la fenêtre */
-    margin: 0; /* Enlève la marge par défaut */
-  }
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.75); /* Blanc avec 80% d'opacité */
-    z-index: -1;
-  }
+        body {
+            position: relative;
+            /* Crée un contexte d'empilement */
+            background-image: url("https://raw.githubusercontent.com/ZamBoyle/Eqla_Bootstrap5/master/Exercices/Files/IconExerciceFinal.png");
+            background-repeat: repeat;
+            background-size: 30%;
+            min-height: 100vh;
+            /* Assurez-vous que le body prend au moins la hauteur de la fenêtre */
+            margin: 0;
+            /* Enlève la marge par défaut */
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.9);
+            /* Blanc avec 80% d'opacité */
+            z-index: -1;
+        }
     </style>
 </head>
 
-<body>
-  <div class="container">
-    <h1 class="text-center mt-2">Exercice Final Bootstrap</h1>
-    <h2>Objectif</h2>
-    <p class="lead">
-        Créer un site web en utilisant Bootstrap.<br> Choisissez un thème (entreprise, club, recettes de cuisine, etc) et faites-en un site web avec les fonctionnalités suivantes :
-    </p>
-    <ul>
-        <li>Utiliser Boostrap 5.3.2.</li>
-        <li>Une barre de navigation avec un logo et 4 liens (Accueil, Produits, Histoire, Contacts)</li>
-        <li>La barre de navigation deviendra un menu burger si on atteint un certain breakpoint que vous aurez défini.</li>
-        <li>Une title différent pour chaque page</li>
-        <li>Différents titres (h1, h2, etc)</li>
-        <li>Un footer avec un logo et 4 liens (Accueil, Produits, Histoire, Contacts)</li>
+<body class="mt-3 mb-3">
+    <div class="container border border-black rounded border-4">
+        <h1 class="text-center mt-2">Exercice Final - Bootstrap</h1>
+        <p class="lead">
+            - Exercice final pour le cours de Bootstrap 5.3.<br>
+            - Vous devrez me rendre cet exercice final pour le <span class="fw-bold">29 février 2024</span> au plus tard.<br>
+            - Vous avez la théorie et les exercices pour vous aider.<br>
+            - Je me suis amusé à faire l'exercice: j'ai fait des captures d'écran que j'ai mises dans un pdf pour évitiez que vous ne regardiez le code source de mon site: Cupcakes Crafters. J'ai fait un peu plus que demandé car je me suis pris au jeu. ;-) <br>
+        </p>
+          <hr class="border border-black border-2 opacity-100">
+        <h2>1. Objectifs</h2>
+        <p class="lead">
+            Créer un site web en utilisant Bootstrap.<br> Choisissez un thème (entreprise, club, recettes de cuisine,
+            etc) et faites-en un site web avec les fonctionnalités suivantes :
+        </p>
+        <ul>
+            <li>Utiliser Boostrap 5.3</li>
+            <li>Une <a
+                    href="https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Theorie/README.md#xiv-les-navbars">barre
+                    de navigation</a> avec <a
+                    href="https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Theorie/README.md#b-exemple-avec-logo">un
+                    logo</a> et 4 liens: Accueil, Produits, A propos, Contacts.</li>
+            <li>La barre de navigation deviendra un <a
+                    href="https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Theorie/README.md#5-navbar-toggler">menu
+                    burger</a> si on atteint un certain <a
+                    href="https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Theorie/README.md#ix-les-breakpoints">breakpoint</a>
+                que vous aurez défini.</li>
+            <li>Toutes les pages doivent avoir le même menu de navigation.</li>
+            <li>N'oubliez pas d'<a
+                    href="https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Theorie/README.md#9-nav-link"></a>activer
+                dans le menu la page sur laquelle vous êtes.</li>
+            <li>Une title différent pour chaque page.</li>
+            <li>Différents niveaux titres: h1, h2, etc.</li>
+            <li>Tous les titres h1 doivent être centrés.</li>
+            <li>N'oubliez pas que toutes les images doivent être responsives.</li>
+            <li>Un footer avec le nom de votre site à gauche de celui-ci.</li>
+        </ul>
+        <hr class="border border-black border-2 opacity-100">
+        <h2>2. Descriptifs des pages</h2>
+        <h3>Accueil</h3>
+        <p class="lead">
+            Une page d'accueil avec une image de fond et un titre centré.
+        </p>
+        <h3>Produits</h3>
+        <p class="lead">
+            Une page avec une liste de produits (au moins 3) avec une image, un titre, une description et un prix.
+        </p>
+        <h3>A propos</h3>
+        <p class="lead">
+            Une page avec une image et un texte qui raconte l'histoire de votre site.
+        </p>
+        <h3>Contacts</h3>
+        <p class="lead">
+            Une page avec les coordonnées de votre site (adresse, téléphone, email, etc).
+        </p>
+        <hr class="border border-black border-2 opacity-100">
+        <h2>3. GitHub Pages</h3>
+        <p class="lead">
+            Vous devez mettre votre site sur GitHub Pages.<br>
+            Vous allez donc devoir créer un nouveau repository sur GitHub et y mettre votre site.<br>
+            Suivez cette <a href="https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Theorie/README.md#9-nav-link">procédure</a> qui est disponible dans le cours.</a>
+        </p>
+    </div>
 
-    </ul>
-  </div>
-
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
