@@ -22,3 +22,4 @@ Chaque exercice sera nommé par exemple Exercice1.html, Exercice2.html, etc.
 - [Exercice n°10](Exercice10.md) - Les barres de navigation / navbar.
 - [Exercice n°11](Exercice11.md) - Everything ! (Révisions)
 - [Exercice n°12](Exercice12.md) - Les formulaires: je vais le faire attendez un peu. ;-)
+- [Exercice Final](https://zamboyle.github.io/htmlpreview/?https://github.com/ZamBoyle/Eqla_Bootstrap5/blob/master/Exercices/ExerciceFinal.html) - Exercice Final pour Bootstrap.
